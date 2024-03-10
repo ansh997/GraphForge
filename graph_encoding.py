@@ -20,6 +20,55 @@ node_to_politician = {
     15: "Gerald", 16: "Theodore", 17: "Franklin", 18: "Harry", 19: "Dwight"
 }
 
+# Game of Thrones characters
+node_to_GoT_characters = [
+    "Jon Snow",
+    "Daenerys Targaryen",
+    "Tyrion Lannister",
+    "Cersei Lannister",
+    "Arya Stark",
+    "Sansa Stark",
+    "Jaime Lannister",
+    "Bran Stark",
+    "Brienne of Tarth",
+    "The Hound (Sandor Clegane)",
+    "The Mountain (Gregor Clegane)",
+    "Joffrey Baratheon",
+    "Margaery Tyrell",
+    "Samwell Tarly",
+    "Davos Seaworth",
+    "Melisandre",
+    "Varys",
+    "Tormund Giantsbane",
+    "Theon Greyjoy",
+    "Gendry"
+]
+
+# South Park characters
+node_to_sp_characters = [
+    "Stan Marsh",
+    "Kyle Broflovski",
+    "Eric Cartman",
+    "Kenny McCormick",
+    "Butters Stotch",
+    "Randy Marsh",
+    "Sharon Marsh",
+    "Gerald Broflovski",
+    "Sheila Broflovski",
+    "Wendy Testaburger",
+    "Token Black",
+    "Clyde Donovan",
+    "Craig Tucker",
+    "Jimmy Valmer",
+    "Timmy Burch",
+    "Bebe Stevens",
+    "Tweek Tweak",
+    "Chef (Jerome McElroy)",
+    "Mr. Garrison",
+    "Mr. Mackey"
+]
+
+
 def adjacency(G):
     all_nodes = list(G.nodes())  # Get all nodes directly from G
     adjacency_list = G.edges()
@@ -102,16 +151,17 @@ def expert(G):
 
     # Combine the introduction and all connection descriptions
     description = intro + "\n" + "\n".join(connections)
-    print(description)
+    # print(description)
     return description
 
     
-
-with open('./path_graph.pkl', 'rb') as f:
-    pg = pickle.load(f)
-
+if __name__ == "__main__":
     
-adjacency(pg)    
+    with open('./path_graph.pkl', 'rb') as f:
+        pg = pickle.load(f)
+
+        
+    adjacency(pg)    
 
 
 
