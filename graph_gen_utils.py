@@ -1,4 +1,5 @@
 import networkx as nx
+import datetime
 import os
 import random
 import matplotlib.pyplot as plt
@@ -206,7 +207,7 @@ def graph_encoding(graph, node_encoding_type, edge_encoding_type, list_of_encode
     return description
 
 
-def gen_save_graphs(graph_type: str, nodes: int=None, directed: bool=False, save_path: str=None):
+def gen_save_graphs(graph_type: str, nodes: int=None, directed: bool=False, save_path: str=None, filename:str=None):
     G = generate_graph(graph_type, nodes, directed)
     dir_flag = 'undirected' if not directed else 'directed'
     
@@ -214,7 +215,7 @@ def gen_save_graphs(graph_type: str, nodes: int=None, directed: bool=False, save
         save_path is None else os.path.join(save_path, 'data', graph_type)
     if not os.path.exists(save_path):
         os.makedirs(save_path)
-    filename = f"{graph_type}_{nodes}_{dir_flag}.gpickle"
+    filename = f"{graph_type}_{nodes}_{dir_flag}_{datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.gpickle" if filename is None else filename
     save_path = os.path.join(save_path, filename)
     nx.write_gpickle(G, save_path)
     print(f"Saved {graph_type} graph to {save_path}")
