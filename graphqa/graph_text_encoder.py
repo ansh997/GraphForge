@@ -17,7 +17,7 @@
 
 import networkx as nx
 
-import name_dictionaries
+from . import name_dictionaries
 
 TEXT_ENCODER_DICT = {
     "adjacency": name_dictionaries.create_name_dict("integer"),

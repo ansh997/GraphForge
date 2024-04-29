@@ -22,7 +22,7 @@ import networkx as nx
 import tensorflow as tf
 from tensorflow.io import gfile
 
-import graph_task
+from . import graph_task
 from tensorflow.core.example import example_pb2
 from tensorflow.core.example import feature_pb2
 

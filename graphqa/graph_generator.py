@@ -23,7 +23,7 @@ from absl import flags
 import networkx as nx
 from tensorflow.io import gfile
 
-import graph_generator_utils
+from . import graph_generator_utils
 
 _ALGORITHM = flags.DEFINE_string(
     "algorithm",

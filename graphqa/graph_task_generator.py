@@ -24,8 +24,8 @@ from absl import flags
 import networkx as nx
 import numpy as np
 
-import graph_task
-import graph_task_utils as utils
+from . import graph_task
+from . import graph_task_utils as utils
 
 _TASK = flags.DEFINE_enum(
     'task',

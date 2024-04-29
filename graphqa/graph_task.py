@@ -20,7 +20,7 @@ import random
 import networkx as nx
 import numpy as np
 
-import graph_text_encoder
+from . import graph_text_encoder
 
 
 class GraphTask:
