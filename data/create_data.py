@@ -1,27 +1,20 @@
-"""import tensorflow as tf
-
-# Path to the TFRecord file
-file_path = './tasks/connected_nodes_cot_bag_test.tfrecords'
-
-
-i = 0
-for example in tf.python_io.tf_record_iterator(file_path):
-    features_dict =tf.train.Example.FromString(example)
-    
-    print(features_dict)
-    i += 1
-    print('\n\n\n')
-    if i == 2:
-      break"""
-
-
 import tensorflow as tf
 import json
 import os
-
 tf.compat.v1.enable_eager_execution()
 
 path = './tasks/'
+
+directory_path = './curated_data'
+
+# Create the directory if it does not exist
+if not os.path.exists(directory_path):
+    os.makedirs(directory_path)
+    print(f"Directory '{directory_path}' was created.")
+else:
+    print(f"Directory '{directory_path}' already exists.")
+
+
 for file_name in os.listdir(path):
 
   # Path to the TFRecord file
