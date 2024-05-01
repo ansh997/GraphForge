@@ -167,12 +167,12 @@ def node_encoding(graph, encoding_type: str, list_of_encoded_nodes: list = None)
     if encoding_type == 'Integer':
         return {node: f"{node}" for node in graph.nodes()}
     
-    print(f"Encoding nodes using {encoding_type}, {list_of_encoded_nodes}")
+    # print(f"Encoding nodes using {encoding_type}, {list_of_encoded_nodes}")
     
-    print('printing...')
-    for node in graph.nodes():
-        print(list_of_encoded_nodes[node % len(list_of_encoded_nodes)]) 
-    print('\t ended')
+    # print('printing...')
+    # for node in graph.nodes():
+    #     print(list_of_encoded_nodes[node % len(list_of_encoded_nodes)]) 
+    # print('\t ended')
     
     return {node: list_of_encoded_nodes[node % len(list_of_encoded_nodes)] for node in graph.nodes()}
 

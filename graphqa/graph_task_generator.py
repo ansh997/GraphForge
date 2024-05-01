@@ -67,6 +67,13 @@ _RANDOM_SEED = flags.DEFINE_integer(
     required=True,
 )
 
+_ISLAND = flags.DEFINE_boolean(
+    name='island',
+    default=False,
+    help='Whether to generate island prompts in the graphs.',
+    # required=True,
+)
+
 
 TASK_CLASS = {
     'edge_existence': graph_task.EdgeExistence,
@@ -83,6 +90,11 @@ TASK_CLASS = {
     'node_classification': graph_task.NodeClassification,
 }
 
+def add_suffix(filename, suffix):
+  """Adding a suffix to a filename."""
+  basename, extension = os.path.splitext(filename)
+  return basename + suffix + extension
+
 
 def zero_shot(
     task,
@@ -92,6 +104,7 @@ def zero_shot(
     cot,
     random_seed,
     split,
+    island=False
 ):
   """Creating zero-shot or zero-cot examples for the given task.
 
@@ -106,12 +119,14 @@ def zero_shot(
   """
   random.seed(random_seed)
   zero_shot_examples = utils.create_zero_shot_task(
-      task, graphs, algorithms, text_encoders, cot=cot
+      task, graphs, algorithms, text_encoders, cot=cot, island=island
   )
 
   file_name = task.name + ('_zero_cot_' if cot else '_zero_shot_')
 
   file_name += split + '.tfrecords'
+  if island:
+    file_name = add_suffix(file_name, '_island')
   utils.write_examples(
       zero_shot_examples,
       os.path.join(_TASK_DIR.value, file_name),
@@ -127,7 +142,8 @@ def few_shot(
     cot,
     bag,
     random_seed,
-):
+    island=False
+  ):
   """Creating few-shot, cot, or cot-bag examples for the given task.
 
   Args:
@@ -150,6 +166,7 @@ def few_shot(
       cot=cot,
       bag=bag,
       random_seed=random_seed,
+      island=island
   )
   file_name = task.name
   if cot and bag:
@@ -158,6 +175,9 @@ def few_shot(
     file_name += '_cot_test.tfrecords'
   else:
     file_name += '_few_shot_test.tfrecords'
+  
+  if island:
+    file_name = add_suffix(file_name, '_island')
 
   utils.write_examples(
       few_shot_examples,
@@ -213,6 +233,7 @@ def main(argv):
 
   # Defining a task on the graphs
   task = TASK_CLASS[_TASK.value]()
+  island = _ISLAND.value
 
   if isinstance(task, graph_task.NodeClassification):
     # The node classification task requires SBM graphs. As it's not possible to
@@ -233,6 +254,7 @@ def main(argv):
       cot=False,
       random_seed=_RANDOM_SEED.value,
       split='test',
+      island=island
   )
   zero_shot(
       task,
@@ -242,6 +264,7 @@ def main(argv):
       cot=True,
       random_seed=_RANDOM_SEED.value,
       split='test',
+      island=island
   )
 
   # Loading few-shot graphs.
@@ -273,6 +296,7 @@ def main(argv):
       cot=False,
       bag=False,
       random_seed=_RANDOM_SEED.value,
+      island=island
   )
 
   few_shot(
@@ -284,6 +308,7 @@ def main(argv):
       cot=True,
       bag=False,
       random_seed=_RANDOM_SEED.value,
+      island=island
   )
 
   few_shot(
@@ -295,6 +320,7 @@ def main(argv):
       cot=True,
       bag=True,
       random_seed=_RANDOM_SEED.value,
+      island=island
   )
 
 

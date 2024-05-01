@@ -135,12 +135,13 @@ def create_zero_shot_task(
     generator_algorithms,
     text_encoders,
     cot = False,
+    island = False
 ):
   """Create a recordio file with zero-shot examples for the task."""
   examples = []
   for encoding_method in text_encoders:
     examples_dict = task.prepare_examples_dict(
-        graphs, generator_algorithms, encoding_method
+        graphs, generator_algorithms, encoding_method, island=island
     )
     if cot:
       for key in examples_dict.keys():
@@ -195,6 +196,7 @@ def create_few_shot_task(
     cot,
     bag,
     random_seed,
+    island=False
 ):
   """Create a recordio file with few-shot examples for the task."""
   number_of_tokens = {}
@@ -209,7 +211,7 @@ def create_few_shot_task(
   for encoding_method in text_encoders:
     random.seed(random_seed)
     examples_dict = task.prepare_examples_dict(
-        graphs, generator_algorithms, encoding_method
+        graphs, generator_algorithms, encoding_method, island=island
     )
     for key in examples_dict.keys():
       few_shots_examples = choose_few_shot_examples(

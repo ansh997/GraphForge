@@ -23,6 +23,21 @@ import numpy as np
 from . import graph_text_encoder
 
 
+# TODO:  Island prompts are not yet supported. If I add it here will it work?
+
+def island_prompt(graph):
+  """Generate a prompt for island detection."""
+  desc = ""
+  S = [graph.subgraph(c).copy() for c in nx.connected_components(graph)]
+  number_of_islands = len(S)
+  desc += "There are {} number of islands. ".format(number_of_islands)
+  for i, island in enumerate(S):
+      island_nodes = list(island.nodes())
+      island_nodes.sort()
+      desc += f" \n This is island {i+1} of {number_of_islands}. It contains the nodes {island_nodes}."
+  return desc
+
+
 class GraphTask:
   """The parent class for all the graph tasks."""
 
@@ -35,6 +50,7 @@ class GraphTask:
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     raise NotImplementedError()
 
@@ -57,13 +73,16 @@ class CycleCheck(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island = False
   ):
     examples_dict = {}
     for ind, graph in enumerate(graphs):
       question = (
           graph_text_encoder.encode_graph(graph, encoding_method)
-          + self._task_description
       )
+      if island:
+        question += island_prompt(graph)  ## Added island prompt
+      question += self._task_description
       try:
         nx.find_cycle(graph)
         answer = 'Yes, there is a cycle.'
@@ -82,7 +101,7 @@ class CycleCheck(GraphTask):
     return examples_dict
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island=False
   ):
     """Create a few shot example w or w/o cot for the graph graph."""
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
@@ -90,6 +109,8 @@ class CycleCheck(GraphTask):
         graph_text_encoder.encode_graph(graph, encoding_method)
         + self._task_description
     )
+    if island:
+      question += island_prompt(graph)  ## Added island prompt
     try:
       cycle = nx.find_cycle(graph)
       cycle_text = ''
@@ -141,6 +162,7 @@ class EdgeExistence(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     examples_dict = {}
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
@@ -148,6 +170,8 @@ class EdgeExistence(GraphTask):
     for ind, graph in enumerate(graphs):
       source, target = random.sample(list(graph.nodes()), k=2)
       question = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        question += island_prompt(graph)  ## Added island prompt
       task_description = 'Q: Is node %s connected to node %s?\nA: ' % (
           name_dict[source],
           name_dict[target],
@@ -172,11 +196,13 @@ class EdgeExistence(GraphTask):
     return examples_dict
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island = False
   ):
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     source, target = random.sample(list(graph.nodes()), k=2)
     question = graph_text_encoder.encode_graph(graph, encoding_method)
+    if island:
+      question += island_prompt(graph)  ## Added island prompt
     question += 'Q: Is node %s connected to node %s?\nA: ' % (
         name_dict[source],
         name_dict[target],
@@ -213,10 +239,13 @@ class NodeCount(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     examples_dict = {}
     for ind, graph in enumerate(graphs):
       question = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        question += island_prompt(graph)  ## Added island prompt
       question += self._task_description
       answer = ' %d.' % len(graph.nodes())
       examples_dict[ind] = {
@@ -239,10 +268,12 @@ class NodeCount(GraphTask):
     return node_string
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island = False
   ):
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     question = graph_text_encoder.encode_graph(graph, encoding_method)
+    if island:
+      question += island_prompt(graph)  ## Added island prompt
     question += self._task_description
     answer = '%d.' % len(graph.nodes())
     if cot:
@@ -265,11 +296,15 @@ class NodeDegree(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     examples_dict = {}
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     for ind, graph in enumerate(graphs):
       question = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        # question += island_prompt(graph)  ## Added island prompt
+        pass
       source_node = random.sample(list(graph.nodes()), k=1)[0]
       task_description = (
           'Q: What is the degree of node %s?\nA: ' % name_dict[source_node]
@@ -306,10 +341,12 @@ class NodeDegree(GraphTask):
     return edge_string
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island = False
   ):
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     question = graph_text_encoder.encode_graph(graph, encoding_method)
+    if island:
+      pass
     source_node = random.sample(list(graph.nodes()), k=1)[0]
     question += (
         'Q: What is the degree of node %s?\nA: ' % name_dict[source_node]
@@ -336,10 +373,14 @@ class EdgeCount(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     examples_dict = {}
     for ind, graph in enumerate(graphs):
       question = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        pass
+        # question += island_prompt(graph)  ## Added island prompt
       question += self._task_description
       answer = ' %d.' % len(graph.edges())
       examples_dict[ind] = {
@@ -365,10 +406,12 @@ class EdgeCount(GraphTask):
     return edges_string.strip()[:-1]
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island = False
   ):
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     question = graph_text_encoder.encode_graph(graph, encoding_method)
+    if island:
+      pass
     question += self._task_description
     answer = '%d.' % len(graph.edges())
     if cot:
@@ -390,11 +433,14 @@ class ConnectedNodes(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     examples_dict = {}
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     for ind, graph in enumerate(graphs):
       question = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        question += island_prompt(graph)  ## Added island prompt
       source_node = random.sample(list(graph.nodes()), k=1)[0]
       task_description = (
           'Q: List all the nodes connected to %s in alphabetical order.\nA: '
@@ -436,10 +482,12 @@ class ConnectedNodes(GraphTask):
     return connected_nodes_string
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island=False
   ):
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     question = graph_text_encoder.encode_graph(graph, encoding_method)
+    if island:
+      question += island_prompt(graph)  ## Added island prompt
     source_node = random.sample(list(graph.nodes()), k=1)[0]
     question += (
         'Q: List all the nodes connected to %s in alphabetical order.\nA: '
@@ -476,11 +524,14 @@ class DisconnectedNodes(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     examples_dict = {}
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     for ind, graph in enumerate(graphs):
       question = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        question += island_prompt(graph)  ## Added island prompt
       source_node = random.sample(list(graph.nodes()), k=1)[0]
       task_description = (
           'Q: List all the nodes that are not connected to %s in alphabetical'
@@ -538,10 +589,12 @@ class DisconnectedNodes(GraphTask):
     return ', '.join(map(str, sorted(all_nodes_names)))
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island=False
   ):
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     question = graph_text_encoder.encode_graph(graph, encoding_method)
+    if island:
+      question += island_prompt(graph)  ## Added island prompt
     source_node = random.sample(list(graph.nodes()), k=1)[0]
     question += (
         'Q: List all the nodes that are not connected to %s in alphabetical'
@@ -584,6 +637,7 @@ class Reachability(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     examples_dict = {}
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
@@ -591,6 +645,8 @@ class Reachability(GraphTask):
     for ind, graph in enumerate(graphs):
       source, target = random.sample(list(graph.nodes()), k=2)
       question = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        question += island_prompt(graph)  ## Added island prompt
       task_description = 'Q: Is there a path from node %s to node %s?\nA: ' % (
           name_dict[source],
           name_dict[target],
@@ -613,11 +669,13 @@ class Reachability(GraphTask):
     return examples_dict
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island=False
   ):
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     source, target = random.sample(list(graph.nodes()), k=2)
     question = graph_text_encoder.encode_graph(graph, encoding_method)
+    if island:
+      question += island_prompt(graph)  ## Added island prompt
     question += 'Q: Is there a path from node %s to node %s?\nA: ' % (
         name_dict[source],
         name_dict[target],
@@ -663,6 +721,7 @@ class ShortestPath(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     examples_dict = {}
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
@@ -670,6 +729,9 @@ class ShortestPath(GraphTask):
     for ind, graph in enumerate(graphs):
       source, target = random.sample(list(graph.nodes()), k=2)
       question = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        # question += island_prompt(graph)  ## Added island prompt
+        pass
       task_description = (
           'Q: What is the length of the shortest path from node %s to node'
           ' %s?\nA: '
@@ -700,11 +762,13 @@ class ShortestPath(GraphTask):
     return examples_dict
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island=False
   ):
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     source, target = random.sample(list(graph.nodes()), k=2)
     question = graph_text_encoder.encode_graph(graph, encoding_method)
+    if island:
+      pass
     question += (
         'Q: What is the length of the shortest path from node %s to node'
         ' %s?\nA: '
@@ -758,13 +822,16 @@ class TriangleCounting(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     examples_dict = {}
     for ind, graph in enumerate(graphs):
       question = (
           graph_text_encoder.encode_graph(graph, encoding_method)
-          + self._task_description
       )
+      if island:
+        pass
+      question+= self._task_description
       ntriangles = int(np.sum(list(nx.triangles(graph).values())) / 3)
 
       answer = '%i.' % ntriangles
@@ -781,7 +848,7 @@ class TriangleCounting(GraphTask):
     return examples_dict
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island=False
   ):
     """Create a few shot example w or w/o cot for the graph graph."""
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
@@ -789,6 +856,8 @@ class TriangleCounting(GraphTask):
         graph_text_encoder.encode_graph(graph, encoding_method)
         + self._task_description
     )
+    if island:
+      pass
     triangles_dict = nx.triangles(graph)
     ntriangles = int(np.sum(list(triangles_dict.values())) / 3)
 
@@ -833,6 +902,7 @@ class MaximumFlow(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island=False
   ):
     examples_dict = {}
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
@@ -841,6 +911,8 @@ class MaximumFlow(GraphTask):
       graph = add_edge_weight(graph)
       source, target = random.sample(list(graph.nodes()), k=2)
       question = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        pass
       task_description = (
           'Q: What is the maximum capacity of the flow from node %s to node'
           ' %s?\nA: ' % (name_dict[source], name_dict[target])
@@ -938,12 +1010,15 @@ class NodeClassification(GraphTask):
       graphs,
       generator_algorithms,
       encoding_method,
+      island = False
   ):
     classes = random.sample(list(self.classes), k=2)
     examples_dict = {}
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     for ind, graph in enumerate(graphs):
       question = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        pass
       nnodes = len(graph.nodes())
       # Sampling nnodes // 2 + 1 nodes.
       sampled_nodes = random.sample(
@@ -979,11 +1054,13 @@ class NodeClassification(GraphTask):
     return examples_dict
 
   def create_few_shot_example(
-      self, graph, encoding_method, cot
+      self, graph, encoding_method, cot, island = False
   ):
     classes = random.sample(list(self.classes), k=2)
     name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
     question = graph_text_encoder.encode_graph(graph, encoding_method)
+    if island:
+      pass
     nnodes = len(graph.nodes())
     sampled_nodes = random.sample(
         list(graph.nodes(data=True)), k=nnodes // 2 + 1
