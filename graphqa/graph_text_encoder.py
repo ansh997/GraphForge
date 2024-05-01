@@ -175,4 +175,18 @@ def with_ids(graph, text_encoder):
 def encode_graph(graph, text_encoder):
   """Encoding a graph according to the given text_encoder method."""
   name_dict = TEXT_ENCODER_DICT[text_encoder]
-  return TEXT_ENCODER_FN[text_encoder](graph, name_dict)
+  return TEXT_ENCODER_FN[text_encoder](graph, name_dict), name_dict
+
+
+def island_prompt(graph, name_dict):
+  """Generate a prompt for island detection."""
+  desc = ""
+  S = [graph.subgraph(c).copy() for c in nx.connected_components(graph)]
+  number_of_islands = len(S)
+  desc += "There are {} number of islands. ".format(number_of_islands)
+  for i, island in enumerate(S):
+      island_nodes = list(island.nodes())
+      island_nodes = [name_dict[node] for node in island_nodes]
+      island_nodes.sort()
+      desc += f" \n This is island {i+1} of {number_of_islands}. It contains the nodes {island_nodes}."
+  return desc
