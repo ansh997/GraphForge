@@ -26,7 +26,7 @@ def inject_prompt(question):
 
 
 question_folder = '/home/pranav/GraphForge/data/curated_data/'
-prediction_path = './output/'
+prediction_path = './output_test/'
 
 for json_path in os.listdir(question_folder):
 	
