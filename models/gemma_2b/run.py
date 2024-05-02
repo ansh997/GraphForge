@@ -5,21 +5,21 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from torch.quantization import quantize_dynamic
 
 device = "cpu"
-#device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)
 
-custom_cache_dir = './'
+custom_cache_dir = '/scratch/ananth.muppidi/TIDL'
 api_token = os.getenv('HF_API_TOKEN')
 if not api_token:
     raise ValueError("HF_API_TOKEN is unset")
 
 tokenizer = AutoTokenizer.from_pretrained(
-    "meta-llama/Llama-2-7b-chat-hf",
+    "google/gemma-2b-it",
     token=api_token
 )
 
 model = AutoModelForCausalLM.from_pretrained(
-    "meta-llama/Llama-2-7b-chat-hf",
+    "google/gemma-2b-it",
     torch_dtype=torch.bfloat16,
     low_cpu_mem_usage=True,
     token=api_token
@@ -33,8 +33,8 @@ model.to(device)
 
 def inject_prompt(question):
     with torch.no_grad():
-        inputs = tokenizer(question, return_tensors="pt")
-        outputs = model.generate(**inputs)
+        inputs = tokenizer(question, return_tensors="pt").to(device)
+        outputs = model.generate(**inputs, max_length=10000)
         response = tokenizer.decode(outputs[0], skip_special_tokens=True)
         return response
 
