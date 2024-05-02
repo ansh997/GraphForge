@@ -7,7 +7,7 @@ from torch.quantization import quantize_dynamic
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)
 
-custom_cache_dir = '/scratch/ananth.muppidi/TIDL'
+custom_cache_dir = './'
 api_token = os.getenv('HF_API_TOKEN')
 if not api_token:
     raise ValueError("HF_API_TOKEN is unset")
