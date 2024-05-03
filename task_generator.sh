@@ -30,15 +30,16 @@ TASKS="edge_existence" # node_degree node_count edge_count cycle_check connected
 
 # For experimenting with only erdos-reyni graph use `er``.
 # For all graph generators, set to `all`.
-ALGORITHM="er"
+ALGORITHM="all"
 
 # cd ./graphqa/
 
 echo "The output path is set to: $TASK_DIR"
 
 # "edge_existence" "node_degree" "node_count" "edge_count" "cycle_check" "connected_nodes"
+# "edge_existence" "node_degree" "node_count" "edge_count" "cycle_check" "connected_nodes"
 
-for  task in "edge_existence" "node_degree" "node_count" "edge_count" "cycle_check" "connected_nodes"
+for  task in "subprocess_order"
 do
   echo "Generating examples for task $task"
   python -m graphqa.graph_task_generator \

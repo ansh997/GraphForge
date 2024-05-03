@@ -17,6 +17,8 @@
 
 import networkx as nx
 
+from .graph_generator_utils import randomize_directions
+
 from . import name_dictionaries
 
 TEXT_ENCODER_DICT = {
@@ -30,6 +32,7 @@ TEXT_ENCODER_DICT = {
     "expert": name_dictionaries.create_name_dict("alphabet"),
     "coauthorship": name_dictionaries.create_name_dict("popular"),
     "random": name_dictionaries.create_name_dict("random_integer"),
+    "subprocess": name_dictionaries.create_name_dict("integer"),
 }
 
 
@@ -153,6 +156,53 @@ def expert_encoder(graph, name_dict):
   return output
 
 
+# def subprocess_encoder(graph, name_dict):
+#     """Encoding a graph as a subprocess."""
+#     directed_graph = randomize_directions(graph=graph)
+#     output = (
+#         "In a directed graph, (i,j) means that there is an edge from node i to"
+#         " node j.\n"
+#     )
+#     # for node in directed_graph:
+#     #     output+= f'{name_dict[node]} '
+#     #     after_nodes = list(directed_graph.successors(node))
+#     #     output+= f'has {len(after_nodes)} successors. '
+#     #     if len(after_nodes) >=1:
+#     #         for i in range(len(after_nodes)):
+#     #           ordinal_suffix = "th" if 11 <= i+1 <= 13 else {1:"st", 2:"nd", 3:"rd"}.get((i+1) % 10, "th")
+#     #           output += f'The {i+1}{ordinal_suffix} successor is {name_dict[after_nodes[i+1]]}. '
+#     #     output+= '\n'
+#     for node in directed_graph:
+#         output+= f'Subprocess{node} '
+#         after_nodes = list(directed_graph.successors(node))
+#         output+= f'has {len(after_nodes)} successors. '
+#         if len(after_nodes) >=1:
+#             for i in range(len(after_nodes)):
+#                 ordinal_suffix = "th" if 11 <= i+1 <= 13 else {1:"st", 2:"nd", 3:"rd"}.get((i+1) % 10, "th")
+#                 output += f'The {i+1}{ordinal_suffix} successor is Subprocess{after_nodes[i]}. '
+#         output+= '\n'
+#     return output
+
+
+def subprocess_encoder(_graph, name_dict):
+    """Encoding a graph as a subprocess."""
+    directed_graph = randomize_directions(graph=_graph, seed=42)
+    output = (
+        "In a directed graph, (i,j) means that there is an edge from node i to"
+        " node j.\n"
+    )
+    for node in directed_graph:
+        output+= f'Subprocess{name_dict[node]} '
+        after_nodes = list(directed_graph.successors(node))
+        output+= f'has {len(after_nodes)} successors. '
+        if len(after_nodes) >=1:
+            for i in range(len(after_nodes)):
+                ordinal_suffix = "th" if 11 <= i+1 <= 13 else {1:"st", 2:"nd", 3:"rd"}.get((i+1) % 10, "th")
+                output += f'The {i+1}{ordinal_suffix} successor is Subprocess{name_dict[after_nodes[i]]}. '
+        output+= '\n'
+    return output
+
+
 TEXT_ENCODER_FN = {
     "adjacency": adjacency_encoder,
     "incident": incident_encoder,
@@ -164,6 +214,7 @@ TEXT_ENCODER_FN = {
     "expert": expert_encoder,
     "coauthorship": coauthorship_encoder,
     "random": adjacency_encoder,
+    "subprocess": subprocess_encoder,
 }
 
 
@@ -190,3 +241,4 @@ def island_prompt(graph, name_dict):
       island_nodes.sort()
       desc += f" \n This is island {i+1} of {number_of_islands}. It contains the nodes {island_nodes}."
   return desc
+

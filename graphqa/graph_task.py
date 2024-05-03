@@ -21,6 +21,8 @@ import networkx as nx
 import numpy as np
 
 from . import graph_text_encoder
+from .graph_generator_utils import randomize_directions
+
 
 
 # TODO:  Island prompts are not yet supported. If I add it here will it work?
@@ -1084,4 +1086,81 @@ class NodeClassification(GraphTask):
           % (sampled_nodes[-1][0], classes[sampled_nodes[-1][1]['block']])
       )
       answer += explanation
+    return question + answer
+
+
+class SubprocessOrder(GraphTask):
+  """The graph task to check if an edge exist in a graph or not."""
+
+  def __init__(self):
+    super().__init__()
+    self.name = 'subprocess_order'
+
+  def prepare_examples_dict(
+      self,
+      graphs,
+      generator_algorithms,
+      encoding_method,
+      island=False
+  ):
+    examples_dict = {}
+    name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
+
+    for ind, graph in enumerate(graphs):
+      source, target = random.sample(list(graph.nodes()), k=2)
+      question, _name_dict = graph_text_encoder.encode_graph(graph, encoding_method)
+      if island:
+        question += island_prompt(graph, _name_dict)  ## Added island prompt
+      task_description = 'Q: Is node %s successor to node %s?\nA: ' % (
+          name_dict[source],
+          name_dict[target],
+      )
+      question += task_description
+      dir_graph = randomize_directions(graph=graph, seed=42)
+      try:
+        name_dict[source] in list(dir_graph.successors(name_dict[target]))
+        answer = 'Yes.'
+      except nx.exception.NetworkXError:
+        answer = 'No.'
+      examples_dict[ind] = {
+          'question': question,
+          'answer': answer,
+          'nnodes': str(len(graph.nodes())),
+          'nedges': str(len(graph.edges())),
+          'task_description': task_description,
+          'graph': graph,
+          'algorithm': generator_algorithms[ind],
+          'node_ids': [source, target],
+      }
+    return examples_dict
+
+  def create_few_shot_example(
+      self, graph, encoding_method, cot, island = False
+  ):
+    name_dict = graph_text_encoder.TEXT_ENCODER_DICT[encoding_method]
+    source, target = random.sample(list(graph.nodes()), k=2)
+    question, _name_dict = graph_text_encoder.encode_graph(graph, encoding_method)
+    if island:
+      question += island_prompt(graph, _name_dict)  ## Added island prompt
+    question += 'Q: Is node %s successor to node %s?\nA: ' % (
+        name_dict[source],
+        name_dict[target],
+    )
+    dir_graph = randomize_directions(graph=graph, seed=42)
+    
+    try:
+      name_dict[source] in list(dir_graph.successors(name_dict[target]))
+      answer = 'Yes.'
+      if cot:
+        answer += (
+            ' Because, there is an directed edge from %s to %s in the graph description.'
+            % (name_dict[source], name_dict[target])
+        )
+    except nx.exception.NetworkXError:
+      answer = 'No.'
+      if cot:
+        answer += (
+            ' Because, there is no directed edge from %s to %s in the graph description.'
+            % (name_dict[source], name_dict[target])
+        )
     return question + answer

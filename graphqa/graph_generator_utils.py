@@ -164,8 +164,10 @@ def remove_graph_data(graph):
   return graph
 
 
-def randomize_directions(graph):
+def randomize_directions(graph, seed=None):
   # Converting the undirected graph to a directed graph.
+  if seed is not None:
+    random.seed(seed)
   directed_graph = graph.to_directed()
   # For each edge, randomly choose a direction.
   edges = list(graph.edges())

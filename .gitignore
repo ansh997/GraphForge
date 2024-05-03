@@ -32,6 +32,10 @@ MANIFEST
 *.manifest
 *.spec
 
+# folder
+.ipynb_checkpoints
+data/
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt

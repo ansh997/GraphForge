@@ -43,6 +43,7 @@ _TASK = flags.DEFINE_enum(
         'maximum_flow',
         'triangle_counting',
         'node_classification',
+        'subprocess_order',
     ],
     'The task to generate datapoints.',
     required=True,
@@ -88,6 +89,7 @@ TASK_CLASS = {
     'maximum_flow': graph_task.MaximumFlow,
     'triangle_counting': graph_task.TriangleCounting,
     'node_classification': graph_task.NodeClassification,
+    'subprocess_order': graph_task.SubprocessOrder,
 }
 
 def add_suffix(filename, suffix):
