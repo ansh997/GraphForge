@@ -2,7 +2,7 @@ import json
 import os
 import torch
 import random
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 random.seed(42)
 torch.random.manual_seed(0)
@@ -17,17 +17,15 @@ if not api_token:
     raise ValueError("HF_API_TOKEN is unset")
 
 model = AutoModelForCausalLM.from_pretrained(
-    "google/gemma-2b", 
+    "microsoft/Phi-3-mini-128k-instruct", 
     device_map="cuda", 
     torch_dtype="auto", 
     trust_remote_code=True, 
-    token=api_token,
-    cache_dir=custom_cache_dir
+    token=api_token
 )
 tokenizer = AutoTokenizer.from_pretrained(
-    "google/gemma-2b", 
-    token=api_token,
-    cache_dir=custom_cache_dir
+    "microsoft/Phi-3-mini-128k-instruct", 
+    token=api_token
 )
 
 
@@ -41,7 +39,7 @@ pipe = pipeline(
 )
 
 generation_args = {
-    "max_new_tokens": 200,
+    "max_new_tokens": 500,
     "return_full_text": False,
     "temperature": 0.0,
     "do_sample": False,
@@ -54,7 +52,8 @@ def inject_prompt(question):
         }
     ]
     output = pipe(messages, **generation_args)
-    return output[0]['generated_text']
+    return output[0]
+
 question_folder = '/scratch/ananth.muppidi/TIDL/data/curated_data/'
 prediction_path = './output/'
 

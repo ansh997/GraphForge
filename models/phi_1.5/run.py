@@ -17,7 +17,7 @@ if not api_token:
     raise ValueError("HF_API_TOKEN is unset")
 
 model = AutoModelForCausalLM.from_pretrained(
-    "google/gemma-2b", 
+    "microsoft/Phi-3-mini-128k-instruct", 
     device_map="cuda", 
     torch_dtype="auto", 
     trust_remote_code=True, 
@@ -25,7 +25,7 @@ model = AutoModelForCausalLM.from_pretrained(
     cache_dir=custom_cache_dir
 )
 tokenizer = AutoTokenizer.from_pretrained(
-    "google/gemma-2b", 
+    "microsoft/Phi-3-mini-128k-instruct", 
     token=api_token,
     cache_dir=custom_cache_dir
 )
