@@ -4,8 +4,10 @@ import torch
 import random
 from transformers import AutoModelForCausalLM, AutoTokenizer
 # from torch.quantization import quantize_dynamic
-
 # device = "cpu"
+
+random.seed(42)
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("Using device:", device)
 
@@ -29,10 +31,6 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 model.to(device)
-
-#model = LlamaForCausalLM.from_pretrained("meta-llama/Llama-2-7b-hf", cache_dir=custom_cache_dir, token=api_token)
-#tokenizer = LlamaTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf", cache_dir=custom_cache_dir, token=api_token)
-#odel = quantize_dynamic(model, {torch.nn.Linear}, dtype=torch.qint8).to(device)
 
 def inject_prompt(question):
     with torch.no_grad():
