@@ -1,0 +1,562 @@
+[
+    {
+        "id": "412",
+        "algorithm": "er",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, and Christopher.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and Michael are connected.\nJames and Mary are connected.\nJames and Patricia are connected.\nJames and Linda are connected.\nJames and William are connected.\nJames and Thomas are connected.\nJames and Christopher are connected.\nRobert and David are connected.\nRobert and Patricia are connected.\nRobert and Linda are connected.\nRobert and Elizabeth are connected.\nRobert and William are connected.\nRobert and Richard are connected.\nRobert and Christopher are connected.\nJohn and Michael are connected.\nJohn and David are connected.\nJohn and Mary are connected.\nJohn and Patricia are connected.\nJohn and Jennifer are connected.\nJohn and Linda are connected.\nJohn and Joseph are connected.\nJohn and Christopher are connected.\nMichael and David are connected.\nMichael and Patricia are connected.\nMichael and Jennifer are connected.\nMichael and Linda are connected.\nMichael and William are connected.\nMichael and Joseph are connected.\nMichael and Christopher are connected.\nDavid and Mary are connected.\nDavid and Patricia are connected.\nDavid and Jennifer are connected.\nDavid and Elizabeth are connected.\nDavid and Joseph are connected.\nDavid and Thomas are connected.\nMary and Patricia are connected.\nMary and Jennifer are connected.\nMary and Linda are connected.\nMary and Elizabeth are connected.\nMary and William are connected.\nMary and Joseph are connected.\nMary and Thomas are connected.\nMary and Christopher are connected.\nPatricia and Jennifer are connected.\nPatricia and Linda are connected.\nPatricia and Elizabeth are connected.\nPatricia and Richard are connected.\nPatricia and Joseph are connected.\nPatricia and Thomas are connected.\nPatricia and Christopher are connected.\nJennifer and Linda are connected.\nJennifer and William are connected.\nJennifer and Joseph are connected.\nJennifer and Thomas are connected.\nLinda and Elizabeth are connected.\nLinda and William are connected.\nLinda and Richard are connected.\nLinda and Thomas are connected.\nLinda and Christopher are connected.\nElizabeth and Richard are connected.\nElizabeth and Joseph are connected.\nElizabeth and Thomas are connected.\nElizabeth and Christopher are connected.\nWilliam and Richard are connected.\nWilliam and Joseph are connected.\nWilliam and Thomas are connected.\nWilliam and Christopher are connected.\nRichard and Thomas are connected.\nJoseph and Thomas are connected.\nThomas and Christopher are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Thomas', 'William'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "248",
+        "algorithm": "er",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, and 17.\nThe edges in G are: (0, 1) (0, 2) (0, 3) (0, 4) (0, 5) (0, 6) (0, 7) (0, 8) (0, 9) (0, 10) (0, 11) (0, 12) (0, 13) (0, 14) (0, 15) (0, 16) (0, 17) (1, 2) (1, 3) (1, 4) (1, 5) (1, 6) (1, 8) (1, 9) (1, 10) (1, 11) (1, 12) (1, 13) (1, 14) (1, 16) (1, 17) (2, 3) (2, 4) (2, 5) (2, 6) (2, 7) (2, 8) (2, 9) (2, 10) (2, 11) (2, 12) (2, 13) (2, 14) (2, 15) (2, 16) (2, 17) (3, 4) (3, 5) (3, 6) (3, 7) (3, 8) (3, 9) (3, 10) (3, 11) (3, 12) (3, 13) (3, 14) (3, 15) (3, 16) (3, 17) (4, 5) (4, 6) (4, 7) (4, 8) (4, 9) (4, 10) (4, 11) (4, 12) (4, 13) (4, 14) (4, 15) (4, 16) (4, 17) (5, 6) (5, 7) (5, 8) (5, 9) (5, 10) (5, 12) (5, 14) (5, 15) (5, 16) (5, 17) (6, 7) (6, 8) (6, 9) (6, 10) (6, 12) (6, 13) (6, 14) (6, 15) (6, 16) (6, 17) (7, 8) (7, 9) (7, 10) (7, 11) (7, 12) (7, 13) (7, 14) (7, 15) (7, 16) (7, 17) (8, 9) (8, 10) (8, 11) (8, 12) (8, 13) (8, 14) (8, 15) (8, 16) (8, 17) (9, 10) (9, 11) (9, 12) (9, 13) (9, 14) (9, 15) (9, 17) (10, 11) (10, 12) (10, 13) (10, 14) (10, 15) (10, 16) (10, 17) (11, 13) (11, 14) (11, 15) (11, 16) (11, 17) (12, 13) (12, 14) (12, 15) (12, 16) (12, 17) (13, 15) (13, 16) (14, 15) (15, 16) (15, 17).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '11', '12', '13', '14', '15', '16', '17', '2', '3', '4', '5', '6', '7', '8', '9'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "79",
+        "algorithm": "er",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, and I.\nG has the following undirected edges:\nA -> D\nA -> F\nA -> G\nA -> H\nA -> I\nB -> D\nB -> H\nC -> F\nC -> H\nC -> I\nD -> G\nD -> H\nD -> I\nE -> F\nF -> G\nF -> H\nF -> I\nG -> H\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "469",
+        "algorithm": "er",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, and G.\nG has the following undirected edges:\nA -> C\nA -> F\nA -> G\nB -> D\nB -> F\nC -> D\nC -> E\nC -> F\nC -> G\nD -> G\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "372",
+        "algorithm": "er",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, and Bebe.\nWe have the following edges in G:\nEric and Kyle are friends.\nEric and Tolkien are friends.\nEric and Bebe are friends.\nKenny and Kyle are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Heidi are friends.\nKenny and Bebe are friends.\nKyle and Stan are friends.\nKyle and Heidi are friends.\nStan and Tolkien are friends.\nTolkien and Heidi are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Heidi', 'Kenny', 'Kyle', 'Stan', 'Tolkien'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "474",
+        "algorithm": "er",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, and Tolkien.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nKenny and Kyle are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKyle and Stan are friends.\nKyle and Tolkien are friends.\nStan and Tolkien are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Eric', 'Kenny', 'Kyle', 'Stan', 'Tolkien'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "456",
+        "algorithm": "er",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, George, and Nancy.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bill are connected.\nBarack and Kamala are connected.\nBarack and Elizabeth are connected.\nBarack and John are connected.\nBarack and Alexandria are connected.\nBarack and George are connected.\nBarack and Nancy are connected.\nJimmy and Arnold are connected.\nJimmy and Bill are connected.\nJimmy and Elizabeth are connected.\nJimmy and Ben are connected.\nJimmy and Joe are connected.\nJimmy and Alexandria are connected.\nArnold and Bernie are connected.\nArnold and Bill are connected.\nArnold and Elizabeth are connected.\nArnold and John are connected.\nArnold and Ben are connected.\nArnold and Alexandria are connected.\nArnold and Nancy are connected.\nBernie and Hillary are connected.\nBernie and John are connected.\nBernie and George are connected.\nBernie and Nancy are connected.\nBill and Kamala are connected.\nBill and Hillary are connected.\nBill and Elizabeth are connected.\nBill and Ben are connected.\nBill and Joe are connected.\nBill and Alexandria are connected.\nBill and Nancy are connected.\nKamala and Hillary are connected.\nKamala and Elizabeth are connected.\nKamala and John are connected.\nKamala and Ben are connected.\nKamala and Joe are connected.\nKamala and Alexandria are connected.\nKamala and George are connected.\nKamala and Nancy are connected.\nHillary and Elizabeth are connected.\nHillary and John are connected.\nHillary and Ben are connected.\nElizabeth and John are connected.\nElizabeth and Alexandria are connected.\nElizabeth and George are connected.\nJohn and Ben are connected.\nJohn and Nancy are connected.\nBen and Alexandria are connected.\nBen and George are connected.\nJoe and Alexandria are connected.\nJoe and George are connected.\nJoe and Nancy are connected.\nAlexandria and George are connected.\nAlexandria and Nancy are connected.\nGeorge and Nancy are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Alexandria', 'Arnold', 'Barack', 'Ben', 'Bernie', 'Bill', 'Elizabeth', 'George', 'Hillary', 'Jimmy', 'Joe', 'John', 'Kamala', 'Nancy'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "6",
+        "algorithm": "er",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, Michael, Jimbo, Herbert, Malcolm, Gary, Steve, and Chris.\nWe have the following edges in G:\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Bebe are friends.\nEric and Liane are friends.\nEric and Sharon are friends.\nEric and Gerald are friends.\nEric and Veronica are friends.\nEric and Michael are friends.\nEric and Malcolm are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Heidi are friends.\nKenny and Gerald are friends.\nKenny and Michael are friends.\nKenny and Herbert are friends.\nKenny and Gary are friends.\nKenny and Steve are friends.\nKyle and Stan are friends.\nKyle and Tolkien are friends.\nKyle and Heidi are friends.\nKyle and Sharon are friends.\nKyle and Linda are friends.\nKyle and Michael are friends.\nKyle and Herbert are friends.\nKyle and Gary are friends.\nStan and Liane are friends.\nStan and Linda are friends.\nStan and Veronica are friends.\nStan and Michael are friends.\nStan and Jimbo are friends.\nStan and Malcolm are friends.\nStan and Gary are friends.\nStan and Steve are friends.\nStan and Chris are friends.\nTolkien and Bebe are friends.\nTolkien and Sharon are friends.\nTolkien and Michael are friends.\nTolkien and Malcolm are friends.\nTolkien and Gary are friends.\nHeidi and Bebe are friends.\nHeidi and Liane are friends.\nHeidi and Sharon are friends.\nHeidi and Linda are friends.\nHeidi and Gerald are friends.\nHeidi and Michael are friends.\nHeidi and Malcolm are friends.\nHeidi and Gary are friends.\nHeidi and Chris are friends.\nBebe and Sharon are friends.\nBebe and Gerald are friends.\nBebe and Malcolm are friends.\nBebe and Gary are friends.\nBebe and Steve are friends.\nBebe and Chris are friends.\nLiane and Sharon are friends.\nLiane and Jimbo are friends.\nLiane and Gary are friends.\nLiane and Chris are friends.\nSharon and Linda are friends.\nSharon and Michael are friends.\nSharon and Gary are friends.\nLinda and Veronica are friends.\nLinda and Michael are friends.\nLinda and Jimbo are friends.\nLinda and Gary are friends.\nLinda and Steve are friends.\nGerald and Michael are friends.\nGerald and Steve are friends.\nVeronica and Michael are friends.\nVeronica and Jimbo are friends.\nVeronica and Gary are friends.\nMichael and Herbert are friends.\nMichael and Malcolm are friends.\nMichael and Gary are friends.\nMichael and Steve are friends.\nJimbo and Malcolm are friends.\nJimbo and Steve are friends.\nHerbert and Chris are friends.\nMalcolm and Steve are friends.\nGary and Steve are friends.\nSteve and Chris are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Chris', 'Eric', 'Gary', 'Gerald', 'Heidi', 'Herbert', 'Jimbo', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Malcolm', 'Michael', 'Sharon', 'Stan', 'Steve', 'Tolkien', 'Veronica'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "326",
+        "algorithm": "er",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, and Thomas.\nWe have the following edges in G:\nJames and Jennifer are connected.\nJames and Elizabeth are connected.\nRobert and William are connected.\nMichael and Jennifer are connected.\nMichael and Linda are connected.\nDavid and Joseph are connected.\nMary and Thomas are connected.\nPatricia and Joseph are connected.\nPatricia and Thomas are connected.\nLinda and William are connected.\nElizabeth and Richard are connected.\nThere are 3 number of islands.  \n This is island 1 of 3. It contains the nodes ['Elizabeth', 'James', 'Jennifer', 'Linda', 'Michael', 'Richard', 'Robert', 'William']. \n This is island 2 of 3. It contains the nodes ['John']. \n This is island 3 of 3. It contains the nodes ['David', 'Joseph', 'Mary', 'Patricia', 'Thomas'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "No"
+    },
+    {
+        "id": "436",
+        "algorithm": "er",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, and Sharon.\nWe have the following edges in G:\nKenny and Bebe are friends.\nKenny and Sharon are friends.\nKyle and Liane are friends.\nTolkien and Sharon are friends.\nThere are 5 number of islands.  \n This is island 1 of 5. It contains the nodes ['Eric']. \n This is island 2 of 5. It contains the nodes ['Bebe', 'Kenny', 'Sharon', 'Tolkien']. \n This is island 3 of 5. It contains the nodes ['Kyle', 'Liane']. \n This is island 4 of 5. It contains the nodes ['Stan']. \n This is island 5 of 5. It contains the nodes ['Heidi'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "No, there is no cycle in this graph."
+    },
+    {
+        "id": "715",
+        "algorithm": "ba",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, and Bill.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Bill are connected.\nArnold and Bill are connected.\nBernie and Bill are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arnold', 'Barack', 'Bernie', 'Bill', 'Jimmy'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "597",
+        "algorithm": "ba",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 11.\nIn this graph:\nNode 0 is connected to nodes 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11.\nNode 1 is connected to nodes 0, 11.\nNode 2 is connected to nodes 0, 11.\nNode 3 is connected to nodes 0, 11.\nNode 4 is connected to node 0.\nNode 5 is connected to nodes 0, 11.\nNode 6 is connected to nodes 0, 11.\nNode 7 is connected to nodes 0, 11.\nNode 8 is connected to nodes 0, 11.\nNode 9 is connected to nodes 0, 11.\nNode 10 is connected to nodes 0, 11.\nNode 11 is connected to nodes 0, 1, 2, 3, 5, 6, 7, 8, 9, 10.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '11', '2', '3', '4', '5', '6', '7', '8', '9'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "990",
+        "algorithm": "ba",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, and 17.\nThe edges in G are: (0, 1) (0, 2) (0, 3) (0, 4) (0, 5) (0, 6) (0, 7) (0, 8) (0, 9) (0, 10) (0, 11) (0, 12) (0, 13) (0, 14) (0, 15) (0, 16) (0, 17) (1, 17) (2, 17) (3, 17) (4, 17) (5, 17) (6, 17) (7, 17) (9, 17) (10, 17) (11, 17) (12, 17) (13, 17) (14, 17) (15, 17) (16, 17).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '11', '12', '13', '14', '15', '16', '17', '2', '3', '4', '5', '6', '7', '8', '9'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "794",
+        "algorithm": "ba",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, and Mary.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'John', 'Mary', 'Michael', 'Robert'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "601",
+        "algorithm": "ba",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, and John.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Kamala are connected.\nBarack and Hillary are connected.\nArnold and Bernie are connected.\nBernie and Bill are connected.\nHillary and Elizabeth are connected.\nElizabeth and John are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arnold', 'Barack', 'Bernie', 'Bill', 'Elizabeth', 'Hillary', 'Jimmy', 'John', 'Kamala'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "904",
+        "algorithm": "ba",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, and Patricia.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and John are connected.\nJames and Michael are connected.\nJames and David are connected.\nJames and Mary are connected.\nRobert and Mary are connected.\nRobert and Patricia are connected.\nJohn and Mary are connected.\nMichael and Patricia are connected.\nDavid and Mary are connected.\nDavid and Patricia are connected.\nMary and Patricia are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'John', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "True"
+    },
+    {
+        "id": "966",
+        "algorithm": "ba",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, and Alexandria.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Kamala are connected.\nBarack and Hillary are connected.\nBarack and John are connected.\nJimmy and Bernie are connected.\nJimmy and Bill are connected.\nJimmy and Kamala are connected.\nJimmy and Hillary are connected.\nJimmy and Elizabeth are connected.\nJimmy and John are connected.\nJimmy and Ben are connected.\nArnold and Elizabeth are connected.\nBernie and Bill are connected.\nKamala and Ben are connected.\nKamala and Joe are connected.\nKamala and Alexandria are connected.\nElizabeth and Joe are connected.\nJohn and Alexandria are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Alexandria', 'Arnold', 'Barack', 'Ben', 'Bernie', 'Bill', 'Elizabeth', 'Hillary', 'Jimmy', 'Joe', 'John', 'Kamala'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "804",
+        "algorithm": "ba",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, and Kamala.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Bill are connected.\nBarack and Kamala are connected.\nArnold and Bernie are connected.\nArnold and Bill are connected.\nBill and Kamala are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arnold', 'Barack', 'Bernie', 'Bill', 'Jimmy', 'Kamala'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "671",
+        "algorithm": "ba",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, and Patricia.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Michael are friends.\nJames and David are friends.\nJames and Mary are friends.\nJames and Patricia are friends.\nRobert and David are friends.\nMichael and David are friends.\nMichael and Mary are friends.\nMichael and Patricia are friends.\nDavid and Mary are friends.\nDavid and Patricia are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'John', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "786",
+        "algorithm": "ba",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, Viserys, Joffrey, Maester, Theon, and Rodrik.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Robert are friends.\nNed and Jorah are friends.\nNed and Theon are friends.\nNed and Rodrik are friends.\nCat and Cersei are friends.\nCat and Jaime are friends.\nCat and Petyr are friends.\nCat and Maester are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jorah are friends.\nDaenerys and Theon are friends.\nJon and Cersei are friends.\nJon and Petyr are friends.\nJon and Robert are friends.\nJon and Jorah are friends.\nJon and Rodrik are friends.\nBran and Cersei are friends.\nBran and Jaime are friends.\nBran and Petyr are friends.\nBran and Jorah are friends.\nBran and Maester are friends.\nBran and Rodrik are friends.\nSansa and Jaime are friends.\nSansa and Petyr are friends.\nSansa and Robert are friends.\nSansa and Jorah are friends.\nSansa and Viserys are friends.\nSansa and Joffrey are friends.\nSansa and Theon are friends.\nSansa and Rodrik are friends.\nArya and Cersei are friends.\nArya and Jaime are friends.\nArya and Robert are friends.\nCersei and Jaime are friends.\nCersei and Petyr are friends.\nCersei and Viserys are friends.\nCersei and Joffrey are friends.\nCersei and Maester are friends.\nJaime and Robert are friends.\nJaime and Jorah are friends.\nJaime and Viserys are friends.\nJaime and Joffrey are friends.\nPetyr and Robert are friends.\nPetyr and Viserys are friends.\nPetyr and Joffrey are friends.\nPetyr and Maester are friends.\nPetyr and Theon are friends.\nRobert and Viserys are friends.\nRobert and Theon are friends.\nJorah and Viserys are friends.\nJorah and Joffrey are friends.\nJorah and Maester are friends.\nJorah and Theon are friends.\nJorah and Rodrik are friends.\nViserys and Joffrey are friends.\nJoffrey and Maester are friends.\nTheon and Rodrik are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Joffrey', 'Jon', 'Jorah', 'Maester', 'Ned', 'Petyr', 'Robert', 'Rodrik', 'Sansa', 'Theon', 'Viserys'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "1176",
+        "algorithm": "sbm",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, and Susan.\nIn this coauthorship graph:\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and Joseph wrote a paper together.\nJames and Christopher wrote a paper together.\nJames and Barbara wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and Richard wrote a paper together.\nRobert and Joseph wrote a paper together.\nRobert and Christopher wrote a paper together.\nRobert and Barbara wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nJohn and Richard wrote a paper together.\nJohn and Joseph wrote a paper together.\nJohn and Susan wrote a paper together.\nJohn and Christopher wrote a paper together.\nJohn and Barbara wrote a paper together.\nMichael and David wrote a paper together.\nMichael and Mary wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nMichael and Elizabeth wrote a paper together.\nMichael and William wrote a paper together.\nMichael and Richard wrote a paper together.\nMichael and Susan wrote a paper together.\nMichael and Christopher wrote a paper together.\nMichael and Barbara wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nDavid and Elizabeth wrote a paper together.\nDavid and Thomas wrote a paper together.\nDavid and Susan wrote a paper together.\nDavid and Barbara wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Linda wrote a paper together.\nMary and Elizabeth wrote a paper together.\nMary and William wrote a paper together.\nMary and Richard wrote a paper together.\nMary and Thomas wrote a paper together.\nMary and Barbara wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nPatricia and William wrote a paper together.\nPatricia and Richard wrote a paper together.\nPatricia and Joseph wrote a paper together.\nJennifer and Linda wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nJennifer and William wrote a paper together.\nJennifer and Richard wrote a paper together.\nJennifer and Thomas wrote a paper together.\nJennifer and Susan wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nLinda and William wrote a paper together.\nLinda and Richard wrote a paper together.\nLinda and Joseph wrote a paper together.\nLinda and Susan wrote a paper together.\nLinda and Christopher wrote a paper together.\nElizabeth and William wrote a paper together.\nElizabeth and Richard wrote a paper together.\nElizabeth and Susan wrote a paper together.\nElizabeth and Barbara wrote a paper together.\nWilliam and Joseph wrote a paper together.\nWilliam and Thomas wrote a paper together.\nWilliam and Susan wrote a paper together.\nWilliam and Christopher wrote a paper together.\nRichard and Thomas wrote a paper together.\nRichard and Susan wrote a paper together.\nRichard and Barbara wrote a paper together.\nJoseph and Thomas wrote a paper together.\nJoseph and Susan wrote a paper together.\nJoseph and Barbara wrote a paper together.\nThomas and Susan wrote a paper together.\nThomas and Christopher wrote a paper together.\nThomas and Barbara wrote a paper together.\nSusan and Barbara wrote a paper together.\nChristopher and Barbara wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Susan', 'Thomas', 'William'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "1060",
+        "algorithm": "sbm",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, and Sansa.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nDaenerys and Jon are friends.\nDaenerys and Sansa are friends.\nJon and Bran are friends.\nJon and Sansa are friends.\nBran and Sansa are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bran', 'Cat', 'Daenerys', 'Jon', 'Ned', 'Sansa'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "1115",
+        "algorithm": "sbm",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, and Cersei.\nWe have the following edges in G:\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Arya are friends.\nCat and Cersei are friends.\nDaenerys and Jon are friends.\nDaenerys and Bran are friends.\nDaenerys and Sansa are friends.\nDaenerys and Arya are friends.\nDaenerys and Cersei are friends.\nJon and Bran are friends.\nJon and Sansa are friends.\nJon and Arya are friends.\nJon and Cersei are friends.\nBran and Sansa are friends.\nBran and Arya are friends.\nBran and Cersei are friends.\nSansa and Arya are friends.\nSansa and Cersei are friends.\nArya and Cersei are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jon', 'Ned', 'Sansa'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "1329",
+        "algorithm": "sbm",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, Viserys, Joffrey, Maester, Theon, Rodrik, and Lysa.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jorah are friends.\nNed and Joffrey are friends.\nNed and Maester are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Jaime are friends.\nCat and Petyr are friends.\nCat and Arya are friends.\nCat and Cersei are friends.\nCat and Joffrey are friends.\nDaenerys and Jon are friends.\nDaenerys and Bran are friends.\nDaenerys and Jaime are friends.\nDaenerys and Petyr are friends.\nDaenerys and Arya are friends.\nDaenerys and Cersei are friends.\nDaenerys and Joffrey are friends.\nJon and Jaime are friends.\nJon and Petyr are friends.\nJon and Arya are friends.\nJon and Cersei are friends.\nJon and Robert are friends.\nJon and Viserys are friends.\nJon and Joffrey are friends.\nBran and Sansa are friends.\nBran and Jaime are friends.\nBran and Petyr are friends.\nBran and Arya are friends.\nBran and Cersei are friends.\nBran and Jorah are friends.\nBran and Joffrey are friends.\nBran and Maester are friends.\nSansa and Robert are friends.\nSansa and Jorah are friends.\nSansa and Maester are friends.\nJaime and Petyr are friends.\nJaime and Arya are friends.\nJaime and Cersei are friends.\nJaime and Robert are friends.\nJaime and Jorah are friends.\nJaime and Viserys are friends.\nJaime and Rodrik are friends.\nJaime and Lysa are friends.\nJaime and Theon are friends.\nPetyr and Arya are friends.\nPetyr and Cersei are friends.\nPetyr and Jorah are friends.\nPetyr and Viserys are friends.\nPetyr and Theon are friends.\nArya and Cersei are friends.\nArya and Viserys are friends.\nArya and Lysa are friends.\nCersei and Robert are friends.\nCersei and Jorah are friends.\nCersei and Viserys are friends.\nCersei and Rodrik are friends.\nRobert and Theon are friends.\nJorah and Joffrey are friends.\nJorah and Rodrik are friends.\nJorah and Theon are friends.\nViserys and Lysa are friends.\nViserys and Theon are friends.\nMaester and Rodrik are friends.\nMaester and Lysa are friends.\nMaester and Theon are friends.\nRodrik and Lysa are friends.\nRodrik and Theon are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Joffrey', 'Jon', 'Jorah', 'Lysa', 'Maester', 'Ned', 'Petyr', 'Robert', 'Rodrik', 'Sansa', 'Theon', 'Viserys'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "1266",
+        "algorithm": "sbm",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, and Susan.\nWe have the following edges in G:\nJames and Patricia are connected.\nJames and Elizabeth are connected.\nJames and William are connected.\nJames and Richard are connected.\nJames and Joseph are connected.\nJames and Thomas are connected.\nJames and Christopher are connected.\nJames and Susan are connected.\nJames and Barbara are connected.\nRobert and David are connected.\nRobert and Mary are connected.\nRobert and Patricia are connected.\nRobert and Linda are connected.\nRobert and William are connected.\nRobert and Richard are connected.\nRobert and Joseph are connected.\nRobert and Christopher are connected.\nRobert and Susan are connected.\nRobert and Barbara are connected.\nJohn and Michael are connected.\nJohn and David are connected.\nJohn and Mary are connected.\nJohn and Patricia are connected.\nJohn and William are connected.\nJohn and Richard are connected.\nJohn and Joseph are connected.\nJohn and Barbara are connected.\nMichael and David are connected.\nMichael and Mary are connected.\nMichael and William are connected.\nMichael and Richard are connected.\nMichael and Joseph are connected.\nMichael and Thomas are connected.\nMichael and Christopher are connected.\nMichael and Susan are connected.\nMichael and Barbara are connected.\nDavid and William are connected.\nDavid and Richard are connected.\nDavid and Joseph are connected.\nDavid and Thomas are connected.\nDavid and Christopher are connected.\nDavid and Susan are connected.\nDavid and Barbara are connected.\nMary and Elizabeth are connected.\nMary and William are connected.\nMary and Joseph are connected.\nMary and Thomas are connected.\nMary and Christopher are connected.\nMary and Barbara are connected.\nPatricia and Jennifer are connected.\nPatricia and Elizabeth are connected.\nPatricia and William are connected.\nPatricia and Richard are connected.\nPatricia and Joseph are connected.\nPatricia and Christopher are connected.\nPatricia and Susan are connected.\nPatricia and Barbara are connected.\nJennifer and Elizabeth are connected.\nJennifer and William are connected.\nJennifer and Richard are connected.\nJennifer and Joseph are connected.\nJennifer and Thomas are connected.\nJennifer and Christopher are connected.\nJennifer and Susan are connected.\nJennifer and Barbara are connected.\nLinda and Richard are connected.\nLinda and Joseph are connected.\nLinda and Thomas are connected.\nLinda and Christopher are connected.\nLinda and Susan are connected.\nLinda and Barbara are connected.\nElizabeth and William are connected.\nElizabeth and Richard are connected.\nElizabeth and Joseph are connected.\nElizabeth and Thomas are connected.\nElizabeth and Christopher are connected.\nElizabeth and Susan are connected.\nWilliam and Joseph are connected.\nWilliam and Christopher are connected.\nWilliam and Susan are connected.\nWilliam and Barbara are connected.\nRichard and Joseph are connected.\nRichard and Thomas are connected.\nRichard and Christopher are connected.\nRichard and Barbara are connected.\nJoseph and Christopher are connected.\nJoseph and Susan are connected.\nJoseph and Barbara are connected.\nThomas and Christopher are connected.\nThomas and Susan are connected.\nThomas and Barbara are connected.\nChristopher and Susan are connected.\nChristopher and Barbara are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Susan', 'Thomas', 'William'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "1071",
+        "algorithm": "sbm",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, and Linda.\nIn this coauthorship graph:\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nRobert and John wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Patricia wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nMichael and David wrote a paper together.\nMichael and Mary wrote a paper together.\nMichael and Patricia wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nMary and Linda wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nLinda and Jennifer wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "1035",
+        "algorithm": "sbm",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, and Jennifer.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and Michael are connected.\nRobert and John are connected.\nRobert and Michael are connected.\nRobert and David are connected.\nJohn and Michael are connected.\nJohn and David are connected.\nMichael and David are connected.\nMary and Patricia are connected.\nMary and Jennifer are connected.\nPatricia and Jennifer are connected.\nThere are 2 number of islands.  \n This is island 1 of 2. It contains the nodes ['David', 'James', 'John', 'Michael', 'Robert']. \n This is island 2 of 2. It contains the nodes ['Jennifer', 'Mary', 'Patricia'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "1218",
+        "algorithm": "sbm",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, and G.\nG has the following undirected edges:\nA -> C\nA -> D\nA -> E\nA -> G\nThere are 3 number of islands.  \n This is island 1 of 3. It contains the nodes ['A', 'C', 'D', 'E', 'G']. \n This is island 2 of 3. It contains the nodes ['B']. \n This is island 3 of 3. It contains the nodes ['F'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "No, there is no cycle in this graph."
+    },
+    {
+        "id": "1369",
+        "algorithm": "sbm",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, and 7.\nIn this graph:\nNode 0 is connected to nodes 5, 7.\nNode 1 is connected to nodes 2, 4, 5, 6.\nNode 2 is connected to nodes 1, 5.\nNode 3 is connected to node 7.\nNode 4 is connected to node 1.\nNode 5 is connected to nodes 0, 1, 2.\nNode 6 is connected to node 1.\nNode 7 is connected to nodes 0, 3.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '2', '3', '4', '5', '6', '7'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "1114",
+        "algorithm": "sbm",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, and Bran.\nWe have the following edges in G:\nNed and Daenerys are friends.\nNed and Jon are friends.\nCat and Daenerys are friends.\nDaenerys and Jon are friends.\nDaenerys and Bran are friends.\nJon and Bran are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bran', 'Cat', 'Daenerys', 'Jon', 'Ned'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "1980",
+        "algorithm": "sfn",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, and David.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and David are friends.\nRobert and John are friends.\nRobert and Michael are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'John', 'Michael', 'Robert'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "1821",
+        "algorithm": "sfn",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, and John.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Barack are connected.\nBarack and Arnold are connected.\nBarack and Bill are connected.\nBarack and Hillary are connected.\nJimmy and Arnold are connected.\nJimmy and Bernie are connected.\nJimmy and Kamala are connected.\nBernie and Elizabeth are connected.\nKamala and John are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arnold', 'Barack', 'Bernie', 'Bill', 'Elizabeth', 'Hillary', 'Jimmy', 'John', 'Kamala'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "1503",
+        "algorithm": "sfn",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, and Jennifer.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and David wrote a paper together.\nJames and John wrote a paper together.\nJames and Jennifer wrote a paper together.\nRobert and John wrote a paper together.\nJohn and John wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'Jennifer', 'John', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "1691",
+        "algorithm": "sfn",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, Michael, Jimbo, Herbert, and Malcolm.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Tolkien are friends.\nEric and Eric are friends.\nKenny and Kyle are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Liane are friends.\nKenny and Linda are friends.\nKenny and Gerald are friends.\nKenny and Herbert are friends.\nKyle and Kyle are friends.\nKyle and Bebe are friends.\nKyle and Linda are friends.\nKyle and Stan are friends.\nKyle and Sharon are friends.\nKyle and Gerald are friends.\nStan and Sharon are friends.\nTolkien and Michael are friends.\nTolkien and Heidi are friends.\nTolkien and Jimbo are friends.\nBebe and Linda are friends.\nSharon and Linda are friends.\nVeronica and Veronica are friends.\nVeronica and Malcolm are friends.\nThere are 2 number of islands.  \n This is island 1 of 2. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Herbert', 'Jimbo', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Michael', 'Sharon', 'Stan', 'Tolkien']. \n This is island 2 of 2. It contains the nodes ['Malcolm', 'Veronica'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph. The cycle consists of the nodes 'Eric', 'Kenny', 'Kyle', and 'Stan'."
+    },
+    {
+        "id": "1683",
+        "algorithm": "sfn",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, and John.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Barack are connected.\nBarack and Arnold are connected.\nBarack and Bill are connected.\nBarack and Kamala are connected.\nBarack and Hillary are connected.\nJimmy and Arnold are connected.\nJimmy and Jimmy are connected.\nJimmy and Bernie are connected.\nJimmy and Elizabeth are connected.\nJimmy and John are connected.\nArnold and Bill are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arnold', 'Barack', 'Bernie', 'Bill', 'Elizabeth', 'Hillary', 'Jimmy', 'John', 'Kamala'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "1530",
+        "algorithm": "sfn",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, and Heidi.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nKenny and Kyle are friends.\nKenny and Kenny are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Heidi are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Eric', 'Heidi', 'Kenny', 'Kyle', 'Stan', 'Tolkien'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "1654",
+        "algorithm": "sfn",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, and Richard.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Robert wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and Elizabeth wrote a paper together.\nRobert and William wrote a paper together.\nJohn and Michael wrote a paper together.\nMichael and Michael wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and William wrote a paper together.\nMichael and Richard wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'William'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in the given coauthorship graph."
+    },
+    {
+        "id": "1793",
+        "algorithm": "sfn",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, and 8.\nIn this graph:\nNode 0 is connected to nodes 1, 2, 3, 5.\nNode 1 is connected to nodes 0, 2, 1, 3, 8.\nNode 2 is connected to nodes 0, 1, 3, 4, 5, 6, 7.\nNode 3 is connected to nodes 0, 1, 2.\nNode 4 is connected to node 2.\nNode 5 is connected to nodes 0, 2.\nNode 6 is connected to node 2.\nNode 7 is connected to node 2.\nNode 8 is connected to node 1.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '2', '3', '4', '5', '6', '7', '8'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "1914",
+        "algorithm": "sfn",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.\nThe edges in G are: (0, 1) (0, 2) (0, 7) (0, 8) (0, 9) (1, 2) (1, 3) (1, 4) (1, 5) (1, 6).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "1877",
+        "algorithm": "sfn",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, and Gerald.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nKenny and Kyle are friends.\nKenny and Kenny are friends.\nKenny and Bebe are friends.\nKenny and Tolkien are friends.\nKenny and Liane are friends.\nKenny and Sharon are friends.\nKenny and Linda are friends.\nKyle and Tolkien are friends.\nKyle and Bebe are friends.\nKyle and Gerald are friends.\nTolkien and Heidi are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Sharon', 'Stan', 'Tolkien'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2146",
+        "algorithm": "complete",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, and Christopher.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and John are connected.\nJames and Michael are connected.\nJames and David are connected.\nJames and Mary are connected.\nJames and Patricia are connected.\nJames and Jennifer are connected.\nJames and Linda are connected.\nJames and Elizabeth are connected.\nJames and William are connected.\nJames and Richard are connected.\nJames and Joseph are connected.\nJames and Thomas are connected.\nJames and Christopher are connected.\nRobert and John are connected.\nRobert and Michael are connected.\nRobert and David are connected.\nRobert and Mary are connected.\nRobert and Patricia are connected.\nRobert and Jennifer are connected.\nRobert and Linda are connected.\nRobert and Elizabeth are connected.\nRobert and William are connected.\nRobert and Richard are connected.\nRobert and Joseph are connected.\nRobert and Thomas are connected.\nRobert and Christopher are connected.\nJohn and Michael are connected.\nJohn and David are connected.\nJohn and Mary are connected.\nJohn and Patricia are connected.\nJohn and Jennifer are connected.\nJohn and Linda are connected.\nJohn and Elizabeth are connected.\nJohn and William are connected.\nJohn and Richard are connected.\nJohn and Joseph are connected.\nJohn and Thomas are connected.\nJohn and Christopher are connected.\nMichael and David are connected.\nMichael and Mary are connected.\nMichael and Patricia are connected.\nMichael and Jennifer are connected.\nMichael and Linda are connected.\nMichael and Elizabeth are connected.\nMichael and William are connected.\nMichael and Richard are connected.\nMichael and Joseph are connected.\nMichael and Thomas are connected.\nMichael and Christopher are connected.\nDavid and Mary are connected.\nDavid and Patricia are connected.\nDavid and Jennifer are connected.\nDavid and Linda are connected.\nDavid and Elizabeth are connected.\nDavid and William are connected.\nDavid and Richard are connected.\nDavid and Joseph are connected.\nDavid and Thomas are connected.\nDavid and Christopher are connected.\nMary and Patricia are connected.\nMary and Jennifer are connected.\nMary and Linda are connected.\nMary and Elizabeth are connected.\nMary and William are connected.\nMary and Richard are connected.\nMary and Joseph are connected.\nMary and Thomas are connected.\nMary and Christopher are connected.\nPatricia and Jennifer are connected.\nPatricia and Linda are connected.\nPatricia and Elizabeth are connected.\nPatricia and William are connected.\nPatricia and Richard are connected.\nPatricia and Joseph are connected.\nPatricia and Thomas are connected.\nPatricia and Christopher are connected.\nJennifer and Linda are connected.\nJennifer and Elizabeth are connected.\nJennifer and William are connected.\nJennifer and Richard are connected.\nJennifer and Joseph are connected.\nJennifer and Thomas are connected.\nJennifer and Christopher are connected.\nLinda and Elizabeth are connected.\nLinda and William are connected.\nLinda and Richard are connected.\nLinda and Joseph are connected.\nLinda and Thomas are connected.\nLinda and Christopher are connected.\nElizabeth and William are connected.\nElizabeth and Richard are connected.\nElizabeth and Joseph are connected.\nElizabeth and Thomas are connected.\nElizabeth and Christopher are connected.\nWilliam and Richard are connected.\nWilliam and Joseph are connected.\nWilliam and Thomas are connected.\nWilliam and Christopher are connected.\nRichard and Joseph are connected.\nRichard and Thomas are connected.\nRichard and Christopher are connected.\nJoseph and Thomas are connected.\nJoseph and Christopher are connected.\nThomas and Christopher are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Thomas', 'William'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2425",
+        "algorithm": "complete",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, and Patricia.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and John are connected.\nJames and Michael are connected.\nJames and David are connected.\nJames and Mary are connected.\nJames and Patricia are connected.\nRobert and John are connected.\nRobert and Michael are connected.\nRobert and David are connected.\nRobert and Mary are connected.\nRobert and Patricia are connected.\nJohn and Michael are connected.\nJohn and David are connected.\nJohn and Mary are connected.\nJohn and Patricia are connected.\nMichael and David are connected.\nMichael and Mary are connected.\nMichael and Patricia are connected.\nDavid and Mary are connected.\nDavid and Patricia are connected.\nMary and Patricia are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'John', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2033",
+        "algorithm": "complete",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, Michael, Jimbo, and Herbert.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Bebe are friends.\nEric and Liane are friends.\nEric and Sharon are friends.\nEric and Linda are friends.\nEric and Gerald are friends.\nEric and Veronica are friends.\nEric and Michael are friends.\nEric and Jimbo are friends.\nEric and Herbert are friends.\nKenny and Kyle are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Heidi are friends.\nKenny and Bebe are friends.\nKenny and Liane are friends.\nKenny and Sharon are friends.\nKenny and Linda are friends.\nKenny and Gerald are friends.\nKenny and Veronica are friends.\nKenny and Michael are friends.\nKenny and Jimbo are friends.\nKenny and Herbert are friends.\nKyle and Stan are friends.\nKyle and Tolkien are friends.\nKyle and Heidi are friends.\nKyle and Bebe are friends.\nKyle and Liane are friends.\nKyle and Sharon are friends.\nKyle and Linda are friends.\nKyle and Gerald are friends.\nKyle and Veronica are friends.\nKyle and Michael are friends.\nKyle and Jimbo are friends.\nKyle and Herbert are friends.\nStan and Tolkien are friends.\nStan and Heidi are friends.\nStan and Bebe are friends.\nStan and Liane are friends.\nStan and Sharon are friends.\nStan and Linda are friends.\nStan and Gerald are friends.\nStan and Veronica are friends.\nStan and Michael are friends.\nStan and Jimbo are friends.\nStan and Herbert are friends.\nTolkien and Heidi are friends.\nTolkien and Bebe are friends.\nTolkien and Liane are friends.\nTolkien and Sharon are friends.\nTolkien and Linda are friends.\nTolkien and Gerald are friends.\nTolkien and Veronica are friends.\nTolkien and Michael are friends.\nTolkien and Jimbo are friends.\nTolkien and Herbert are friends.\nHeidi and Bebe are friends.\nHeidi and Liane are friends.\nHeidi and Sharon are friends.\nHeidi and Linda are friends.\nHeidi and Gerald are friends.\nHeidi and Veronica are friends.\nHeidi and Michael are friends.\nHeidi and Jimbo are friends.\nHeidi and Herbert are friends.\nBebe and Liane are friends.\nBebe and Sharon are friends.\nBebe and Linda are friends.\nBebe and Gerald are friends.\nBebe and Veronica are friends.\nBebe and Michael are friends.\nBebe and Jimbo are friends.\nBebe and Herbert are friends.\nLiane and Sharon are friends.\nLiane and Linda are friends.\nLiane and Gerald are friends.\nLiane and Veronica are friends.\nLiane and Michael are friends.\nLiane and Jimbo are friends.\nLiane and Herbert are friends.\nSharon and Linda are friends.\nSharon and Gerald are friends.\nSharon and Veronica are friends.\nSharon and Michael are friends.\nSharon and Jimbo are friends.\nSharon and Herbert are friends.\nLinda and Gerald are friends.\nLinda and Veronica are friends.\nLinda and Michael are friends.\nLinda and Jimbo are friends.\nLinda and Herbert are friends.\nGerald and Veronica are friends.\nGerald and Michael are friends.\nGerald and Jimbo are friends.\nGerald and Herbert are friends.\nVeronica and Michael are friends.\nVeronica and Jimbo are friends.\nVeronica and Herbert are friends.\nMichael and Jimbo are friends.\nMichael and Herbert are friends.\nJimbo and Herbert are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Herbert', 'Jimbo', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Michael', 'Sharon', 'Stan', 'Tolkien', 'Veronica'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2308",
+        "algorithm": "complete",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, and Christopher.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and William wrote a paper together.\nJames and Richard wrote a paper together.\nJames and Joseph wrote a paper together.\nJames and Thomas wrote a paper together.\nJames and Christopher wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and Elizabeth wrote a paper together.\nRobert and William wrote a paper together.\nRobert and Richard wrote a paper together.\nRobert and Joseph wrote a paper together.\nRobert and Thomas wrote a paper together.\nRobert and Christopher wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nJohn and William wrote a paper together.\nJohn and Richard wrote a paper together.\nJohn and Joseph wrote a paper together.\nJohn and Thomas wrote a paper together.\nJohn and Christopher wrote a paper together.\nMichael and David wrote a paper together.\nMichael and Mary wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nMichael and Elizabeth wrote a paper together.\nMichael and William wrote a paper together.\nMichael and Richard wrote a paper together.\nMichael and Joseph wrote a paper together.\nMichael and Thomas wrote a paper together.\nMichael and Christopher wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nDavid and Elizabeth wrote a paper together.\nDavid and William wrote a paper together.\nDavid and Richard wrote a paper together.\nDavid and Joseph wrote a paper together.\nDavid and Thomas wrote a paper together.\nDavid and Christopher wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Linda wrote a paper together.\nMary and Elizabeth wrote a paper together.\nMary and William wrote a paper together.\nMary and Richard wrote a paper together.\nMary and Joseph wrote a paper together.\nMary and Thomas wrote a paper together.\nMary and Christopher wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nPatricia and William wrote a paper together.\nPatricia and Richard wrote a paper together.\nPatricia and Joseph wrote a paper together.\nPatricia and Thomas wrote a paper together.\nPatricia and Christopher wrote a paper together.\nJennifer and Linda wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nJennifer and William wrote a paper together.\nJennifer and Richard wrote a paper together.\nJennifer and Joseph wrote a paper together.\nJennifer and Thomas wrote a paper together.\nJennifer and Christopher wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nLinda and William wrote a paper together.\nLinda and Richard wrote a paper together.\nLinda and Joseph wrote a paper together.\nLinda and Thomas wrote a paper together.\nLinda and Christopher wrote a paper together.\nElizabeth and William wrote a paper together.\nElizabeth and Richard wrote a paper together.\nElizabeth and Joseph wrote a paper together.\nElizabeth and Thomas wrote a paper together.\nElizabeth and Christopher wrote a paper together.\nWilliam and Richard wrote a paper together.\nWilliam and Joseph wrote a paper together.\nWilliam and Thomas wrote a paper together.\nWilliam and Christopher wrote a paper together.\nRichard and Joseph wrote a paper together.\nRichard and Thomas wrote a paper together.\nRichard and Christopher wrote a paper together.\nJoseph and Thomas wrote a paper together.\nJoseph and Christopher wrote a paper together.\nThomas and Christopher wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Thomas', 'William'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2182",
+        "algorithm": "complete",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, and Robert.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Robert are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Arya are friends.\nCat and Cersei are friends.\nCat and Jaime are friends.\nCat and Petyr are friends.\nCat and Robert are friends.\nDaenerys and Jon are friends.\nDaenerys and Bran are friends.\nDaenerys and Sansa are friends.\nDaenerys and Arya are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jaime are friends.\nDaenerys and Petyr are friends.\nDaenerys and Robert are friends.\nJon and Bran are friends.\nJon and Sansa are friends.\nJon and Arya are friends.\nJon and Cersei are friends.\nJon and Jaime are friends.\nJon and Petyr are friends.\nJon and Robert are friends.\nBran and Sansa are friends.\nBran and Arya are friends.\nBran and Cersei are friends.\nBran and Jaime are friends.\nBran and Petyr are friends.\nBran and Robert are friends.\nSansa and Arya are friends.\nSansa and Cersei are friends.\nSansa and Jaime are friends.\nSansa and Petyr are friends.\nSansa and Robert are friends.\nArya and Cersei are friends.\nArya and Jaime are friends.\nArya and Petyr are friends.\nArya and Robert are friends.\nCersei and Jaime are friends.\nCersei and Petyr are friends.\nCersei and Robert are friends.\nJaime and Petyr are friends.\nJaime and Robert are friends.\nPetyr and Robert are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Jon', 'Ned', 'Petyr', 'Robert', 'Sansa'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "2061",
+        "algorithm": "complete",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, and Petyr.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Arya are friends.\nCat and Cersei are friends.\nCat and Jaime are friends.\nCat and Petyr are friends.\nDaenerys and Jon are friends.\nDaenerys and Bran are friends.\nDaenerys and Sansa are friends.\nDaenerys and Arya are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jaime are friends.\nDaenerys and Petyr are friends.\nJon and Bran are friends.\nJon and Sansa are friends.\nJon and Arya are friends.\nJon and Cersei are friends.\nJon and Jaime are friends.\nJon and Petyr are friends.\nBran and Sansa are friends.\nBran and Arya are friends.\nBran and Cersei are friends.\nBran and Jaime are friends.\nBran and Petyr are friends.\nSansa and Arya are friends.\nSansa and Cersei are friends.\nSansa and Jaime are friends.\nSansa and Petyr are friends.\nArya and Cersei are friends.\nArya and Jaime are friends.\nArya and Petyr are friends.\nCersei and Jaime are friends.\nCersei and Petyr are friends.\nJaime and Petyr are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Jon', 'Ned', 'Petyr', 'Sansa'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2055",
+        "algorithm": "complete",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, and Patricia.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Michael are friends.\nJames and David are friends.\nJames and Mary are friends.\nJames and Patricia are friends.\nRobert and John are friends.\nRobert and Michael are friends.\nRobert and David are friends.\nRobert and Mary are friends.\nRobert and Patricia are friends.\nJohn and Michael are friends.\nJohn and David are friends.\nJohn and Mary are friends.\nJohn and Patricia are friends.\nMichael and David are friends.\nMichael and Mary are friends.\nMichael and Patricia are friends.\nDavid and Mary are friends.\nDavid and Patricia are friends.\nMary and Patricia are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'John', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "2305",
+        "algorithm": "complete",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, Susan, and Jessica.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and William wrote a paper together.\nJames and Richard wrote a paper together.\nJames and Joseph wrote a paper together.\nJames and Thomas wrote a paper together.\nJames and Christopher wrote a paper together.\nJames and Barbara wrote a paper together.\nJames and Susan wrote a paper together.\nJames and Jessica wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and Elizabeth wrote a paper together.\nRobert and William wrote a paper together.\nRobert and Richard wrote a paper together.\nRobert and Joseph wrote a paper together.\nRobert and Thomas wrote a paper together.\nRobert and Christopher wrote a paper together.\nRobert and Barbara wrote a paper together.\nRobert and Susan wrote a paper together.\nRobert and Jessica wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nJohn and William wrote a paper together.\nJohn and Richard wrote a paper together.\nJohn and Joseph wrote a paper together.\nJohn and Thomas wrote a paper together.\nJohn and Christopher wrote a paper together.\nJohn and Barbara wrote a paper together.\nJohn and Susan wrote a paper together.\nJohn and Jessica wrote a paper together.\nMichael and David wrote a paper together.\nMichael and Mary wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nMichael and Elizabeth wrote a paper together.\nMichael and William wrote a paper together.\nMichael and Richard wrote a paper together.\nMichael and Joseph wrote a paper together.\nMichael and Thomas wrote a paper together.\nMichael and Christopher wrote a paper together.\nMichael and Barbara wrote a paper together.\nMichael and Susan wrote a paper together.\nMichael and Jessica wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nDavid and Elizabeth wrote a paper together.\nDavid and William wrote a paper together.\nDavid and Richard wrote a paper together.\nDavid and Joseph wrote a paper together.\nDavid and Thomas wrote a paper together.\nDavid and Christopher wrote a paper together.\nDavid and Barbara wrote a paper together.\nDavid and Susan wrote a paper together.\nDavid and Jessica wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Linda wrote a paper together.\nMary and Elizabeth wrote a paper together.\nMary and William wrote a paper together.\nMary and Richard wrote a paper together.\nMary and Joseph wrote a paper together.\nMary and Thomas wrote a paper together.\nMary and Christopher wrote a paper together.\nMary and Barbara wrote a paper together.\nMary and Susan wrote a paper together.\nMary and Jessica wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nPatricia and William wrote a paper together.\nPatricia and Richard wrote a paper together.\nPatricia and Joseph wrote a paper together.\nPatricia and Thomas wrote a paper together.\nPatricia and Christopher wrote a paper together.\nPatricia and Barbara wrote a paper together.\nPatricia and Susan wrote a paper together.\nPatricia and Jessica wrote a paper together.\nJennifer and Linda wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nJennifer and William wrote a paper together.\nJennifer and Richard wrote a paper together.\nJennifer and Joseph wrote a paper together.\nJennifer and Thomas wrote a paper together.\nJennifer and Christopher wrote a paper together.\nJennifer and Barbara wrote a paper together.\nJennifer and Susan wrote a paper together.\nJennifer and Jessica wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nLinda and William wrote a paper together.\nLinda and Richard wrote a paper together.\nLinda and Joseph wrote a paper together.\nLinda and Thomas wrote a paper together.\nLinda and Christopher wrote a paper together.\nLinda and Barbara wrote a paper together.\nLinda and Susan wrote a paper together.\nLinda and Jessica wrote a paper together.\nElizabeth and William wrote a paper together.\nElizabeth and Richard wrote a paper together.\nElizabeth and Joseph wrote a paper together.\nElizabeth and Thomas wrote a paper together.\nElizabeth and Christopher wrote a paper together.\nElizabeth and Barbara wrote a paper together.\nElizabeth and Susan wrote a paper together.\nElizabeth and Jessica wrote a paper together.\nWilliam and Richard wrote a paper together.\nWilliam and Joseph wrote a paper together.\nWilliam and Thomas wrote a paper together.\nWilliam and Christopher wrote a paper together.\nWilliam and Barbara wrote a paper together.\nWilliam and Susan wrote a paper together.\nWilliam and Jessica wrote a paper together.\nRichard and Joseph wrote a paper together.\nRichard and Thomas wrote a paper together.\nRichard and Christopher wrote a paper together.\nRichard and Barbara wrote a paper together.\nRichard and Susan wrote a paper together.\nRichard and Jessica wrote a paper together.\nJoseph and Thomas wrote a paper together.\nJoseph and Christopher wrote a paper together.\nJoseph and Barbara wrote a paper together.\nJoseph and Susan wrote a paper together.\nJoseph and Jessica wrote a paper together.\nThomas and Christopher wrote a paper together.\nThomas and Barbara wrote a paper together.\nThomas and Susan wrote a paper together.\nThomas and Jessica wrote a paper together.\nChristopher and Barbara wrote a paper together.\nChristopher and Susan wrote a paper together.\nChristopher and Jessica wrote a paper together.\nBarbara and Susan wrote a paper together.\nBarbara and Jessica wrote a paper together.\nSusan and Jessica wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'Jessica', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Susan', 'Thomas', 'William'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2081",
+        "algorithm": "complete",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, and F.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nB -> C\nB -> D\nB -> E\nB -> F\nC -> D\nC -> E\nC -> F\nD -> E\nD -> F\nE -> F\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2216",
+        "algorithm": "complete",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, and S.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nA -> G\nA -> H\nA -> I\nA -> J\nA -> K\nA -> L\nA -> M\nA -> N\nA -> O\nA -> P\nA -> Q\nA -> R\nA -> S\nB -> C\nB -> D\nB -> E\nB -> F\nB -> G\nB -> H\nB -> I\nB -> J\nB -> K\nB -> L\nB -> M\nB -> N\nB -> O\nB -> P\nB -> Q\nB -> R\nB -> S\nC -> D\nC -> E\nC -> F\nC -> G\nC -> H\nC -> I\nC -> J\nC -> K\nC -> L\nC -> M\nC -> N\nC -> O\nC -> P\nC -> Q\nC -> R\nC -> S\nD -> E\nD -> F\nD -> G\nD -> H\nD -> I\nD -> J\nD -> K\nD -> L\nD -> M\nD -> N\nD -> O\nD -> P\nD -> Q\nD -> R\nD -> S\nE -> F\nE -> G\nE -> H\nE -> I\nE -> J\nE -> K\nE -> L\nE -> M\nE -> N\nE -> O\nE -> P\nE -> Q\nE -> R\nE -> S\nF -> G\nF -> H\nF -> I\nF -> J\nF -> K\nF -> L\nF -> M\nF -> N\nF -> O\nF -> P\nF -> Q\nF -> R\nF -> S\nG -> H\nG -> I\nG -> J\nG -> K\nG -> L\nG -> M\nG -> N\nG -> O\nG -> P\nG -> Q\nG -> R\nG -> S\nH -> I\nH -> J\nH -> K\nH -> L\nH -> M\nH -> N\nH -> O\nH -> P\nH -> Q\nH -> R\nH -> S\nI -> J\nI -> K\nI -> L\nI -> M\nI -> N\nI -> O\nI -> P\nI -> Q\nI -> R\nI -> S\nJ -> K\nJ -> L\nJ -> M\nJ -> N\nJ -> O\nJ -> P\nJ -> Q\nJ -> R\nJ -> S\nK -> L\nK -> M\nK -> N\nK -> O\nK -> P\nK -> Q\nK -> R\nK -> S\nL -> M\nL -> N\nL -> O\nL -> P\nL -> Q\nL -> R\nL -> S\nM -> N\nM -> O\nM -> P\nM -> Q\nM -> R\nM -> S\nN -> O\nN -> P\nN -> Q\nN -> R\nN -> S\nO -> P\nO -> Q\nO -> R\nO -> S\nP -> Q\nP -> R\nP -> S\nQ -> R\nQ -> S\nR -> S\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "Yes, there is a cycle.",
+        "prediction": "Yes, there is a cycle in the given graph."
+    },
+    {
+        "id": "2824",
+        "algorithm": "star",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, and Elizabeth.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Bill are connected.\nBarack and Kamala are connected.\nBarack and Hillary are connected.\nBarack and Elizabeth are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arnold', 'Barack', 'Bernie', 'Bill', 'Elizabeth', 'Hillary', 'Jimmy', 'Kamala'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "No"
+    },
+    {
+        "id": "2585",
+        "algorithm": "star",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, and E.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "2527",
+        "algorithm": "star",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, Viserys, and Joffrey.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Robert are friends.\nNed and Jorah are friends.\nNed and Viserys are friends.\nNed and Joffrey are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Joffrey', 'Jon', 'Jorah', 'Ned', 'Petyr', 'Robert', 'Sansa', 'Viserys'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2574",
+        "algorithm": "star",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, and M.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nA -> G\nA -> H\nA -> I\nA -> J\nA -> K\nA -> L\nA -> M\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "No"
+    },
+    {
+        "id": "2689",
+        "algorithm": "star",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, and 13.\nThe edges in G are: (0, 1) (0, 2) (0, 3) (0, 4) (0, 5) (0, 6) (0, 7) (0, 8) (0, 9) (0, 10) (0, 11) (0, 12) (0, 13).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '11', '12', '13', '2', '3', '4', '5', '6', '7', '8', '9'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2737",
+        "algorithm": "star",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10.\nIn this graph:\nNode 0 is connected to nodes 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.\nNode 1 is connected to node 0.\nNode 2 is connected to node 0.\nNode 3 is connected to node 0.\nNode 4 is connected to node 0.\nNode 5 is connected to node 0.\nNode 6 is connected to node 0.\nNode 7 is connected to node 0.\nNode 8 is connected to node 0.\nNode 9 is connected to node 0.\nNode 10 is connected to node 0.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '2', '3', '4', '5', '6', '7', '8', '9'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "2721",
+        "algorithm": "star",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, and Thomas.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and John are connected.\nJames and Michael are connected.\nJames and David are connected.\nJames and Mary are connected.\nJames and Patricia are connected.\nJames and Jennifer are connected.\nJames and Linda are connected.\nJames and Elizabeth are connected.\nJames and William are connected.\nJames and Richard are connected.\nJames and Joseph are connected.\nJames and Thomas are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Thomas', 'William'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "No"
+    },
+    {
+        "id": "2640",
+        "algorithm": "star",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, and R.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nA -> G\nA -> H\nA -> I\nA -> J\nA -> K\nA -> L\nA -> M\nA -> N\nA -> O\nA -> P\nA -> Q\nA -> R\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "No"
+    },
+    {
+        "id": "2745",
+        "algorithm": "star",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, George, Nancy, Pete, Madeleine, and Elijah.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Bill are connected.\nBarack and Kamala are connected.\nBarack and Hillary are connected.\nBarack and Elizabeth are connected.\nBarack and John are connected.\nBarack and Ben are connected.\nBarack and Joe are connected.\nBarack and Alexandria are connected.\nBarack and George are connected.\nBarack and Nancy are connected.\nBarack and Pete are connected.\nBarack and Madeleine are connected.\nBarack and Elijah are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Alexandria', 'Arnold', 'Barack', 'Ben', 'Bernie', 'Bill', 'Elijah', 'Elizabeth', 'George', 'Hillary', 'Jimmy', 'Joe', 'John', 'Kamala', 'Madeleine', 'Nancy', 'Pete'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "No"
+    },
+    {
+        "id": "2972",
+        "algorithm": "star",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, and William.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Michael are friends.\nJames and David are friends.\nJames and Mary are friends.\nJames and Patricia are friends.\nJames and Jennifer are friends.\nJames and Linda are friends.\nJames and Elizabeth are friends.\nJames and William are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Robert', 'William'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "3262",
+        "algorithm": "path",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, and Patricia.\nWe have the following edges in G:\nJames and Robert are friends.\nRobert and John are friends.\nJohn and Michael are friends.\nMichael and David are friends.\nDavid and Mary are friends.\nMary and Patricia are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'John', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "3390",
+        "algorithm": "path",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, Viserys, Joffrey, Maester, and Theon.\nWe have the following edges in G:\nNed and Cat are friends.\nCat and Daenerys are friends.\nDaenerys and Jon are friends.\nJon and Bran are friends.\nBran and Sansa are friends.\nSansa and Arya are friends.\nArya and Cersei are friends.\nCersei and Jaime are friends.\nJaime and Petyr are friends.\nPetyr and Robert are friends.\nRobert and Jorah are friends.\nJorah and Viserys are friends.\nViserys and Joffrey are friends.\nJoffrey and Maester are friends.\nMaester and Theon are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Joffrey', 'Jon', 'Jorah', 'Maester', 'Ned', 'Petyr', 'Robert', 'Sansa', 'Theon', 'Viserys'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "No"
+    },
+    {
+        "id": "3398",
+        "algorithm": "path",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, and 18.\nThe edges in G are: (0, 1) (1, 2) (2, 3) (3, 4) (4, 5) (5, 6) (6, 7) (7, 8) (8, 9) (9, 10) (10, 11) (11, 12) (12, 13) (13, 14) (14, 15) (15, 16) (16, 17) (17, 18).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '11', '12', '13', '14', '15', '16', '17', '18', '2', '3', '4', '5', '6', '7', '8', '9'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "3414",
+        "algorithm": "path",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9.\nThe edges in G are: (0, 1) (1, 2) (2, 3) (3, 4) (4, 5) (5, 6) (6, 7) (7, 8) (8, 9).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "3304",
+        "algorithm": "path",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, and Bebe.\nWe have the following edges in G:\nEric and Kenny are friends.\nKenny and Kyle are friends.\nKyle and Stan are friends.\nStan and Tolkien are friends.\nTolkien and Heidi are friends.\nHeidi and Bebe are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Heidi', 'Kenny', 'Kyle', 'Stan', 'Tolkien'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes"
+    },
+    {
+        "id": "3054",
+        "algorithm": "path",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, and K.\nG has the following undirected edges:\nA -> B\nB -> C\nC -> D\nD -> E\nE -> F\nF -> G\nG -> H\nH -> I\nI -> J\nJ -> K\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "3355",
+        "algorithm": "path",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, and Elizabeth.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nJimmy and Arnold are connected.\nArnold and Bernie are connected.\nBernie and Bill are connected.\nBill and Kamala are connected.\nKamala and Hillary are connected.\nHillary and Elizabeth are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arnold', 'Barack', 'Bernie', 'Bill', 'Elizabeth', 'Hillary', 'Jimmy', 'Kamala'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "3340",
+        "algorithm": "path",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, Michael, Jimbo, Herbert, and Malcolm.\nWe have the following edges in G:\nEric and Kenny are friends.\nKenny and Kyle are friends.\nKyle and Stan are friends.\nStan and Tolkien are friends.\nTolkien and Heidi are friends.\nHeidi and Bebe are friends.\nBebe and Liane are friends.\nLiane and Sharon are friends.\nSharon and Linda are friends.\nLinda and Gerald are friends.\nGerald and Veronica are friends.\nVeronica and Michael are friends.\nMichael and Jimbo are friends.\nJimbo and Herbert are friends.\nHerbert and Malcolm are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Herbert', 'Jimbo', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Malcolm', 'Michael', 'Sharon', 'Stan', 'Tolkien', 'Veronica'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "3396",
+        "algorithm": "path",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, N, and O.\nG has the following undirected edges:\nA -> B\nB -> C\nC -> D\nD -> E\nE -> F\nF -> G\nG -> H\nH -> I\nI -> J\nJ -> K\nK -> L\nL -> M\nM -> N\nN -> O\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes, there is a cycle in this graph."
+    },
+    {
+        "id": "3066",
+        "algorithm": "path",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, and 7.\nThe edges in G are: (0, 1) (1, 2) (2, 3) (3, 4) (4, 5) (5, 6) (6, 7).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '2', '3', '4', '5', '6', '7'].Q: Is there a cycle in this graph?\nA: ",
+        "answer": "No, there is no cycle.",
+        "prediction": "Yes"
+    }
+]

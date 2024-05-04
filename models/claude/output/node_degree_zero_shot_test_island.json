@@ -1,0 +1,562 @@
+[
+    {
+        "id": "441",
+        "algorithm": "er",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, and Q.\nG has the following undirected edges:\nB -> I\nB -> Q\nG -> P\nG -> Q\nH -> N\nI -> M\nL -> N\nM -> Q\nQ: What is the degree of node L?\nA: ",
+        "answer": "1.",
+        "prediction": "2"
+    },
+    {
+        "id": "378",
+        "algorithm": "er",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, and Veronica.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Linda are friends.\nEric and Gerald are friends.\nEric and Veronica are friends.\nKenny and Kyle are friends.\nKenny and Tolkien are friends.\nKenny and Sharon are friends.\nKenny and Gerald are friends.\nKenny and Veronica are friends.\nKyle and Heidi are friends.\nKyle and Liane are friends.\nKyle and Gerald are friends.\nKyle and Veronica are friends.\nStan and Tolkien are friends.\nStan and Heidi are friends.\nStan and Bebe are friends.\nStan and Liane are friends.\nStan and Sharon are friends.\nStan and Linda are friends.\nStan and Gerald are friends.\nStan and Veronica are friends.\nTolkien and Heidi are friends.\nTolkien and Bebe are friends.\nTolkien and Sharon are friends.\nTolkien and Linda are friends.\nTolkien and Gerald are friends.\nTolkien and Veronica are friends.\nHeidi and Bebe are friends.\nHeidi and Liane are friends.\nHeidi and Sharon are friends.\nHeidi and Gerald are friends.\nHeidi and Veronica are friends.\nBebe and Liane are friends.\nBebe and Sharon are friends.\nBebe and Linda are friends.\nBebe and Veronica are friends.\nLiane and Sharon are friends.\nLiane and Linda are friends.\nLiane and Gerald are friends.\nLiane and Veronica are friends.\nSharon and Linda are friends.\nSharon and Gerald are friends.\nSharon and Veronica are friends.\nGerald and Veronica are friends.\nQ: What is the degree of node Bebe?\nA: ",
+        "answer": "7.",
+        "prediction": "6"
+    },
+    {
+        "id": "457",
+        "algorithm": "er",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, and Tolkien.\nWe have the following edges in G:\nStan and Tolkien are friends.\nQ: What is the degree of node Eric?\nA: ",
+        "answer": "0.",
+        "prediction": "0"
+    },
+    {
+        "id": "290",
+        "algorithm": "er",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, and Christopher.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and William wrote a paper together.\nJames and Richard wrote a paper together.\nJames and Joseph wrote a paper together.\nJames and Thomas wrote a paper together.\nJames and Christopher wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and Elizabeth wrote a paper together.\nRobert and William wrote a paper together.\nRobert and Richard wrote a paper together.\nRobert and Joseph wrote a paper together.\nRobert and Thomas wrote a paper together.\nRobert and Christopher wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nJohn and William wrote a paper together.\nJohn and Joseph wrote a paper together.\nJohn and Thomas wrote a paper together.\nJohn and Christopher wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nMichael and Elizabeth wrote a paper together.\nMichael and William wrote a paper together.\nMichael and Richard wrote a paper together.\nMichael and Joseph wrote a paper together.\nMichael and Thomas wrote a paper together.\nMichael and Christopher wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nDavid and Elizabeth wrote a paper together.\nDavid and William wrote a paper together.\nDavid and Richard wrote a paper together.\nDavid and Joseph wrote a paper together.\nDavid and Thomas wrote a paper together.\nDavid and Christopher wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Linda wrote a paper together.\nMary and William wrote a paper together.\nMary and Richard wrote a paper together.\nMary and Joseph wrote a paper together.\nMary and Thomas wrote a paper together.\nMary and Christopher wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nPatricia and William wrote a paper together.\nPatricia and Richard wrote a paper together.\nPatricia and Joseph wrote a paper together.\nPatricia and Thomas wrote a paper together.\nPatricia and Christopher wrote a paper together.\nJennifer and Linda wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nJennifer and William wrote a paper together.\nJennifer and Richard wrote a paper together.\nJennifer and Joseph wrote a paper together.\nJennifer and Thomas wrote a paper together.\nJennifer and Christopher wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nLinda and William wrote a paper together.\nLinda and Richard wrote a paper together.\nLinda and Joseph wrote a paper together.\nLinda and Thomas wrote a paper together.\nLinda and Christopher wrote a paper together.\nElizabeth and William wrote a paper together.\nElizabeth and Richard wrote a paper together.\nElizabeth and Joseph wrote a paper together.\nElizabeth and Thomas wrote a paper together.\nElizabeth and Christopher wrote a paper together.\nWilliam and Richard wrote a paper together.\nWilliam and Joseph wrote a paper together.\nWilliam and Christopher wrote a paper together.\nRichard and Joseph wrote a paper together.\nRichard and Thomas wrote a paper together.\nRichard and Christopher wrote a paper together.\nJoseph and Thomas wrote a paper together.\nJoseph and Christopher wrote a paper together.\nThomas and Christopher wrote a paper together..\nQ: What is the degree of node William?\nA: ",
+        "answer": "13.",
+        "prediction": "7"
+    },
+    {
+        "id": "426",
+        "algorithm": "er",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, and Barbara.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Linda wrote a paper together.\nJames and William wrote a paper together.\nJames and Richard wrote a paper together.\nJames and Thomas wrote a paper together.\nJames and Christopher wrote a paper together.\nJames and Barbara wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and William wrote a paper together.\nRobert and Richard wrote a paper together.\nRobert and Joseph wrote a paper together.\nRobert and Christopher wrote a paper together.\nRobert and Barbara wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nJohn and William wrote a paper together.\nJohn and Richard wrote a paper together.\nJohn and Joseph wrote a paper together.\nJohn and Thomas wrote a paper together.\nJohn and Christopher wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nMichael and Elizabeth wrote a paper together.\nMichael and William wrote a paper together.\nMichael and Richard wrote a paper together.\nMichael and Joseph wrote a paper together.\nMichael and Thomas wrote a paper together.\nMichael and Christopher wrote a paper together.\nMichael and Barbara wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nDavid and Elizabeth wrote a paper together.\nDavid and William wrote a paper together.\nDavid and Richard wrote a paper together.\nDavid and Joseph wrote a paper together.\nDavid and Thomas wrote a paper together.\nDavid and Christopher wrote a paper together.\nDavid and Barbara wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Linda wrote a paper together.\nMary and Elizabeth wrote a paper together.\nMary and William wrote a paper together.\nMary and Richard wrote a paper together.\nMary and Joseph wrote a paper together.\nMary and Thomas wrote a paper together.\nMary and Christopher wrote a paper together.\nMary and Barbara wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and William wrote a paper together.\nPatricia and Richard wrote a paper together.\nPatricia and Joseph wrote a paper together.\nPatricia and Thomas wrote a paper together.\nPatricia and Christopher wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nJennifer and William wrote a paper together.\nJennifer and Richard wrote a paper together.\nJennifer and Joseph wrote a paper together.\nJennifer and Christopher wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nLinda and Richard wrote a paper together.\nLinda and Joseph wrote a paper together.\nLinda and Thomas wrote a paper together.\nLinda and Christopher wrote a paper together.\nLinda and Barbara wrote a paper together.\nElizabeth and William wrote a paper together.\nElizabeth and Richard wrote a paper together.\nElizabeth and Joseph wrote a paper together.\nElizabeth and Thomas wrote a paper together.\nElizabeth and Barbara wrote a paper together.\nWilliam and Joseph wrote a paper together.\nWilliam and Thomas wrote a paper together.\nWilliam and Christopher wrote a paper together.\nWilliam and Barbara wrote a paper together.\nRichard and Joseph wrote a paper together.\nRichard and Thomas wrote a paper together.\nRichard and Christopher wrote a paper together.\nRichard and Barbara wrote a paper together.\nJoseph and Thomas wrote a paper together.\nJoseph and Christopher wrote a paper together.\nJoseph and Barbara wrote a paper together.\nThomas and Christopher wrote a paper together.\nThomas and Barbara wrote a paper together.\nChristopher and Barbara wrote a paper together..\nQ: What is the degree of node Thomas?\nA: ",
+        "answer": "13.",
+        "prediction": "7"
+    },
+    {
+        "id": "461",
+        "algorithm": "er",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, Viserys, and Joffrey.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Robert are friends.\nNed and Jorah are friends.\nNed and Joffrey are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Arya are friends.\nCat and Cersei are friends.\nCat and Jaime are friends.\nCat and Petyr are friends.\nCat and Robert are friends.\nCat and Jorah are friends.\nCat and Joffrey are friends.\nDaenerys and Jon are friends.\nDaenerys and Bran are friends.\nDaenerys and Sansa are friends.\nDaenerys and Arya are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jaime are friends.\nDaenerys and Petyr are friends.\nDaenerys and Jorah are friends.\nDaenerys and Viserys are friends.\nDaenerys and Joffrey are friends.\nJon and Bran are friends.\nJon and Sansa are friends.\nJon and Arya are friends.\nJon and Cersei are friends.\nJon and Jaime are friends.\nJon and Petyr are friends.\nJon and Robert are friends.\nJon and Jorah are friends.\nJon and Viserys are friends.\nJon and Joffrey are friends.\nBran and Sansa are friends.\nBran and Arya are friends.\nBran and Cersei are friends.\nBran and Petyr are friends.\nBran and Robert are friends.\nBran and Jorah are friends.\nBran and Viserys are friends.\nBran and Joffrey are friends.\nSansa and Arya are friends.\nSansa and Cersei are friends.\nSansa and Jaime are friends.\nSansa and Robert are friends.\nSansa and Jorah are friends.\nSansa and Viserys are friends.\nSansa and Joffrey are friends.\nArya and Cersei are friends.\nArya and Jaime are friends.\nArya and Petyr are friends.\nArya and Robert are friends.\nArya and Jorah are friends.\nArya and Viserys are friends.\nArya and Joffrey are friends.\nCersei and Jaime are friends.\nCersei and Petyr are friends.\nCersei and Robert are friends.\nCersei and Jorah are friends.\nCersei and Viserys are friends.\nCersei and Joffrey are friends.\nJaime and Petyr are friends.\nJaime and Robert are friends.\nJaime and Jorah are friends.\nJaime and Viserys are friends.\nPetyr and Robert are friends.\nPetyr and Jorah are friends.\nPetyr and Viserys are friends.\nPetyr and Joffrey are friends.\nRobert and Jorah are friends.\nRobert and Viserys are friends.\nRobert and Joffrey are friends.\nJorah and Viserys are friends.\nJorah and Joffrey are friends.\nViserys and Joffrey are friends.\nQ: What is the degree of node Jaime?\nA: ",
+        "answer": "11.",
+        "prediction": "9"
+    },
+    {
+        "id": "167",
+        "algorithm": "er",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, and E.\nG has the following undirected edges:\nA -> B\nA -> D\nA -> E\nB -> C\nB -> D\nB -> E\nC -> D\nC -> E\nD -> E\nQ: What is the degree of node B?\nA: ",
+        "answer": "4.",
+        "prediction": "4"
+    },
+    {
+        "id": "336",
+        "algorithm": "er",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, and Thomas.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and Michael are friends.\nJames and David are friends.\nJames and Mary are friends.\nJames and Patricia are friends.\nJames and Jennifer are friends.\nJames and Elizabeth are friends.\nJames and Richard are friends.\nJames and Joseph are friends.\nJames and Thomas are friends.\nRobert and John are friends.\nRobert and Michael are friends.\nRobert and David are friends.\nRobert and Mary are friends.\nRobert and Jennifer are friends.\nRobert and William are friends.\nRobert and Richard are friends.\nRobert and Thomas are friends.\nJohn and Michael are friends.\nJohn and David are friends.\nJohn and Mary are friends.\nJohn and Patricia are friends.\nJohn and Linda are friends.\nJohn and Elizabeth are friends.\nJohn and Richard are friends.\nJohn and Joseph are friends.\nJohn and Thomas are friends.\nMichael and Mary are friends.\nMichael and Patricia are friends.\nMichael and Jennifer are friends.\nMichael and Elizabeth are friends.\nMichael and William are friends.\nMichael and Thomas are friends.\nDavid and Mary are friends.\nDavid and Patricia are friends.\nDavid and Jennifer are friends.\nDavid and Linda are friends.\nDavid and Elizabeth are friends.\nDavid and William are friends.\nDavid and Richard are friends.\nMary and Patricia are friends.\nMary and Jennifer are friends.\nMary and Richard are friends.\nMary and Joseph are friends.\nPatricia and Jennifer are friends.\nPatricia and Linda are friends.\nPatricia and Elizabeth are friends.\nPatricia and William are friends.\nPatricia and Richard are friends.\nPatricia and Joseph are friends.\nPatricia and Thomas are friends.\nJennifer and Elizabeth are friends.\nJennifer and William are friends.\nJennifer and Richard are friends.\nJennifer and Joseph are friends.\nJennifer and Thomas are friends.\nLinda and Elizabeth are friends.\nLinda and Richard are friends.\nLinda and Thomas are friends.\nElizabeth and William are friends.\nElizabeth and Richard are friends.\nElizabeth and Thomas are friends.\nWilliam and Richard are friends.\nWilliam and Thomas are friends.\nRichard and Joseph are friends.\nRichard and Thomas are friends.\nJoseph and Thomas are friends.\nQ: What is the degree of node Patricia?\nA: ",
+        "answer": "12.",
+        "prediction": "8"
+    },
+    {
+        "id": "494",
+        "algorithm": "er",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, and 8.\nIn this graph:\nNode 0 is connected to node 1.\nNode 1 is connected to nodes 0, 6.\nNode 2 is connected to nodes 5, 7.\nNode 3 is connected to node 8.\nNode 5 is connected to node 2.\nNode 6 is connected to node 1.\nNode 7 is connected to nodes 2, 8.\nNode 8 is connected to nodes 3, 7.\nQ: What is the degree of node 2?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "146",
+        "algorithm": "er",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, Susan, and Jessica.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and David are friends.\nJames and Patricia are friends.\nJames and Elizabeth are friends.\nJames and Barbara are friends.\nJames and Susan are friends.\nRobert and Michael are friends.\nRobert and Jennifer are friends.\nRobert and Thomas are friends.\nRobert and Barbara are friends.\nJohn and David are friends.\nJohn and Christopher are friends.\nDavid and Jennifer are friends.\nDavid and Linda are friends.\nDavid and Joseph are friends.\nDavid and Thomas are friends.\nDavid and Jessica are friends.\nMary and Patricia are friends.\nMary and Jennifer are friends.\nMary and Linda are friends.\nMary and Richard are friends.\nMary and Christopher are friends.\nMary and Barbara are friends.\nPatricia and William are friends.\nPatricia and Joseph are friends.\nPatricia and Jessica are friends.\nJennifer and Barbara are friends.\nJennifer and Jessica are friends.\nLinda and Thomas are friends.\nElizabeth and Christopher are friends.\nWilliam and Joseph are friends.\nRichard and Barbara are friends.\nJoseph and Christopher are friends.\nThomas and Barbara are friends.\nThomas and Jessica are friends.\nQ: What is the degree of node Barbara?\nA: ",
+        "answer": "6.",
+        "prediction": "7"
+    },
+    {
+        "id": "637",
+        "algorithm": "ba",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, and Mary.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nJohn and David wrote a paper together.\nDavid and Mary wrote a paper together..\nQ: What is the degree of node James?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "939",
+        "algorithm": "ba",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, Susan, Jessica, and Sarah.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Michael are friends.\nJames and David are friends.\nJames and Mary are friends.\nJames and Patricia are friends.\nJames and Jennifer are friends.\nJames and Linda are friends.\nJames and Elizabeth are friends.\nJames and William are friends.\nJames and Richard are friends.\nJames and Joseph are friends.\nJames and Thomas are friends.\nJames and Christopher are friends.\nJames and Barbara are friends.\nJames and Susan are friends.\nJames and Jessica are friends.\nJames and Sarah are friends.\nQ: What is the degree of node Robert?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "547",
+        "algorithm": "ba",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, and N.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nA -> H\nA -> I\nA -> M\nB -> E\nB -> G\nC -> E\nC -> F\nC -> G\nC -> I\nC -> J\nC -> K\nC -> M\nD -> H\nD -> J\nE -> F\nE -> G\nE -> J\nE -> M\nE -> N\nF -> H\nF -> I\nF -> K\nF -> N\nH -> K\nH -> L\nI -> L\nJ -> L\nL -> N\nQ: What is the degree of node M?\nA: ",
+        "answer": "3.",
+        "prediction": "4"
+    },
+    {
+        "id": "715",
+        "algorithm": "ba",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, and 4.\nThe edges in G are: (0, 1) (0, 2) (0, 3) (0, 4) (2, 4) (3, 4).\nQ: What is the degree of node 4?\nA: ",
+        "answer": "3.",
+        "prediction": "3"
+    },
+    {
+        "id": "956",
+        "algorithm": "ba",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, and Petyr.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nCat and Jaime are friends.\nJon and Jaime are friends.\nJon and Petyr are friends.\nBran and Jaime are friends.\nBran and Petyr are friends.\nSansa and Jaime are friends.\nSansa and Petyr are friends.\nArya and Jaime are friends.\nArya and Petyr are friends.\nCersei and Jaime are friends.\nCersei and Petyr are friends.\nJaime and Petyr are friends.\nQ: What is the degree of node Daenerys?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "522",
+        "algorithm": "ba",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, and Susan.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and John are connected.\nRobert and Michael are connected.\nRobert and David are connected.\nRobert and Mary are connected.\nRobert and Elizabeth are connected.\nRobert and William are connected.\nRobert and Thomas are connected.\nRobert and Barbara are connected.\nRobert and Susan are connected.\nJohn and Michael are connected.\nJohn and Patricia are connected.\nJohn and Jennifer are connected.\nJohn and Joseph are connected.\nJohn and Christopher are connected.\nMichael and David are connected.\nMichael and Mary are connected.\nMichael and Patricia are connected.\nMichael and Linda are connected.\nMichael and Richard are connected.\nDavid and Jennifer are connected.\nDavid and Elizabeth are connected.\nDavid and William are connected.\nDavid and Susan are connected.\nMary and Linda are connected.\nMary and Christopher are connected.\nWilliam and Richard are connected.\nWilliam and Joseph are connected.\nRichard and Barbara are connected.\nJoseph and Thomas are connected.\nQ: What is the degree of node Thomas?\nA: ",
+        "answer": "2.",
+        "prediction": "1"
+    },
+    {
+        "id": "828",
+        "algorithm": "ba",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, and Kamala.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Bill are connected.\nBarack and Kamala are connected.\nQ: What is the degree of node Kamala?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "563",
+        "algorithm": "ba",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, and Elizabeth.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Elizabeth wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Elizabeth wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nJennifer and Linda wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nLinda and Elizabeth wrote a paper together..\nQ: What is the degree of node James?\nA: ",
+        "answer": "9.",
+        "prediction": "9"
+    },
+    {
+        "id": "706",
+        "algorithm": "ba",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, and 6.\nIn this graph:\nNode 0 is connected to node 1.\nNode 1 is connected to nodes 0, 2, 3, 4.\nNode 2 is connected to node 1.\nNode 3 is connected to node 1.\nNode 4 is connected to nodes 1, 5, 6.\nNode 5 is connected to node 4.\nNode 6 is connected to node 4.\nQ: What is the degree of node 2?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "538",
+        "algorithm": "ba",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, and 4.\nIn this graph:\nNode 0 is connected to nodes 1, 2, 3, 4.\nNode 1 is connected to node 0.\nNode 2 is connected to node 0.\nNode 3 is connected to node 0.\nNode 4 is connected to node 0.\nQ: What is the degree of node 0?\nA: ",
+        "answer": "4.",
+        "prediction": "4"
+    },
+    {
+        "id": "1033",
+        "algorithm": "sbm",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, Viserys, Joffrey, and Maester.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Bran are friends.\nNed and Arya are friends.\nNed and Jorah are friends.\nNed and Joffrey are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Arya are friends.\nCat and Cersei are friends.\nCat and Jorah are friends.\nCat and Viserys are friends.\nDaenerys and Bran are friends.\nDaenerys and Sansa are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jaime are friends.\nDaenerys and Robert are friends.\nDaenerys and Jorah are friends.\nDaenerys and Viserys are friends.\nDaenerys and Joffrey are friends.\nJon and Bran are friends.\nJon and Arya are friends.\nJon and Cersei are friends.\nJon and Jaime are friends.\nJon and Petyr are friends.\nJon and Jorah are friends.\nJon and Viserys are friends.\nBran and Cersei are friends.\nBran and Jaime are friends.\nBran and Robert are friends.\nBran and Viserys are friends.\nSansa and Arya are friends.\nSansa and Jorah are friends.\nSansa and Viserys are friends.\nArya and Cersei are friends.\nArya and Petyr are friends.\nArya and Robert are friends.\nArya and Jorah are friends.\nArya and Viserys are friends.\nCersei and Jaime are friends.\nCersei and Petyr are friends.\nCersei and Robert are friends.\nCersei and Jorah are friends.\nCersei and Viserys are friends.\nCersei and Joffrey are friends.\nJaime and Robert are friends.\nJaime and Viserys are friends.\nPetyr and Viserys are friends.\nRobert and Viserys are friends.\nJorah and Viserys are friends.\nJorah and Joffrey are friends.\nViserys and Joffrey are friends.\nViserys and Maester are friends.\nQ: What is the degree of node Jon?\nA: ",
+        "answer": "8.",
+        "prediction": "9"
+    },
+    {
+        "id": "1261",
+        "algorithm": "sbm",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, and Richard.\nWe have the following edges in G:\nJames and Michael are connected.\nJames and David are connected.\nJames and Mary are connected.\nJames and Patricia are connected.\nJames and Jennifer are connected.\nJames and Linda are connected.\nJames and Elizabeth are connected.\nJames and William are connected.\nJames and Richard are connected.\nRobert and Michael are connected.\nRobert and David are connected.\nRobert and Patricia are connected.\nRobert and Linda are connected.\nRobert and William are connected.\nRobert and Richard are connected.\nJohn and Michael are connected.\nJohn and David are connected.\nJohn and Mary are connected.\nJohn and Jennifer are connected.\nJohn and Linda are connected.\nJohn and William are connected.\nJohn and Richard are connected.\nMichael and David are connected.\nMichael and Mary are connected.\nMichael and Patricia are connected.\nMichael and Jennifer are connected.\nMichael and Linda are connected.\nMichael and Elizabeth are connected.\nMichael and William are connected.\nMichael and Richard are connected.\nDavid and Mary are connected.\nDavid and Patricia are connected.\nDavid and Jennifer are connected.\nDavid and Linda are connected.\nDavid and Elizabeth are connected.\nDavid and William are connected.\nDavid and Richard are connected.\nMary and Jennifer are connected.\nMary and Linda are connected.\nMary and Elizabeth are connected.\nMary and William are connected.\nMary and Richard are connected.\nPatricia and Jennifer are connected.\nPatricia and Linda are connected.\nPatricia and Elizabeth are connected.\nPatricia and William are connected.\nPatricia and Richard are connected.\nJennifer and Elizabeth are connected.\nQ: What is the degree of node Linda?\nA: ",
+        "answer": "7.",
+        "prediction": "8"
+    },
+    {
+        "id": "1421",
+        "algorithm": "sbm",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, George, Nancy, Pete, Madeleine, and Elijah.\nWe have the following edges in G:\nBarack and George are connected.\nBarack and Nancy are connected.\nBarack and Elijah are connected.\nJimmy and Bernie are connected.\nJimmy and Bill are connected.\nJimmy and Hillary are connected.\nJimmy and Nancy are connected.\nJimmy and Elijah are connected.\nArnold and Bill are connected.\nArnold and Nancy are connected.\nBernie and Pete are connected.\nBernie and Madeleine are connected.\nBill and Nancy are connected.\nBill and Elijah are connected.\nKamala and Hillary are connected.\nKamala and Elizabeth are connected.\nKamala and Ben are connected.\nKamala and Joe are connected.\nKamala and Alexandria are connected.\nKamala and George are connected.\nKamala and Madeleine are connected.\nHillary and Elizabeth are connected.\nHillary and John are connected.\nHillary and Ben are connected.\nHillary and Joe are connected.\nHillary and George are connected.\nHillary and Madeleine are connected.\nElizabeth and John are connected.\nElizabeth and Ben are connected.\nElizabeth and George are connected.\nElizabeth and Elijah are connected.\nJohn and Ben are connected.\nJohn and Joe are connected.\nJohn and Alexandria are connected.\nJohn and Elijah are connected.\nJohn and Madeleine are connected.\nBen and Alexandria are connected.\nBen and Elijah are connected.\nJoe and Alexandria are connected.\nJoe and George are connected.\nJoe and Madeleine are connected.\nAlexandria and Pete are connected.\nAlexandria and Elijah are connected.\nGeorge and Madeleine are connected.\nNancy and Pete are connected.\nElijah and Madeleine are connected.\nQ: What is the degree of node Jimmy?\nA: ",
+        "answer": "5.",
+        "prediction": "6"
+    },
+    {
+        "id": "1306",
+        "algorithm": "sbm",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, and N.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> H\nA -> J\nB -> D\nB -> E\nB -> I\nB -> J\nC -> E\nC -> J\nD -> E\nD -> G\nD -> H\nD -> I\nD -> J\nE -> G\nE -> H\nE -> I\nE -> J\nF -> G\nF -> H\nF -> I\nF -> J\nG -> H\nG -> J\nH -> J\nK -> M\nK -> N\nQ: What is the degree of node C?\nA: ",
+        "answer": "3.",
+        "prediction": "3"
+    },
+    {
+        "id": "1365",
+        "algorithm": "sbm",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, and Barbara.\nWe have the following edges in G:\nJames and John are connected.\nJames and Michael are connected.\nJames and Patricia are connected.\nRobert and John are connected.\nRobert and Michael are connected.\nRobert and David are connected.\nRobert and Patricia are connected.\nRobert and Jennifer are connected.\nJohn and Michael are connected.\nJohn and Mary are connected.\nJohn and Patricia are connected.\nJohn and Linda are connected.\nMichael and Joseph are connected.\nMichael and Barbara are connected.\nDavid and Jennifer are connected.\nDavid and William are connected.\nMary and Patricia are connected.\nMary and Jennifer are connected.\nMary and William are connected.\nMary and Joseph are connected.\nPatricia and Jennifer are connected.\nPatricia and William are connected.\nPatricia and Thomas are connected.\nPatricia and Barbara are connected.\nJennifer and Elizabeth are connected.\nJennifer and William are connected.\nLinda and William are connected.\nElizabeth and Richard are connected.\nElizabeth and Joseph are connected.\nElizabeth and Christopher are connected.\nWilliam and Thomas are connected.\nWilliam and Christopher are connected.\nThomas and Christopher are connected.\nThomas and Barbara are connected.\nChristopher and Barbara are connected.\nQ: What is the degree of node Christopher?\nA: ",
+        "answer": "4.",
+        "prediction": "The degree of node Christopher is 4."
+    },
+    {
+        "id": "1354",
+        "algorithm": "sbm",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, Susan, and Jessica.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and Michael are connected.\nJames and Mary are connected.\nJames and Jennifer are connected.\nJames and Linda are connected.\nJames and Elizabeth are connected.\nJames and Richard are connected.\nJames and Thomas are connected.\nJames and Barbara are connected.\nJames and Jessica are connected.\nRobert and David are connected.\nRobert and Jennifer are connected.\nRobert and Richard are connected.\nRobert and Joseph are connected.\nRobert and Thomas are connected.\nRobert and Christopher are connected.\nRobert and Susan are connected.\nJohn and Michael are connected.\nJohn and David are connected.\nJohn and Patricia are connected.\nJohn and Jennifer are connected.\nJohn and Linda are connected.\nJohn and Richard are connected.\nJohn and Joseph are connected.\nJohn and Thomas are connected.\nJohn and Christopher are connected.\nJohn and Barbara are connected.\nJohn and Susan are connected.\nMichael and Patricia are connected.\nMichael and Jennifer are connected.\nMichael and Linda are connected.\nMichael and Thomas are connected.\nMichael and Christopher are connected.\nMichael and Jessica are connected.\nDavid and Elizabeth are connected.\nDavid and William are connected.\nDavid and Richard are connected.\nDavid and Joseph are connected.\nDavid and Thomas are connected.\nDavid and Christopher are connected.\nDavid and Barbara are connected.\nDavid and Susan are connected.\nDavid and Jessica are connected.\nMary and Jennifer are connected.\nMary and William are connected.\nMary and Richard are connected.\nMary and Thomas are connected.\nMary and Christopher are connected.\nMary and Susan are connected.\nMary and Jessica are connected.\nPatricia and Jennifer are connected.\nPatricia and Linda are connected.\nPatricia and Richard are connected.\nPatricia and Joseph are connected.\nPatricia and Thomas are connected.\nPatricia and Christopher are connected.\nPatricia and Barbara are connected.\nPatricia and Susan are connected.\nPatricia and Jessica are connected.\nJennifer and Elizabeth are connected.\nJennifer and Richard are connected.\nJennifer and Joseph are connected.\nJennifer and Thomas are connected.\nJennifer and Christopher are connected.\nJennifer and Barbara are connected.\nJennifer and Susan are connected.\nJennifer and Jessica are connected.\nLinda and Elizabeth are connected.\nLinda and Richard are connected.\nLinda and Thomas are connected.\nLinda and Christopher are connected.\nLinda and Barbara are connected.\nLinda and Susan are connected.\nLinda and Jessica are connected.\nElizabeth and Richard are connected.\nElizabeth and Joseph are connected.\nElizabeth and Thomas are connected.\nElizabeth and Christopher are connected.\nElizabeth and Barbara are connected.\nElizabeth and Jessica are connected.\nWilliam and Joseph are connected.\nWilliam and Thomas are connected.\nWilliam and Christopher are connected.\nWilliam and Barbara are connected.\nWilliam and Jessica are connected.\nRichard and Joseph are connected.\nRichard and Christopher are connected.\nRichard and Susan are connected.\nRichard and Jessica are connected.\nJoseph and Thomas are connected.\nJoseph and Barbara are connected.\nJoseph and Jessica are connected.\nThomas and Susan are connected.\nThomas and Jessica are connected.\nChristopher and Barbara are connected.\nBarbara and Susan are connected.\nBarbara and Jessica are connected.\nQ: What is the degree of node Joseph?\nA: ",
+        "answer": "11.",
+        "prediction": "6"
+    },
+    {
+        "id": "1104",
+        "algorithm": "sbm",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, and 12.\nIn this graph:\nNode 0 is connected to nodes 1, 2, 4, 6, 7, 10.\nNode 1 is connected to nodes 0, 3, 4, 7, 11, 12.\nNode 2 is connected to nodes 0, 3, 6, 9.\nNode 3 is connected to nodes 1, 2, 4, 7, 12.\nNode 4 is connected to nodes 0, 1, 3, 5, 6, 7, 8, 9, 11.\nNode 5 is connected to nodes 4, 6, 7.\nNode 6 is connected to nodes 0, 2, 4, 5, 7, 9.\nNode 7 is connected to nodes 0, 1, 3, 4, 5, 6, 9, 11.\nNode 8 is connected to nodes 4, 9, 11.\nNode 9 is connected to nodes 2, 4, 6, 7, 8, 10.\nNode 10 is connected to nodes 0, 9, 12.\nNode 11 is connected to nodes 1, 4, 7, 8.\nNode 12 is connected to nodes 1, 3, 10.\nQ: What is the degree of node 2?\nA: ",
+        "answer": "4.",
+        "prediction": "4"
+    },
+    {
+        "id": "1026",
+        "algorithm": "sbm",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, and Elizabeth.\nIn this coauthorship graph:\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Elizabeth wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and Elizabeth wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nMichael and David wrote a paper together.\nMichael and Linda wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Elizabeth wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nJennifer and Linda wrote a paper together.\nLinda and Elizabeth wrote a paper together..\nQ: What is the degree of node James?\nA: ",
+        "answer": "8.",
+        "prediction": "8"
+    },
+    {
+        "id": "1097",
+        "algorithm": "sbm",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, and Petyr.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Jaime are friends.\nCat and Jon are friends.\nDaenerys and Jaime are friends.\nDaenerys and Petyr are friends.\nJon and Jaime are friends.\nBran and Jaime are friends.\nBran and Petyr are friends.\nSansa and Jaime are friends.\nArya and Jaime are friends.\nCersei and Jaime are friends.\nQ: What is the degree of node Jon?\nA: ",
+        "answer": "2.",
+        "prediction": "3"
+    },
+    {
+        "id": "1107",
+        "algorithm": "sbm",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, and 8.\nIn this graph:\nNode 0 is connected to node 1.\nNode 1 is connected to nodes 0, 7.\nNode 2 is connected to nodes 3, 4, 5, 6, 7, 8.\nNode 3 is connected to nodes 2, 4, 5, 6, 7, 8.\nNode 4 is connected to nodes 2, 3, 5, 6, 7, 8.\nNode 5 is connected to nodes 2, 3, 4, 6, 7, 8.\nNode 6 is connected to nodes 2, 3, 4, 5, 7, 8.\nNode 7 is connected to nodes 1, 2, 3, 4, 5, 6, 8.\nNode 8 is connected to nodes 2, 3, 4, 5, 6, 7.\nQ: What is the degree of node 3?\nA: ",
+        "answer": "6.",
+        "prediction": "6"
+    },
+    {
+        "id": "1686",
+        "algorithm": "sfn",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, George, Nancy, Pete, and Madeleine.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Bill are connected.\nBarack and Kamala are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Hillary are connected.\nBarack and Alexandria are connected.\nJimmy and Arnold are connected.\nJimmy and Jimmy are connected.\nJimmy and Elizabeth are connected.\nArnold and John are connected.\nArnold and Ben are connected.\nArnold and Joe are connected.\nBill and Hillary are connected.\nBill and John are connected.\nBill and Nancy are connected.\nHillary and George are connected.\nJohn and Pete are connected.\nJoe and George are connected.\nGeorge and Madeleine are connected.\nQ: What is the degree of node Arnold?\nA: ",
+        "answer": "5.",
+        "prediction": "5"
+    },
+    {
+        "id": "1816",
+        "algorithm": "sfn",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, and George.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Bernie are connected.\nBarack and Arnold are connected.\nBarack and Bill are connected.\nBarack and Hillary are connected.\nJimmy and Arnold are connected.\nJimmy and Jimmy are connected.\nJimmy and Ben are connected.\nJimmy and Joe are connected.\nJimmy and Alexandria are connected.\nJimmy and George are connected.\nArnold and John are connected.\nArnold and Kamala are connected.\nBernie and Elizabeth are connected.\nBen and Ben are connected.\nQ: What is the degree of node Ben?\nA: ",
+        "answer": "3.",
+        "prediction": "2"
+    },
+    {
+        "id": "1738",
+        "algorithm": "sfn",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, N, and O.\nG has the following undirected edges:\nA -> B\nA -> A\nA -> C\nA -> D\nB -> C\nB -> F\nB -> K\nB -> L\nC -> C\nC -> D\nC -> I\nC -> H\nC -> M\nD -> E\nD -> G\nD -> H\nD -> J\nD -> O\nE -> L\nG -> N\nQ: What is the degree of node E?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "1822",
+        "algorithm": "sfn",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, Viserys, Joffrey, Maester, Theon, Rodrik, and Lysa.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Ned are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Robert are friends.\nNed and Viserys are friends.\nNed and Theon are friends.\nNed and Rodrik are friends.\nNed and Lysa are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nDaenerys and Bran are friends.\nDaenerys and Joffrey are friends.\nDaenerys and Sansa are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jorah are friends.\nDaenerys and Maester are friends.\nDaenerys and Theon are friends.\nBran and Sansa are friends.\nBran and Arya are friends.\nBran and Cersei are friends.\nSansa and Joffrey are friends.\nQ: What is the degree of node Arya?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "1551",
+        "algorithm": "sfn",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, and William.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and James wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Robert wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and William wrote a paper together.\nMary and Mary wrote a paper together..\nQ: What is the degree of node Elizabeth?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "1990",
+        "algorithm": "sfn",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, Susan, and Jessica.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Richard wrote a paper together.\nJames and Christopher wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and David wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and Jessica wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Joseph wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nJohn and William wrote a paper together.\nJohn and Richard wrote a paper together.\nJohn and Thomas wrote a paper together.\nMichael and Barbara wrote a paper together.\nMichael and Susan wrote a paper together.\nPatricia and Patricia wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nRichard and Christopher wrote a paper together..\nQ: What is the degree of node Joseph?\nA: ",
+        "answer": "1.",
+        "prediction": "2"
+    },
+    {
+        "id": "1557",
+        "algorithm": "sfn",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, and Linda.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and James wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nRobert and John wrote a paper together.\nMichael and David wrote a paper together..\nQ: What is the degree of node Robert?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "1544",
+        "algorithm": "sfn",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, George, Nancy, and Pete.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Hillary are connected.\nBarack and Arnold are connected.\nBarack and Kamala are connected.\nBarack and John are connected.\nBarack and Ben are connected.\nBarack and George are connected.\nBarack and Nancy are connected.\nBarack and Pete are connected.\nJimmy and Arnold are connected.\nJimmy and Bill are connected.\nJimmy and Kamala are connected.\nArnold and Arnold are connected.\nArnold and Bernie are connected.\nArnold and Kamala are connected.\nHillary and Elizabeth are connected.\nHillary and Joe are connected.\nBen and Alexandria are connected.\nQ: What is the degree of node Elizabeth?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "1619",
+        "algorithm": "sfn",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, and P.\nG has the following undirected edges:\nA -> B\nA -> D\nA -> N\nA -> C\nA -> E\nA -> G\nA -> J\nA -> K\nB -> C\nB -> D\nB -> F\nB -> G\nB -> H\nB -> O\nC -> G\nC -> I\nC -> J\nC -> O\nD -> F\nD -> G\nD -> H\nD -> L\nE -> E\nH -> P\nJ -> M\nQ: What is the degree of node F?\nA: ",
+        "answer": "2.",
+        "prediction": "3"
+    },
+    {
+        "id": "1953",
+        "algorithm": "sfn",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, and 11.\nThe edges in G are: (0, 1) (0, 2) (1, 2) (1, 3) (1, 1) (1, 4) (2, 2) (2, 3) (2, 4) (2, 6) (2, 11) (3, 4) (3, 5) (3, 7) (3, 8) (6, 9) (8, 10).\nQ: What is the degree of node 3?\nA: ",
+        "answer": "6.",
+        "prediction": "5"
+    },
+    {
+        "id": "2017",
+        "algorithm": "complete",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, Susan, and Jessica.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and William wrote a paper together.\nJames and Richard wrote a paper together.\nJames and Joseph wrote a paper together.\nJames and Thomas wrote a paper together.\nJames and Christopher wrote a paper together.\nJames and Barbara wrote a paper together.\nJames and Susan wrote a paper together.\nJames and Jessica wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and Elizabeth wrote a paper together.\nRobert and William wrote a paper together.\nRobert and Richard wrote a paper together.\nRobert and Joseph wrote a paper together.\nRobert and Thomas wrote a paper together.\nRobert and Christopher wrote a paper together.\nRobert and Barbara wrote a paper together.\nRobert and Susan wrote a paper together.\nRobert and Jessica wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nJohn and William wrote a paper together.\nJohn and Richard wrote a paper together.\nJohn and Joseph wrote a paper together.\nJohn and Thomas wrote a paper together.\nJohn and Christopher wrote a paper together.\nJohn and Barbara wrote a paper together.\nJohn and Susan wrote a paper together.\nJohn and Jessica wrote a paper together.\nMichael and David wrote a paper together.\nMichael and Mary wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nMichael and Elizabeth wrote a paper together.\nMichael and William wrote a paper together.\nMichael and Richard wrote a paper together.\nMichael and Joseph wrote a paper together.\nMichael and Thomas wrote a paper together.\nMichael and Christopher wrote a paper together.\nMichael and Barbara wrote a paper together.\nMichael and Susan wrote a paper together.\nMichael and Jessica wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nDavid and Elizabeth wrote a paper together.\nDavid and William wrote a paper together.\nDavid and Richard wrote a paper together.\nDavid and Joseph wrote a paper together.\nDavid and Thomas wrote a paper together.\nDavid and Christopher wrote a paper together.\nDavid and Barbara wrote a paper together.\nDavid and Susan wrote a paper together.\nDavid and Jessica wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Linda wrote a paper together.\nMary and Elizabeth wrote a paper together.\nMary and William wrote a paper together.\nMary and Richard wrote a paper together.\nMary and Joseph wrote a paper together.\nMary and Thomas wrote a paper together.\nMary and Christopher wrote a paper together.\nMary and Barbara wrote a paper together.\nMary and Susan wrote a paper together.\nMary and Jessica wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nPatricia and William wrote a paper together.\nPatricia and Richard wrote a paper together.\nPatricia and Joseph wrote a paper together.\nPatricia and Thomas wrote a paper together.\nPatricia and Christopher wrote a paper together.\nPatricia and Barbara wrote a paper together.\nPatricia and Susan wrote a paper together.\nPatricia and Jessica wrote a paper together.\nJennifer and Linda wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nJennifer and William wrote a paper together.\nJennifer and Richard wrote a paper together.\nJennifer and Joseph wrote a paper together.\nJennifer and Thomas wrote a paper together.\nJennifer and Christopher wrote a paper together.\nJennifer and Barbara wrote a paper together.\nJennifer and Susan wrote a paper together.\nJennifer and Jessica wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nLinda and William wrote a paper together.\nLinda and Richard wrote a paper together.\nLinda and Joseph wrote a paper together.\nLinda and Thomas wrote a paper together.\nLinda and Christopher wrote a paper together.\nLinda and Barbara wrote a paper together.\nLinda and Susan wrote a paper together.\nLinda and Jessica wrote a paper together.\nElizabeth and William wrote a paper together.\nElizabeth and Richard wrote a paper together.\nElizabeth and Joseph wrote a paper together.\nElizabeth and Thomas wrote a paper together.\nElizabeth and Christopher wrote a paper together.\nElizabeth and Barbara wrote a paper together.\nElizabeth and Susan wrote a paper together.\nElizabeth and Jessica wrote a paper together.\nWilliam and Richard wrote a paper together.\nWilliam and Joseph wrote a paper together.\nWilliam and Thomas wrote a paper together.\nWilliam and Christopher wrote a paper together.\nWilliam and Barbara wrote a paper together.\nWilliam and Susan wrote a paper together.\nWilliam and Jessica wrote a paper together.\nRichard and Joseph wrote a paper together.\nRichard and Thomas wrote a paper together.\nRichard and Christopher wrote a paper together.\nRichard and Barbara wrote a paper together.\nRichard and Susan wrote a paper together.\nRichard and Jessica wrote a paper together.\nJoseph and Thomas wrote a paper together.\nJoseph and Christopher wrote a paper together.\nJoseph and Barbara wrote a paper together.\nJoseph and Susan wrote a paper together.\nJoseph and Jessica wrote a paper together.\nThomas and Christopher wrote a paper together.\nThomas and Barbara wrote a paper together.\nThomas and Susan wrote a paper together.\nThomas and Jessica wrote a paper together.\nChristopher and Barbara wrote a paper together.\nChristopher and Susan wrote a paper together.\nChristopher and Jessica wrote a paper together.\nBarbara and Susan wrote a paper together.\nBarbara and Jessica wrote a paper together.\nSusan and Jessica wrote a paper together..\nQ: What is the degree of node William?\nA: ",
+        "answer": "17.",
+        "prediction": "9"
+    },
+    {
+        "id": "2244",
+        "algorithm": "complete",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, and P.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nA -> G\nA -> H\nA -> I\nA -> J\nA -> K\nA -> L\nA -> M\nA -> N\nA -> O\nA -> P\nB -> C\nB -> D\nB -> E\nB -> F\nB -> G\nB -> H\nB -> I\nB -> J\nB -> K\nB -> L\nB -> M\nB -> N\nB -> O\nB -> P\nC -> D\nC -> E\nC -> F\nC -> G\nC -> H\nC -> I\nC -> J\nC -> K\nC -> L\nC -> M\nC -> N\nC -> O\nC -> P\nD -> E\nD -> F\nD -> G\nD -> H\nD -> I\nD -> J\nD -> K\nD -> L\nD -> M\nD -> N\nD -> O\nD -> P\nE -> F\nE -> G\nE -> H\nE -> I\nE -> J\nE -> K\nE -> L\nE -> M\nE -> N\nE -> O\nE -> P\nF -> G\nF -> H\nF -> I\nF -> J\nF -> K\nF -> L\nF -> M\nF -> N\nF -> O\nF -> P\nG -> H\nG -> I\nG -> J\nG -> K\nG -> L\nG -> M\nG -> N\nG -> O\nG -> P\nH -> I\nH -> J\nH -> K\nH -> L\nH -> M\nH -> N\nH -> O\nH -> P\nI -> J\nI -> K\nI -> L\nI -> M\nI -> N\nI -> O\nI -> P\nJ -> K\nJ -> L\nJ -> M\nJ -> N\nJ -> O\nJ -> P\nK -> L\nK -> M\nK -> N\nK -> O\nK -> P\nL -> M\nL -> N\nL -> O\nL -> P\nM -> N\nM -> O\nM -> P\nN -> O\nN -> P\nO -> P\nQ: What is the degree of node C?\nA: ",
+        "answer": "15.",
+        "prediction": "16"
+    },
+    {
+        "id": "2253",
+        "algorithm": "complete",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, Susan, and Jessica.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and William wrote a paper together.\nJames and Richard wrote a paper together.\nJames and Joseph wrote a paper together.\nJames and Thomas wrote a paper together.\nJames and Christopher wrote a paper together.\nJames and Barbara wrote a paper together.\nJames and Susan wrote a paper together.\nJames and Jessica wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and Elizabeth wrote a paper together.\nRobert and William wrote a paper together.\nRobert and Richard wrote a paper together.\nRobert and Joseph wrote a paper together.\nRobert and Thomas wrote a paper together.\nRobert and Christopher wrote a paper together.\nRobert and Barbara wrote a paper together.\nRobert and Susan wrote a paper together.\nRobert and Jessica wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nJohn and William wrote a paper together.\nJohn and Richard wrote a paper together.\nJohn and Joseph wrote a paper together.\nJohn and Thomas wrote a paper together.\nJohn and Christopher wrote a paper together.\nJohn and Barbara wrote a paper together.\nJohn and Susan wrote a paper together.\nJohn and Jessica wrote a paper together.\nMichael and David wrote a paper together.\nMichael and Mary wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nMichael and Elizabeth wrote a paper together.\nMichael and William wrote a paper together.\nMichael and Richard wrote a paper together.\nMichael and Joseph wrote a paper together.\nMichael and Thomas wrote a paper together.\nMichael and Christopher wrote a paper together.\nMichael and Barbara wrote a paper together.\nMichael and Susan wrote a paper together.\nMichael and Jessica wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nDavid and Elizabeth wrote a paper together.\nDavid and William wrote a paper together.\nDavid and Richard wrote a paper together.\nDavid and Joseph wrote a paper together.\nDavid and Thomas wrote a paper together.\nDavid and Christopher wrote a paper together.\nDavid and Barbara wrote a paper together.\nDavid and Susan wrote a paper together.\nDavid and Jessica wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Linda wrote a paper together.\nMary and Elizabeth wrote a paper together.\nMary and William wrote a paper together.\nMary and Richard wrote a paper together.\nMary and Joseph wrote a paper together.\nMary and Thomas wrote a paper together.\nMary and Christopher wrote a paper together.\nMary and Barbara wrote a paper together.\nMary and Susan wrote a paper together.\nMary and Jessica wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nPatricia and William wrote a paper together.\nPatricia and Richard wrote a paper together.\nPatricia and Joseph wrote a paper together.\nPatricia and Thomas wrote a paper together.\nPatricia and Christopher wrote a paper together.\nPatricia and Barbara wrote a paper together.\nPatricia and Susan wrote a paper together.\nPatricia and Jessica wrote a paper together.\nJennifer and Linda wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nJennifer and William wrote a paper together.\nJennifer and Richard wrote a paper together.\nJennifer and Joseph wrote a paper together.\nJennifer and Thomas wrote a paper together.\nJennifer and Christopher wrote a paper together.\nJennifer and Barbara wrote a paper together.\nJennifer and Susan wrote a paper together.\nJennifer and Jessica wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nLinda and William wrote a paper together.\nLinda and Richard wrote a paper together.\nLinda and Joseph wrote a paper together.\nLinda and Thomas wrote a paper together.\nLinda and Christopher wrote a paper together.\nLinda and Barbara wrote a paper together.\nLinda and Susan wrote a paper together.\nLinda and Jessica wrote a paper together.\nElizabeth and William wrote a paper together.\nElizabeth and Richard wrote a paper together.\nElizabeth and Joseph wrote a paper together.\nElizabeth and Thomas wrote a paper together.\nElizabeth and Christopher wrote a paper together.\nElizabeth and Barbara wrote a paper together.\nElizabeth and Susan wrote a paper together.\nElizabeth and Jessica wrote a paper together.\nWilliam and Richard wrote a paper together.\nWilliam and Joseph wrote a paper together.\nWilliam and Thomas wrote a paper together.\nWilliam and Christopher wrote a paper together.\nWilliam and Barbara wrote a paper together.\nWilliam and Susan wrote a paper together.\nWilliam and Jessica wrote a paper together.\nRichard and Joseph wrote a paper together.\nRichard and Thomas wrote a paper together.\nRichard and Christopher wrote a paper together.\nRichard and Barbara wrote a paper together.\nRichard and Susan wrote a paper together.\nRichard and Jessica wrote a paper together.\nJoseph and Thomas wrote a paper together.\nJoseph and Christopher wrote a paper together.\nJoseph and Barbara wrote a paper together.\nJoseph and Susan wrote a paper together.\nJoseph and Jessica wrote a paper together.\nThomas and Christopher wrote a paper together.\nThomas and Barbara wrote a paper together.\nThomas and Susan wrote a paper together.\nThomas and Jessica wrote a paper together.\nChristopher and Barbara wrote a paper together.\nChristopher and Susan wrote a paper together.\nChristopher and Jessica wrote a paper together.\nBarbara and Susan wrote a paper together.\nBarbara and Jessica wrote a paper together.\nSusan and Jessica wrote a paper together..\nQ: What is the degree of node Joseph?\nA: ",
+        "answer": "17.",
+        "prediction": "10"
+    },
+    {
+        "id": "2491",
+        "algorithm": "complete",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, and Veronica.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Bebe are friends.\nEric and Liane are friends.\nEric and Sharon are friends.\nEric and Linda are friends.\nEric and Gerald are friends.\nEric and Veronica are friends.\nKenny and Kyle are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Heidi are friends.\nKenny and Bebe are friends.\nKenny and Liane are friends.\nKenny and Sharon are friends.\nKenny and Linda are friends.\nKenny and Gerald are friends.\nKenny and Veronica are friends.\nKyle and Stan are friends.\nKyle and Tolkien are friends.\nKyle and Heidi are friends.\nKyle and Bebe are friends.\nKyle and Liane are friends.\nKyle and Sharon are friends.\nKyle and Linda are friends.\nKyle and Gerald are friends.\nKyle and Veronica are friends.\nStan and Tolkien are friends.\nStan and Heidi are friends.\nStan and Bebe are friends.\nStan and Liane are friends.\nStan and Sharon are friends.\nStan and Linda are friends.\nStan and Gerald are friends.\nStan and Veronica are friends.\nTolkien and Heidi are friends.\nTolkien and Bebe are friends.\nTolkien and Liane are friends.\nTolkien and Sharon are friends.\nTolkien and Linda are friends.\nTolkien and Gerald are friends.\nTolkien and Veronica are friends.\nHeidi and Bebe are friends.\nHeidi and Liane are friends.\nHeidi and Sharon are friends.\nHeidi and Linda are friends.\nHeidi and Gerald are friends.\nHeidi and Veronica are friends.\nBebe and Liane are friends.\nBebe and Sharon are friends.\nBebe and Linda are friends.\nBebe and Gerald are friends.\nBebe and Veronica are friends.\nLiane and Sharon are friends.\nLiane and Linda are friends.\nLiane and Gerald are friends.\nLiane and Veronica are friends.\nSharon and Linda are friends.\nSharon and Gerald are friends.\nSharon and Veronica are friends.\nLinda and Gerald are friends.\nLinda and Veronica are friends.\nGerald and Veronica are friends.\nQ: What is the degree of node Heidi?\nA: ",
+        "answer": "11.",
+        "prediction": "10"
+    },
+    {
+        "id": "2348",
+        "algorithm": "complete",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, and Linda.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Linda wrote a paper together.\nMichael and David wrote a paper together.\nMichael and Mary wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Linda wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nJennifer and Linda wrote a paper together..\nQ: What is the degree of node Michael?\nA: ",
+        "answer": "8.",
+        "prediction": "6"
+    },
+    {
+        "id": "2326",
+        "algorithm": "complete",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, and Elizabeth.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Elizabeth wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and Elizabeth wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nMichael and David wrote a paper together.\nMichael and Mary wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nMichael and Elizabeth wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nDavid and Elizabeth wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Linda wrote a paper together.\nMary and Elizabeth wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nJennifer and Linda wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nLinda and Elizabeth wrote a paper together..\nQ: What is the degree of node Jennifer?\nA: ",
+        "answer": "9.",
+        "prediction": "7"
+    },
+    {
+        "id": "2143",
+        "algorithm": "complete",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, and Viserys.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Robert are friends.\nNed and Jorah are friends.\nNed and Viserys are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Arya are friends.\nCat and Cersei are friends.\nCat and Jaime are friends.\nCat and Petyr are friends.\nCat and Robert are friends.\nCat and Jorah are friends.\nCat and Viserys are friends.\nDaenerys and Jon are friends.\nDaenerys and Bran are friends.\nDaenerys and Sansa are friends.\nDaenerys and Arya are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jaime are friends.\nDaenerys and Petyr are friends.\nDaenerys and Robert are friends.\nDaenerys and Jorah are friends.\nDaenerys and Viserys are friends.\nJon and Bran are friends.\nJon and Sansa are friends.\nJon and Arya are friends.\nJon and Cersei are friends.\nJon and Jaime are friends.\nJon and Petyr are friends.\nJon and Robert are friends.\nJon and Jorah are friends.\nJon and Viserys are friends.\nBran and Sansa are friends.\nBran and Arya are friends.\nBran and Cersei are friends.\nBran and Jaime are friends.\nBran and Petyr are friends.\nBran and Robert are friends.\nBran and Jorah are friends.\nBran and Viserys are friends.\nSansa and Arya are friends.\nSansa and Cersei are friends.\nSansa and Jaime are friends.\nSansa and Petyr are friends.\nSansa and Robert are friends.\nSansa and Jorah are friends.\nSansa and Viserys are friends.\nArya and Cersei are friends.\nArya and Jaime are friends.\nArya and Petyr are friends.\nArya and Robert are friends.\nArya and Jorah are friends.\nArya and Viserys are friends.\nCersei and Jaime are friends.\nCersei and Petyr are friends.\nCersei and Robert are friends.\nCersei and Jorah are friends.\nCersei and Viserys are friends.\nJaime and Petyr are friends.\nJaime and Robert are friends.\nJaime and Jorah are friends.\nJaime and Viserys are friends.\nPetyr and Robert are friends.\nPetyr and Jorah are friends.\nPetyr and Viserys are friends.\nRobert and Jorah are friends.\nRobert and Viserys are friends.\nJorah and Viserys are friends.\nQ: What is the degree of node Daenerys?\nA: ",
+        "answer": "12.",
+        "prediction": "12"
+    },
+    {
+        "id": "2347",
+        "algorithm": "complete",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, and Barbara.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Michael are friends.\nJames and David are friends.\nJames and Mary are friends.\nJames and Patricia are friends.\nJames and Jennifer are friends.\nJames and Linda are friends.\nJames and Elizabeth are friends.\nJames and William are friends.\nJames and Richard are friends.\nJames and Joseph are friends.\nJames and Thomas are friends.\nJames and Christopher are friends.\nJames and Barbara are friends.\nRobert and John are friends.\nRobert and Michael are friends.\nRobert and David are friends.\nRobert and Mary are friends.\nRobert and Patricia are friends.\nRobert and Jennifer are friends.\nRobert and Linda are friends.\nRobert and Elizabeth are friends.\nRobert and William are friends.\nRobert and Richard are friends.\nRobert and Joseph are friends.\nRobert and Thomas are friends.\nRobert and Christopher are friends.\nRobert and Barbara are friends.\nJohn and Michael are friends.\nJohn and David are friends.\nJohn and Mary are friends.\nJohn and Patricia are friends.\nJohn and Jennifer are friends.\nJohn and Linda are friends.\nJohn and Elizabeth are friends.\nJohn and William are friends.\nJohn and Richard are friends.\nJohn and Joseph are friends.\nJohn and Thomas are friends.\nJohn and Christopher are friends.\nJohn and Barbara are friends.\nMichael and David are friends.\nMichael and Mary are friends.\nMichael and Patricia are friends.\nMichael and Jennifer are friends.\nMichael and Linda are friends.\nMichael and Elizabeth are friends.\nMichael and William are friends.\nMichael and Richard are friends.\nMichael and Joseph are friends.\nMichael and Thomas are friends.\nMichael and Christopher are friends.\nMichael and Barbara are friends.\nDavid and Mary are friends.\nDavid and Patricia are friends.\nDavid and Jennifer are friends.\nDavid and Linda are friends.\nDavid and Elizabeth are friends.\nDavid and William are friends.\nDavid and Richard are friends.\nDavid and Joseph are friends.\nDavid and Thomas are friends.\nDavid and Christopher are friends.\nDavid and Barbara are friends.\nMary and Patricia are friends.\nMary and Jennifer are friends.\nMary and Linda are friends.\nMary and Elizabeth are friends.\nMary and William are friends.\nMary and Richard are friends.\nMary and Joseph are friends.\nMary and Thomas are friends.\nMary and Christopher are friends.\nMary and Barbara are friends.\nPatricia and Jennifer are friends.\nPatricia and Linda are friends.\nPatricia and Elizabeth are friends.\nPatricia and William are friends.\nPatricia and Richard are friends.\nPatricia and Joseph are friends.\nPatricia and Thomas are friends.\nPatricia and Christopher are friends.\nPatricia and Barbara are friends.\nJennifer and Linda are friends.\nJennifer and Elizabeth are friends.\nJennifer and William are friends.\nJennifer and Richard are friends.\nJennifer and Joseph are friends.\nJennifer and Thomas are friends.\nJennifer and Christopher are friends.\nJennifer and Barbara are friends.\nLinda and Elizabeth are friends.\nLinda and William are friends.\nLinda and Richard are friends.\nLinda and Joseph are friends.\nLinda and Thomas are friends.\nLinda and Christopher are friends.\nLinda and Barbara are friends.\nElizabeth and William are friends.\nElizabeth and Richard are friends.\nElizabeth and Joseph are friends.\nElizabeth and Thomas are friends.\nElizabeth and Christopher are friends.\nElizabeth and Barbara are friends.\nWilliam and Richard are friends.\nWilliam and Joseph are friends.\nWilliam and Thomas are friends.\nWilliam and Christopher are friends.\nWilliam and Barbara are friends.\nRichard and Joseph are friends.\nRichard and Thomas are friends.\nRichard and Christopher are friends.\nRichard and Barbara are friends.\nJoseph and Thomas are friends.\nJoseph and Christopher are friends.\nJoseph and Barbara are friends.\nThomas and Christopher are friends.\nThomas and Barbara are friends.\nChristopher and Barbara are friends.\nQ: What is the degree of node David?\nA: ",
+        "answer": "15.",
+        "prediction": "9"
+    },
+    {
+        "id": "2334",
+        "algorithm": "complete",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, and Arya.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Arya are friends.\nDaenerys and Jon are friends.\nDaenerys and Bran are friends.\nDaenerys and Sansa are friends.\nDaenerys and Arya are friends.\nJon and Bran are friends.\nJon and Sansa are friends.\nJon and Arya are friends.\nBran and Sansa are friends.\nBran and Arya are friends.\nSansa and Arya are friends.\nQ: What is the degree of node Jon?\nA: ",
+        "answer": "6.",
+        "prediction": "5"
+    },
+    {
+        "id": "2250",
+        "algorithm": "complete",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, and J.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nA -> G\nA -> H\nA -> I\nA -> J\nB -> C\nB -> D\nB -> E\nB -> F\nB -> G\nB -> H\nB -> I\nB -> J\nC -> D\nC -> E\nC -> F\nC -> G\nC -> H\nC -> I\nC -> J\nD -> E\nD -> F\nD -> G\nD -> H\nD -> I\nD -> J\nE -> F\nE -> G\nE -> H\nE -> I\nE -> J\nF -> G\nF -> H\nF -> I\nF -> J\nG -> H\nG -> I\nG -> J\nH -> I\nH -> J\nI -> J\nQ: What is the degree of node B?\nA: ",
+        "answer": "9.",
+        "prediction": "8"
+    },
+    {
+        "id": "2826",
+        "algorithm": "star",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, and Sharon.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Bebe are friends.\nEric and Liane are friends.\nEric and Sharon are friends.\nQ: What is the degree of node Kyle?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "2646",
+        "algorithm": "star",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, and 13.\nIn this graph:\nNode 0 is connected to nodes 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13.\nNode 1 is connected to node 0.\nNode 2 is connected to node 0.\nNode 3 is connected to node 0.\nNode 4 is connected to node 0.\nNode 5 is connected to node 0.\nNode 6 is connected to node 0.\nNode 7 is connected to node 0.\nNode 8 is connected to node 0.\nNode 9 is connected to node 0.\nNode 10 is connected to node 0.\nNode 11 is connected to node 0.\nNode 12 is connected to node 0.\nNode 13 is connected to node 0.\nQ: What is the degree of node 4?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "2552",
+        "algorithm": "star",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, and Gerald.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Bebe are friends.\nEric and Liane are friends.\nEric and Sharon are friends.\nEric and Linda are friends.\nEric and Gerald are friends.\nQ: What is the degree of node Liane?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "2608",
+        "algorithm": "star",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, and Michael.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Michael are friends.\nQ: What is the degree of node Robert?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "2748",
+        "algorithm": "star",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, Michael, Jimbo, Herbert, and Malcolm.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Bebe are friends.\nEric and Liane are friends.\nEric and Sharon are friends.\nEric and Linda are friends.\nEric and Gerald are friends.\nEric and Veronica are friends.\nEric and Michael are friends.\nEric and Jimbo are friends.\nEric and Herbert are friends.\nEric and Malcolm are friends.\nQ: What is the degree of node Jimbo?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "2525",
+        "algorithm": "star",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, and Richard.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and William wrote a paper together.\nJames and Richard wrote a paper together..\nQ: What is the degree of node Mary?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "2980",
+        "algorithm": "star",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, and Stan.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nQ: What is the degree of node Eric?\nA: ",
+        "answer": "3.",
+        "prediction": "3"
+    },
+    {
+        "id": "2870",
+        "algorithm": "star",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, and J.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nA -> G\nA -> H\nA -> I\nA -> J\nQ: What is the degree of node J?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "2765",
+        "algorithm": "star",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, and 3.\nIn this graph:\nNode 0 is connected to nodes 1, 2, 3.\nNode 1 is connected to node 0.\nNode 2 is connected to node 0.\nNode 3 is connected to node 0.\nQ: What is the degree of node 0?\nA: ",
+        "answer": "3.",
+        "prediction": "3"
+    },
+    {
+        "id": "2617",
+        "algorithm": "star",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, and F.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nQ: What is the degree of node F?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "3381",
+        "algorithm": "path",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, Susan, Jessica, and Sarah.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nRobert and John wrote a paper together.\nJohn and Michael wrote a paper together.\nMichael and David wrote a paper together.\nDavid and Mary wrote a paper together.\nMary and Patricia wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nJennifer and Linda wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nElizabeth and William wrote a paper together.\nWilliam and Richard wrote a paper together.\nRichard and Joseph wrote a paper together.\nJoseph and Thomas wrote a paper together.\nThomas and Christopher wrote a paper together.\nChristopher and Barbara wrote a paper together.\nBarbara and Susan wrote a paper together.\nSusan and Jessica wrote a paper together.\nJessica and Sarah wrote a paper together..\nQ: What is the degree of node Susan?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "3263",
+        "algorithm": "path",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, Susan, Jessica, and Sarah.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nRobert and John wrote a paper together.\nJohn and Michael wrote a paper together.\nMichael and David wrote a paper together.\nDavid and Mary wrote a paper together.\nMary and Patricia wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nJennifer and Linda wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nElizabeth and William wrote a paper together.\nWilliam and Richard wrote a paper together.\nRichard and Joseph wrote a paper together.\nJoseph and Thomas wrote a paper together.\nThomas and Christopher wrote a paper together.\nChristopher and Barbara wrote a paper together.\nBarbara and Susan wrote a paper together.\nSusan and Jessica wrote a paper together.\nJessica and Sarah wrote a paper together..\nQ: What is the degree of node Mary?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "3402",
+        "algorithm": "path",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, and Jennifer.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nRobert and John wrote a paper together.\nJohn and Michael wrote a paper together.\nMichael and David wrote a paper together.\nDavid and Mary wrote a paper together.\nMary and Patricia wrote a paper together.\nPatricia and Jennifer wrote a paper together..\nQ: What is the degree of node John?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "3265",
+        "algorithm": "path",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, and Bran.\nWe have the following edges in G:\nNed and Cat are friends.\nCat and Daenerys are friends.\nDaenerys and Jon are friends.\nJon and Bran are friends.\nQ: What is the degree of node Ned?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "3337",
+        "algorithm": "path",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, and 13.\nThe edges in G are: (0, 1) (1, 2) (2, 3) (3, 4) (4, 5) (5, 6) (6, 7) (7, 8) (8, 9) (9, 10) (10, 11) (11, 12) (12, 13).\nQ: What is the degree of node 7?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "3232",
+        "algorithm": "path",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, and 8.\nThe edges in G are: (0, 1) (1, 2) (2, 3) (3, 4) (4, 5) (5, 6) (6, 7) (7, 8).\nQ: What is the degree of node 2?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "3165",
+        "algorithm": "path",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, and 8.\nIn this graph:\nNode 0 is connected to node 1.\nNode 1 is connected to nodes 0, 2.\nNode 2 is connected to nodes 1, 3.\nNode 3 is connected to nodes 2, 4.\nNode 4 is connected to nodes 3, 5.\nNode 5 is connected to nodes 4, 6.\nNode 6 is connected to nodes 5, 7.\nNode 7 is connected to nodes 6, 8.\nNode 8 is connected to node 7.\nQ: What is the degree of node 1?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "3372",
+        "algorithm": "path",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, and 7.\nThe edges in G are: (0, 1) (1, 2) (2, 3) (3, 4) (4, 5) (5, 6) (6, 7).\nQ: What is the degree of node 3?\nA: ",
+        "answer": "2.",
+        "prediction": "2"
+    },
+    {
+        "id": "3168",
+        "algorithm": "path",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, and Linda.\nWe have the following edges in G:\nEric and Kenny are friends.\nKenny and Kyle are friends.\nKyle and Stan are friends.\nStan and Tolkien are friends.\nTolkien and Heidi are friends.\nHeidi and Bebe are friends.\nBebe and Liane are friends.\nLiane and Sharon are friends.\nSharon and Linda are friends.\nQ: What is the degree of node Eric?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    },
+    {
+        "id": "3226",
+        "algorithm": "path",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, and Christopher.\nWe have the following edges in G:\nJames and Robert are friends.\nRobert and John are friends.\nJohn and Michael are friends.\nMichael and David are friends.\nDavid and Mary are friends.\nMary and Patricia are friends.\nPatricia and Jennifer are friends.\nJennifer and Linda are friends.\nLinda and Elizabeth are friends.\nElizabeth and William are friends.\nWilliam and Richard are friends.\nRichard and Joseph are friends.\nJoseph and Thomas are friends.\nThomas and Christopher are friends.\nQ: What is the degree of node James?\nA: ",
+        "answer": "1.",
+        "prediction": "1"
+    }
+]

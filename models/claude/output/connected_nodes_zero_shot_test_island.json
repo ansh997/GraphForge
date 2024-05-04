@@ -1,0 +1,562 @@
+[
+    {
+        "id": "258",
+        "algorithm": "er",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, and 6.\nThe edges in G are: (0, 2) (0, 6) (1, 4) (2, 3) (2, 4) (2, 6) (3, 5) (4, 5).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '2', '3', '4', '5', '6'].Q: List all the nodes connected to 4 in alphabetical order.\nA: ",
+        "answer": "1, 2, 5.",
+        "prediction": "[1, 2, 5]"
+    },
+    {
+        "id": "400",
+        "algorithm": "er",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, and 17.\nIn this graph:\nNode 0 is connected to nodes 4, 5, 16.\nNode 2 is connected to node 5.\nNode 3 is connected to nodes 4, 6, 9.\nNode 4 is connected to nodes 0, 3, 8.\nNode 5 is connected to nodes 0, 2, 12.\nNode 6 is connected to node 3.\nNode 7 is connected to node 10.\nNode 8 is connected to node 4.\nNode 9 is connected to node 3.\nNode 10 is connected to nodes 7, 12.\nNode 12 is connected to nodes 5, 10.\nNode 13 is connected to node 16.\nNode 16 is connected to nodes 0, 13.\nThere are 6 number of islands.  \n This is island 1 of 6. It contains the nodes ['0', '10', '12', '13', '16', '2', '3', '4', '5', '6', '7', '8', '9']. \n This is island 2 of 6. It contains the nodes ['1']. \n This is island 3 of 6. It contains the nodes ['11']. \n This is island 4 of 6. It contains the nodes ['14']. \n This is island 5 of 6. It contains the nodes ['15']. \n This is island 6 of 6. It contains the nodes ['17'].Q: List all the nodes connected to 9 in alphabetical order.\nA: ",
+        "answer": "3.",
+        "prediction": "['3', '4']"
+    },
+    {
+        "id": "62",
+        "algorithm": "er",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, and Jennifer.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Michael are friends.\nJames and David are friends.\nJames and Mary are friends.\nJames and Jennifer are friends.\nRobert and Michael are friends.\nRobert and David are friends.\nRobert and Mary are friends.\nRobert and Patricia are friends.\nRobert and Jennifer are friends.\nJohn and Michael are friends.\nJohn and David are friends.\nJohn and Mary are friends.\nJohn and Patricia are friends.\nJohn and Jennifer are friends.\nMichael and David are friends.\nMichael and Mary are friends.\nMichael and Patricia are friends.\nMichael and Jennifer are friends.\nDavid and Mary are friends.\nDavid and Patricia are friends.\nDavid and Jennifer are friends.\nMary and Patricia are friends.\nMary and Jennifer are friends.\nPatricia and Jennifer are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'Jennifer', 'John', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: List all the nodes connected to David in alphabetical order.\nA: ",
+        "answer": "James, Jennifer, John, Mary, Michael, Patricia, Robert.",
+        "prediction": "['David', 'James', 'Jennifer', 'John', 'Mary', 'Michael', 'Patricia', 'Robert']"
+    },
+    {
+        "id": "155",
+        "algorithm": "er",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, and 16.\nThe edges in G are: (0, 1) (0, 2) (0, 3) (0, 4) (0, 5) (0, 6) (0, 7) (0, 8) (0, 9) (0, 10) (0, 11) (0, 12) (0, 13) (0, 14) (0, 15) (0, 16) (1, 2) (1, 3) (1, 4) (1, 5) (1, 6) (1, 7) (1, 8) (1, 9) (1, 10) (1, 12) (1, 13) (1, 14) (1, 15) (1, 16) (2, 3) (2, 4) (2, 5) (2, 7) (2, 8) (2, 9) (2, 10) (2, 11) (2, 12) (2, 13) (2, 15) (2, 16) (3, 4) (3, 5) (3, 6) (3, 7) (3, 8) (3, 9) (3, 10) (3, 11) (3, 12) (3, 13) (3, 14) (3, 15) (3, 16) (4, 5) (4, 6) (4, 7) (4, 8) (4, 9) (4, 10) (4, 11) (4, 12) (4, 13) (4, 14) (4, 15) (4, 16) (5, 6) (5, 7) (5, 8) (5, 9) (5, 10) (5, 11) (5, 12) (5, 13) (5, 14) (5, 15) (5, 16) (6, 7) (6, 8) (6, 9) (6, 10) (6, 11) (6, 12) (6, 13) (6, 15) (6, 16) (7, 8) (7, 9) (7, 10) (7, 11) (7, 12) (7, 13) (7, 14) (7, 15) (7, 16) (8, 9) (8, 10) (8, 11) (8, 12) (8, 13) (8, 15) (8, 16) (9, 10) (9, 11) (9, 12) (9, 13) (9, 14) (9, 15) (9, 16) (10, 11) (10, 12) (10, 13) (10, 14) (10, 15) (10, 16) (11, 12) (11, 13) (11, 14) (11, 15) (11, 16) (12, 13) (12, 14) (12, 15) (12, 16) (13, 14) (13, 15) (13, 16) (14, 15) (14, 16) (15, 16).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '11', '12', '13', '14', '15', '16', '2', '3', '4', '5', '6', '7', '8', '9'].Q: List all the nodes connected to 13 in alphabetical order.\nA: ",
+        "answer": "0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16.",
+        "prediction": "['0', '1', '10', '11', '12', '13', '14', '15', '16', '2', '3', '4', '5', '6', '7', '8', '9']"
+    },
+    {
+        "id": "112",
+        "algorithm": "er",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, George, Nancy, Pete, Madeleine, Elijah, Gabrielle, and Al.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Bill are connected.\nBarack and Kamala are connected.\nBarack and Hillary are connected.\nBarack and Elizabeth are connected.\nBarack and John are connected.\nBarack and Ben are connected.\nBarack and Joe are connected.\nBarack and Alexandria are connected.\nBarack and George are connected.\nBarack and Nancy are connected.\nBarack and Pete are connected.\nBarack and Madeleine are connected.\nBarack and Elijah are connected.\nBarack and Gabrielle are connected.\nBarack and Al are connected.\nJimmy and Arnold are connected.\nJimmy and Bernie are connected.\nJimmy and Bill are connected.\nJimmy and Kamala are connected.\nJimmy and Hillary are connected.\nJimmy and Elizabeth are connected.\nJimmy and John are connected.\nJimmy and Ben are connected.\nJimmy and Joe are connected.\nJimmy and Alexandria are connected.\nJimmy and George are connected.\nJimmy and Nancy are connected.\nJimmy and Pete are connected.\nJimmy and Madeleine are connected.\nJimmy and Elijah are connected.\nJimmy and Gabrielle are connected.\nJimmy and Al are connected.\nArnold and Bernie are connected.\nArnold and Bill are connected.\nArnold and Kamala are connected.\nArnold and Hillary are connected.\nArnold and Elizabeth are connected.\nArnold and John are connected.\nArnold and Ben are connected.\nArnold and Joe are connected.\nArnold and Alexandria are connected.\nArnold and George are connected.\nArnold and Nancy are connected.\nArnold and Pete are connected.\nArnold and Madeleine are connected.\nArnold and Elijah are connected.\nArnold and Gabrielle are connected.\nArnold and Al are connected.\nBernie and Bill are connected.\nBernie and Kamala are connected.\nBernie and Hillary are connected.\nBernie and Elizabeth are connected.\nBernie and John are connected.\nBernie and Ben are connected.\nBernie and Joe are connected.\nBernie and Alexandria are connected.\nBernie and George are connected.\nBernie and Nancy are connected.\nBernie and Pete are connected.\nBernie and Madeleine are connected.\nBernie and Elijah are connected.\nBernie and Gabrielle are connected.\nBernie and Al are connected.\nBill and Kamala are connected.\nBill and Hillary are connected.\nBill and Elizabeth are connected.\nBill and John are connected.\nBill and Ben are connected.\nBill and Joe are connected.\nBill and Alexandria are connected.\nBill and George are connected.\nBill and Nancy are connected.\nBill and Pete are connected.\nBill and Madeleine are connected.\nBill and Elijah are connected.\nBill and Gabrielle are connected.\nBill and Al are connected.\nKamala and Hillary are connected.\nKamala and Elizabeth are connected.\nKamala and John are connected.\nKamala and Ben are connected.\nKamala and Joe are connected.\nKamala and Alexandria are connected.\nKamala and George are connected.\nKamala and Nancy are connected.\nKamala and Pete are connected.\nKamala and Madeleine are connected.\nKamala and Elijah are connected.\nKamala and Gabrielle are connected.\nKamala and Al are connected.\nHillary and Elizabeth are connected.\nHillary and John are connected.\nHillary and Ben are connected.\nHillary and Joe are connected.\nHillary and Alexandria are connected.\nHillary and George are connected.\nHillary and Nancy are connected.\nHillary and Pete are connected.\nHillary and Madeleine are connected.\nHillary and Elijah are connected.\nHillary and Gabrielle are connected.\nHillary and Al are connected.\nElizabeth and John are connected.\nElizabeth and Ben are connected.\nElizabeth and Joe are connected.\nElizabeth and Alexandria are connected.\nElizabeth and George are connected.\nElizabeth and Nancy are connected.\nElizabeth and Pete are connected.\nElizabeth and Madeleine are connected.\nElizabeth and Gabrielle are connected.\nElizabeth and Al are connected.\nJohn and Ben are connected.\nJohn and Joe are connected.\nJohn and Alexandria are connected.\nJohn and George are connected.\nJohn and Nancy are connected.\nJohn and Pete are connected.\nJohn and Madeleine are connected.\nJohn and Elijah are connected.\nJohn and Gabrielle are connected.\nJohn and Al are connected.\nBen and Joe are connected.\nBen and Alexandria are connected.\nBen and George are connected.\nBen and Nancy are connected.\nBen and Pete are connected.\nBen and Madeleine are connected.\nBen and Elijah are connected.\nBen and Gabrielle are connected.\nBen and Al are connected.\nJoe and Alexandria are connected.\nJoe and George are connected.\nJoe and Nancy are connected.\nJoe and Pete are connected.\nJoe and Madeleine are connected.\nJoe and Elijah are connected.\nJoe and Gabrielle are connected.\nJoe and Al are connected.\nAlexandria and George are connected.\nAlexandria and Nancy are connected.\nAlexandria and Pete are connected.\nAlexandria and Madeleine are connected.\nAlexandria and Elijah are connected.\nAlexandria and Gabrielle are connected.\nAlexandria and Al are connected.\nGeorge and Nancy are connected.\nGeorge and Pete are connected.\nGeorge and Madeleine are connected.\nGeorge and Elijah are connected.\nGeorge and Gabrielle are connected.\nGeorge and Al are connected.\nNancy and Pete are connected.\nNancy and Madeleine are connected.\nNancy and Elijah are connected.\nNancy and Gabrielle are connected.\nNancy and Al are connected.\nPete and Madeleine are connected.\nPete and Elijah are connected.\nPete and Gabrielle are connected.\nPete and Al are connected.\nMadeleine and Elijah are connected.\nMadeleine and Gabrielle are connected.\nMadeleine and Al are connected.\nElijah and Gabrielle are connected.\nElijah and Al are connected.\nGabrielle and Al are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Al', 'Alexandria', 'Arnold', 'Barack', 'Ben', 'Bernie', 'Bill', 'Elijah', 'Elizabeth', 'Gabrielle', 'George', 'Hillary', 'Jimmy', 'Joe', 'John', 'Kamala', 'Madeleine', 'Nancy', 'Pete'].Q: List all the nodes connected to Al in alphabetical order.\nA: ",
+        "answer": "Alexandria, Arnold, Barack, Ben, Bernie, Bill, Elijah, Elizabeth, Gabrielle, George, Hillary, Jimmy, Joe, John, Kamala, Madeleine, Nancy, Pete.",
+        "prediction": "['Alexandria', 'Arnold', 'Barack', 'Ben', 'Bernie', 'Bill', 'Elijah', 'Elizabeth', 'Gabrielle', 'George', 'Hillary', 'Jimmy', 'Joe', 'John', 'Kamala', 'Madeleine', 'Nancy', 'Pete']"
+    },
+    {
+        "id": "69",
+        "algorithm": "er",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, and Jorah.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Jorah are friends.\nCat and Jon are friends.\nCat and Sansa are friends.\nCat and Arya are friends.\nCat and Cersei are friends.\nCat and Jaime are friends.\nCat and Robert are friends.\nCat and Jorah are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jaime are friends.\nDaenerys and Petyr are friends.\nDaenerys and Robert are friends.\nDaenerys and Jorah are friends.\nJon and Sansa are friends.\nJon and Cersei are friends.\nJon and Jaime are friends.\nJon and Petyr are friends.\nJon and Jorah are friends.\nBran and Sansa are friends.\nBran and Cersei are friends.\nBran and Jaime are friends.\nBran and Petyr are friends.\nBran and Robert are friends.\nBran and Jorah are friends.\nSansa and Arya are friends.\nSansa and Cersei are friends.\nSansa and Jaime are friends.\nSansa and Petyr are friends.\nSansa and Robert are friends.\nSansa and Jorah are friends.\nArya and Cersei are friends.\nArya and Robert are friends.\nArya and Jorah are friends.\nCersei and Petyr are friends.\nCersei and Robert are friends.\nCersei and Jorah are friends.\nJaime and Robert are friends.\nJaime and Jorah are friends.\nPetyr and Robert are friends.\nPetyr and Jorah are friends.\nRobert and Jorah are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Jon', 'Jorah', 'Ned', 'Petyr', 'Robert', 'Sansa'].Q: List all the nodes connected to Daenerys in alphabetical order.\nA: ",
+        "answer": "Cersei, Jaime, Jorah, Ned, Petyr, Robert.",
+        "prediction": "['Arya', 'Bran', 'Cersei', 'Jaime', 'Jorah', 'Jon', 'Ned', 'Petyr', 'Robert']"
+    },
+    {
+        "id": "430",
+        "algorithm": "er",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, and Linda.\nWe have the following edges in G:\nJames and John are connected.\nJames and Michael are connected.\nJames and David are connected.\nJames and Patricia are connected.\nJames and Jennifer are connected.\nRobert and John are connected.\nRobert and Michael are connected.\nRobert and David are connected.\nRobert and Mary are connected.\nRobert and Jennifer are connected.\nRobert and Linda are connected.\nJohn and Patricia are connected.\nJohn and Linda are connected.\nMichael and David are connected.\nMichael and Mary are connected.\nMichael and Patricia are connected.\nMichael and Jennifer are connected.\nDavid and Mary are connected.\nDavid and Jennifer are connected.\nDavid and Linda are connected.\nMary and Patricia are connected.\nMary and Jennifer are connected.\nMary and Linda are connected.\nPatricia and Jennifer are connected.\nPatricia and Linda are connected.\nJennifer and Linda are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: List all the nodes connected to Jennifer in alphabetical order.\nA: ",
+        "answer": "David, James, Linda, Mary, Michael, Patricia, Robert.",
+        "prediction": "['David', 'James', 'Linda', 'Mary', 'Michael', 'Patricia', 'Robert']"
+    },
+    {
+        "id": "240",
+        "algorithm": "er",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, and Joseph.\nIn this coauthorship graph:\nJames and John wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Joseph wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nJohn and Joseph wrote a paper together.\nMichael and Mary wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nDavid and Linda wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Elizabeth wrote a paper together.\nPatricia and William wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nJennifer and William wrote a paper together.\nElizabeth and Richard wrote a paper together.\nWilliam and Joseph wrote a paper together.\nRichard and Joseph wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'William'].Q: List all the nodes connected to Elizabeth in alphabetical order.\nA: ",
+        "answer": "Jennifer, John, Mary, Richard.",
+        "prediction": "['Elizabeth', 'Jennifer', 'Mary']"
+    },
+    {
+        "id": "382",
+        "algorithm": "er",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, and Susan.\nWe have the following edges in G:\nJames and David are connected.\nJames and William are connected.\nRobert and Mary are connected.\nRobert and Joseph are connected.\nJohn and David are connected.\nJohn and Elizabeth are connected.\nJohn and Thomas are connected.\nJohn and Barbara are connected.\nMichael and Linda are connected.\nMichael and Thomas are connected.\nDavid and Jennifer are connected.\nDavid and Linda are connected.\nDavid and Elizabeth are connected.\nDavid and William are connected.\nMary and Richard are connected.\nPatricia and Jennifer are connected.\nPatricia and Linda are connected.\nPatricia and Christopher are connected.\nJennifer and Elizabeth are connected.\nJennifer and Susan are connected.\nLinda and William are connected.\nLinda and Richard are connected.\nElizabeth and William are connected.\nRichard and Thomas are connected.\nRichard and Barbara are connected.\nJoseph and Barbara are connected.\nJoseph and Susan are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Susan', 'Thomas', 'William'].Q: List all the nodes connected to Susan in alphabetical order.\nA: ",
+        "answer": "Jennifer, Joseph.",
+        "prediction": "['Jennifer', 'Joseph']"
+    },
+    {
+        "id": "170",
+        "algorithm": "er",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, and David.\nWe have the following edges in G:\nRobert and John are friends.\nRobert and David are friends.\nJohn and Michael are friends.\nJohn and David are friends.\nThere are 2 number of islands.  \n This is island 1 of 2. It contains the nodes ['James']. \n This is island 2 of 2. It contains the nodes ['David', 'John', 'Michael', 'Robert'].Q: List all the nodes connected to Robert in alphabetical order.\nA: ",
+        "answer": "David, John.",
+        "prediction": "['David', 'John', 'Michael', 'Robert']"
+    },
+    {
+        "id": "861",
+        "algorithm": "ba",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, and Susan.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and John are connected.\nJames and Michael are connected.\nJames and David are connected.\nJames and Mary are connected.\nJames and Patricia are connected.\nJames and Jennifer are connected.\nJames and Linda are connected.\nJames and Elizabeth are connected.\nJames and William are connected.\nJames and Joseph are connected.\nJames and Thomas are connected.\nJames and Christopher are connected.\nJames and Barbara are connected.\nJames and Susan are connected.\nRobert and Linda are connected.\nRobert and William are connected.\nJohn and Linda are connected.\nJohn and Elizabeth are connected.\nJohn and William are connected.\nJohn and Richard are connected.\nJohn and Joseph are connected.\nJohn and Thomas are connected.\nMichael and Elizabeth are connected.\nMichael and William are connected.\nMichael and Joseph are connected.\nMichael and Thomas are connected.\nMichael and Susan are connected.\nDavid and Linda are connected.\nDavid and Elizabeth are connected.\nDavid and William are connected.\nDavid and Richard are connected.\nDavid and Thomas are connected.\nDavid and Christopher are connected.\nDavid and Barbara are connected.\nDavid and Susan are connected.\nMary and Linda are connected.\nMary and Richard are connected.\nMary and Joseph are connected.\nMary and Christopher are connected.\nPatricia and Linda are connected.\nPatricia and Elizabeth are connected.\nPatricia and William are connected.\nPatricia and Richard are connected.\nPatricia and Christopher are connected.\nJennifer and Linda are connected.\nJennifer and Elizabeth are connected.\nJennifer and Barbara are connected.\nJennifer and Susan are connected.\nLinda and Elizabeth are connected.\nLinda and William are connected.\nLinda and Richard are connected.\nLinda and Christopher are connected.\nLinda and Barbara are connected.\nElizabeth and Richard are connected.\nElizabeth and Joseph are connected.\nElizabeth and Susan are connected.\nWilliam and Richard are connected.\nWilliam and Joseph are connected.\nWilliam and Thomas are connected.\nRichard and Joseph are connected.\nRichard and Thomas are connected.\nRichard and Christopher are connected.\nRichard and Barbara are connected.\nRichard and Susan are connected.\nJoseph and Thomas are connected.\nJoseph and Christopher are connected.\nJoseph and Barbara are connected.\nThomas and Susan are connected.\nChristopher and Barbara are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Susan', 'Thomas', 'William'].Q: List all the nodes connected to Barbara in alphabetical order.\nA: ",
+        "answer": "Christopher, David, James, Jennifer, Joseph, Linda, Richard.",
+        "prediction": "['Christopher', 'David', 'Jennifer', 'Joseph', 'Linda', 'Richard']"
+    },
+    {
+        "id": "610",
+        "algorithm": "ba",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, and I.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nA -> G\nA -> H\nA -> I\nB -> G\nB -> H\nC -> G\nC -> H\nC -> I\nD -> G\nE -> G\nE -> H\nE -> I\nF -> I\nG -> H\nH -> I\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'].Q: List all the nodes connected to C in alphabetical order.\nA: ",
+        "answer": "A, G, H, I.",
+        "prediction": "A, C, G, H, I"
+    },
+    {
+        "id": "863",
+        "algorithm": "ba",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, George, Nancy, Pete, Madeleine, Elijah, Gabrielle, and Al.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Bill are connected.\nBarack and Kamala are connected.\nBarack and Hillary are connected.\nBarack and Elizabeth are connected.\nBarack and John are connected.\nBarack and Ben are connected.\nBarack and Joe are connected.\nBarack and Alexandria are connected.\nBarack and George are connected.\nBarack and Nancy are connected.\nBarack and Pete are connected.\nBarack and Madeleine are connected.\nBarack and Elijah are connected.\nBarack and Gabrielle are connected.\nBarack and Al are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Al', 'Alexandria', 'Arnold', 'Barack', 'Ben', 'Bernie', 'Bill', 'Elijah', 'Elizabeth', 'Gabrielle', 'George', 'Hillary', 'Jimmy', 'Joe', 'John', 'Kamala', 'Madeleine', 'Nancy', 'Pete'].Q: List all the nodes connected to Bernie in alphabetical order.\nA: ",
+        "answer": "Barack.",
+        "prediction": "['Barack', 'Ben', 'Bill', 'Elijah', 'Elizabeth', 'Hillary', 'Joe', 'John', 'Kamala']"
+    },
+    {
+        "id": "510",
+        "algorithm": "ba",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, and 16.\nIn this graph:\nNode 0 is connected to nodes 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16.\nNode 1 is connected to node 0.\nNode 2 is connected to node 0.\nNode 3 is connected to node 0.\nNode 4 is connected to node 0.\nNode 5 is connected to node 0.\nNode 6 is connected to node 0.\nNode 7 is connected to node 0.\nNode 8 is connected to node 0.\nNode 9 is connected to node 0.\nNode 10 is connected to node 0.\nNode 11 is connected to node 0.\nNode 12 is connected to node 0.\nNode 13 is connected to node 0.\nNode 14 is connected to node 0.\nNode 15 is connected to node 0.\nNode 16 is connected to node 0.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '11', '12', '13', '14', '15', '16', '2', '3', '4', '5', '6', '7', '8', '9'].Q: List all the nodes connected to 1 in alphabetical order.\nA: ",
+        "answer": "0.",
+        "prediction": "0"
+    },
+    {
+        "id": "631",
+        "algorithm": "ba",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, and Richard.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and William wrote a paper together.\nJames and Richard wrote a paper together.\nRobert and William wrote a paper together.\nJohn and William wrote a paper together.\nJohn and Richard wrote a paper together.\nMichael and William wrote a paper together.\nDavid and William wrote a paper together.\nDavid and Richard wrote a paper together.\nMary and Richard wrote a paper together.\nPatricia and William wrote a paper together.\nPatricia and Richard wrote a paper together.\nJennifer and William wrote a paper together.\nJennifer and Richard wrote a paper together.\nLinda and William wrote a paper together.\nLinda and Richard wrote a paper together.\nElizabeth and William wrote a paper together.\nElizabeth and Richard wrote a paper together.\nWilliam and Richard wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'William'].Q: List all the nodes connected to John in alphabetical order.\nA: ",
+        "answer": "James, Richard, William.",
+        "prediction": "['James', 'Richard', 'William']"
+    },
+    {
+        "id": "749",
+        "algorithm": "ba",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, and N.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> G\nA -> I\nA -> J\nA -> K\nA -> L\nB -> E\nB -> F\nB -> G\nB -> H\nB -> L\nC -> F\nC -> H\nC -> M\nD -> E\nD -> F\nD -> I\nE -> G\nE -> H\nE -> K\nE -> M\nG -> N\nH -> I\nH -> J\nH -> L\nH -> M\nH -> N\nI -> J\nJ -> K\nL -> N\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'].Q: List all the nodes connected to E in alphabetical order.\nA: ",
+        "answer": "A, B, D, G, H, K, M.",
+        "prediction": "B, D, E, G, H, K, M"
+    },
+    {
+        "id": "698",
+        "algorithm": "ba",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, and Richard.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Michael are friends.\nJames and David are friends.\nJames and Mary are friends.\nJames and Patricia are friends.\nJames and Jennifer are friends.\nJames and Linda are friends.\nJames and Elizabeth are friends.\nJames and Richard are friends.\nRobert and Jennifer are friends.\nRobert and Linda are friends.\nRobert and Elizabeth are friends.\nRobert and Richard are friends.\nJohn and Jennifer are friends.\nJohn and Elizabeth are friends.\nMichael and Jennifer are friends.\nMichael and Linda are friends.\nMichael and William are friends.\nMichael and Richard are friends.\nDavid and Jennifer are friends.\nDavid and Linda are friends.\nDavid and William are friends.\nMary and Jennifer are friends.\nMary and Elizabeth are friends.\nMary and William are friends.\nPatricia and Linda are friends.\nPatricia and Elizabeth are friends.\nJennifer and Linda are friends.\nJennifer and William are friends.\nJennifer and Richard are friends.\nLinda and Elizabeth are friends.\nLinda and William are friends.\nLinda and Richard are friends.\nElizabeth and William are friends.\nElizabeth and Richard are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'William'].Q: List all the nodes connected to Elizabeth in alphabetical order.\nA: ",
+        "answer": "James, John, Linda, Mary, Patricia, Richard, Robert, William.",
+        "prediction": "['David', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Patricia', 'Richard', 'Robert', 'William']"
+    },
+    {
+        "id": "662",
+        "algorithm": "ba",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, and Viserys.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Robert are friends.\nNed and Jorah are friends.\nNed and Viserys are friends.\nCat and Cersei are friends.\nCat and Jaime are friends.\nCat and Petyr are friends.\nCat and Robert are friends.\nDaenerys and Cersei are friends.\nDaenerys and Viserys are friends.\nJon and Cersei are friends.\nJon and Petyr are friends.\nJon and Jorah are friends.\nBran and Cersei are friends.\nBran and Jaime are friends.\nBran and Petyr are friends.\nBran and Robert are friends.\nSansa and Jaime are friends.\nSansa and Jorah are friends.\nSansa and Viserys are friends.\nArya and Cersei are friends.\nArya and Jaime are friends.\nCersei and Jaime are friends.\nCersei and Petyr are friends.\nCersei and Robert are friends.\nCersei and Jorah are friends.\nCersei and Viserys are friends.\nJaime and Petyr are friends.\nJaime and Robert are friends.\nPetyr and Robert are friends.\nPetyr and Jorah are friends.\nRobert and Jorah are friends.\nRobert and Viserys are friends.\nJorah and Viserys are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Jon', 'Jorah', 'Ned', 'Petyr', 'Robert', 'Sansa', 'Viserys'].Q: List all the nodes connected to Petyr in alphabetical order.\nA: ",
+        "answer": "Bran, Cat, Cersei, Jaime, Jon, Jorah, Ned, Robert.",
+        "prediction": "['Bran', 'Cat', 'Cersei', 'Jaime', 'Jon', 'Ned', 'Robert']"
+    },
+    {
+        "id": "918",
+        "algorithm": "ba",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, George, and Nancy.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Hillary are connected.\nBarack and Nancy are connected.\nJimmy and Kamala are connected.\nJimmy and John are connected.\nArnold and Bernie are connected.\nArnold and Bill are connected.\nArnold and Ben are connected.\nBernie and Elizabeth are connected.\nElizabeth and Joe are connected.\nElizabeth and Alexandria are connected.\nElizabeth and George are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Alexandria', 'Arnold', 'Barack', 'Ben', 'Bernie', 'Bill', 'Elizabeth', 'George', 'Hillary', 'Jimmy', 'Joe', 'John', 'Kamala', 'Nancy'].Q: List all the nodes connected to Jimmy in alphabetical order.\nA: ",
+        "answer": "Barack, John, Kamala.",
+        "prediction": "Kamala, John"
+    },
+    {
+        "id": "804",
+        "algorithm": "ba",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, and F.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nC -> D\nC -> E\nE -> F\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F'].Q: List all the nodes connected to A in alphabetical order.\nA: ",
+        "answer": "B, C, D, E, F.",
+        "prediction": "B, C, D, E, F"
+    },
+    {
+        "id": "1086",
+        "algorithm": "sbm",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, and Barbara.\nWe have the following edges in G:\nJames and John are connected.\nJames and Jennifer are connected.\nJames and Linda are connected.\nJames and William are connected.\nJames and Thomas are connected.\nRobert and John are connected.\nRobert and Michael are connected.\nRobert and David are connected.\nRobert and Mary are connected.\nRobert and Elizabeth are connected.\nRobert and William are connected.\nRobert and Thomas are connected.\nJohn and David are connected.\nJohn and Patricia are connected.\nJohn and Jennifer are connected.\nJohn and Linda are connected.\nJohn and Richard are connected.\nJohn and Barbara are connected.\nMichael and David are connected.\nMichael and Mary are connected.\nMichael and Jennifer are connected.\nMichael and Elizabeth are connected.\nMichael and William are connected.\nMichael and Richard are connected.\nMichael and Thomas are connected.\nDavid and Mary are connected.\nDavid and Patricia are connected.\nDavid and Jennifer are connected.\nDavid and Linda are connected.\nDavid and Elizabeth are connected.\nDavid and William are connected.\nDavid and Joseph are connected.\nDavid and Barbara are connected.\nMary and Patricia are connected.\nMary and Jennifer are connected.\nMary and Linda are connected.\nMary and Thomas are connected.\nPatricia and Linda are connected.\nPatricia and Elizabeth are connected.\nPatricia and William are connected.\nPatricia and Thomas are connected.\nJennifer and Linda are connected.\nJennifer and Elizabeth are connected.\nJennifer and William are connected.\nJennifer and Richard are connected.\nJennifer and Thomas are connected.\nLinda and Barbara are connected.\nWilliam and Richard are connected.\nRichard and Joseph are connected.\nJoseph and Thomas are connected.\nJoseph and Barbara are connected.\nThomas and Christopher are connected.\nThomas and Barbara are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Thomas', 'William'].Q: List all the nodes connected to Mary in alphabetical order.\nA: ",
+        "answer": "David, Jennifer, Linda, Michael, Patricia, Robert, Thomas.",
+        "prediction": "['Barbara', 'David', 'Jennifer', 'Linda', 'Patricia', 'Thomas']"
+    },
+    {
+        "id": "1070",
+        "algorithm": "sbm",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, Viserys, and Joffrey.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Petyr are friends.\nNed and Robert are friends.\nNed and Viserys are friends.\nNed and Joffrey are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Arya are friends.\nCat and Jaime are friends.\nCat and Cersei are friends.\nCat and Jorah are friends.\nCat and Joffrey are friends.\nDaenerys and Jon are friends.\nDaenerys and Jaime are friends.\nDaenerys and Cersei are friends.\nDaenerys and Robert are friends.\nDaenerys and Viserys are friends.\nDaenerys and Joffrey are friends.\nJon and Sansa are friends.\nJon and Jaime are friends.\nJon and Cersei are friends.\nJon and Robert are friends.\nBran and Jaime are friends.\nBran and Cersei are friends.\nBran and Robert are friends.\nBran and Jorah are friends.\nBran and Joffrey are friends.\nSansa and Arya are friends.\nSansa and Cersei are friends.\nSansa and Petyr are friends.\nPetyr and Robert are friends.\nPetyr and Joffrey are friends.\nRobert and Jorah are friends.\nRobert and Viserys are friends.\nRobert and Joffrey are friends.\nJorah and Viserys are friends.\nJorah and Joffrey are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Joffrey', 'Jon', 'Jorah', 'Ned', 'Petyr', 'Robert', 'Sansa', 'Viserys'].Q: List all the nodes connected to Joffrey in alphabetical order.\nA: ",
+        "answer": "Bran, Cat, Daenerys, Jorah, Ned, Petyr, Robert.",
+        "prediction": "Arya, Bran, Cat, Cersei, Daenerys, Joffrey, Ned, Petyr, Robert"
+    },
+    {
+        "id": "1418",
+        "algorithm": "sbm",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, and Elizabeth.\nIn this coauthorship graph:\nJames and Elizabeth wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nMichael and Patricia wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nJennifer and Linda wrote a paper together.\nJennifer and Elizabeth wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: List all the nodes connected to Patricia in alphabetical order.\nA: ",
+        "answer": "David, Elizabeth, John, Michael.",
+        "prediction": "David, Elizabeth, John, Michael, Patricia, Robert"
+    },
+    {
+        "id": "1265",
+        "algorithm": "sbm",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, and Elizabeth.\nWe have the following edges in G:\nBarack and Elizabeth are connected.\nArnold and Elizabeth are connected.\nBill and Elizabeth are connected.\nKamala and Elizabeth are connected.\nThere are 4 number of islands.  \n This is island 1 of 4. It contains the nodes ['Arnold', 'Barack', 'Bill', 'Elizabeth', 'Kamala']. \n This is island 2 of 4. It contains the nodes ['Jimmy']. \n This is island 3 of 4. It contains the nodes ['Bernie']. \n This is island 4 of 4. It contains the nodes ['Hillary'].Q: List all the nodes connected to Elizabeth in alphabetical order.\nA: ",
+        "answer": "Arnold, Barack, Bill, Kamala.",
+        "prediction": "['Arnold', 'Barack', 'Bill', 'Kamala']"
+    },
+    {
+        "id": "1367",
+        "algorithm": "sbm",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, and S.\nG has the following undirected edges:\nA -> D\nA -> E\nA -> F\nA -> G\nA -> I\nA -> J\nA -> N\nA -> O\nA -> P\nA -> Q\nA -> R\nA -> S\nB -> C\nB -> D\nB -> E\nB -> F\nB -> G\nB -> H\nB -> I\nB -> J\nB -> L\nB -> M\nB -> N\nB -> O\nB -> P\nB -> Q\nC -> D\nC -> E\nC -> G\nC -> H\nC -> I\nC -> K\nC -> M\nC -> N\nC -> O\nC -> P\nC -> Q\nC -> R\nC -> S\nD -> E\nD -> F\nD -> G\nD -> H\nD -> I\nD -> J\nD -> L\nD -> M\nD -> O\nD -> P\nD -> Q\nD -> S\nE -> F\nE -> G\nE -> H\nE -> J\nE -> M\nE -> N\nE -> Q\nE -> S\nF -> H\nF -> J\nF -> M\nF -> O\nF -> Q\nF -> R\nF -> S\nG -> H\nG -> M\nG -> N\nG -> O\nG -> P\nG -> Q\nG -> R\nH -> I\nH -> J\nH -> M\nH -> N\nH -> O\nH -> P\nH -> Q\nH -> R\nH -> S\nI -> K\nI -> M\nI -> N\nI -> O\nI -> P\nI -> Q\nI -> R\nI -> S\nJ -> L\nJ -> M\nJ -> N\nJ -> O\nJ -> R\nJ -> S\nK -> L\nK -> M\nK -> O\nK -> P\nK -> Q\nK -> R\nL -> P\nM -> N\nM -> O\nM -> P\nM -> Q\nM -> R\nM -> S\nN -> P\nN -> S\nO -> P\nO -> Q\nO -> S\nP -> Q\nP -> R\nP -> S\nQ -> R\nQ -> S\nR -> S\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S'].Q: List all the nodes connected to D in alphabetical order.\nA: ",
+        "answer": "A, B, C, E, F, G, H, I, J, L, M, O, P, Q, S.",
+        "prediction": "A, B, C, D, E, F, G, H, I, J, L, M, O, P, Q, S"
+    },
+    {
+        "id": "1304",
+        "algorithm": "sbm",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, and Jaime.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Arya are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nCat and Jaime are friends.\nDaenerys and Jon are friends.\nDaenerys and Arya are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jaime are friends.\nJon and Arya are friends.\nJon and Cersei are friends.\nThere are 2 number of islands.  \n This is island 1 of 2. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Jon', 'Ned']. \n This is island 2 of 2. It contains the nodes ['Sansa'].Q: List all the nodes connected to Sansa in alphabetical order.\nA: ",
+        "answer": " No nodes.",
+        "prediction": "[]"
+    },
+    {
+        "id": "1475",
+        "algorithm": "sbm",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, and F.\nG has the following undirected edges:\nA -> B\nA -> E\nA -> F\nB -> E\nB -> F\nC -> E\nC -> F\nD -> E\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F'].Q: List all the nodes connected to C in alphabetical order.\nA: ",
+        "answer": "E, F.",
+        "prediction": "C, E, F"
+    },
+    {
+        "id": "1402",
+        "algorithm": "sbm",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, and Sansa.\nWe have the following edges in G:\nNed and Daenerys are friends.\nNed and Sansa are friends.\nCat and Jon are friends.\nDaenerys and Bran are friends.\nThere are 2 number of islands.  \n This is island 1 of 2. It contains the nodes ['Bran', 'Daenerys', 'Ned', 'Sansa']. \n This is island 2 of 2. It contains the nodes ['Cat', 'Jon'].Q: List all the nodes connected to Daenerys in alphabetical order.\nA: ",
+        "answer": "Bran, Ned.",
+        "prediction": "['Bran', 'Ned']"
+    },
+    {
+        "id": "1165",
+        "algorithm": "sbm",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, and Heidi.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Heidi are friends.\nKyle and Stan are friends.\nKyle and Tolkien are friends.\nKyle and Heidi are friends.\nStan and Tolkien are friends.\nTolkien and Heidi are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Eric', 'Heidi', 'Kenny', 'Kyle', 'Stan', 'Tolkien'].Q: List all the nodes connected to Kenny in alphabetical order.\nA: ",
+        "answer": "Eric, Heidi, Stan, Tolkien.",
+        "prediction": "['Eric', 'Heidi', 'Stan', 'Tolkien']"
+    },
+    {
+        "id": "1466",
+        "algorithm": "sbm",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, and George.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Ben are connected.\nJimmy and Bernie are connected.\nJimmy and Ben are connected.\nJimmy and Joe are connected.\nJimmy and George are connected.\nArnold and Bernie are connected.\nArnold and Kamala are connected.\nArnold and Ben are connected.\nArnold and Joe are connected.\nBernie and Bill are connected.\nBernie and Kamala are connected.\nBernie and Hillary are connected.\nBernie and Elizabeth are connected.\nBernie and Ben are connected.\nBernie and Joe are connected.\nBill and Hillary are connected.\nBill and Joe are connected.\nKamala and Hillary are connected.\nKamala and Elizabeth are connected.\nKamala and Ben are connected.\nKamala and Joe are connected.\nHillary and Ben are connected.\nHillary and Joe are connected.\nHillary and Alexandria are connected.\nElizabeth and John are connected.\nElizabeth and Alexandria are connected.\nElizabeth and George are connected.\nJohn and Ben are connected.\nJohn and George are connected.\nBen and Alexandria are connected.\nAlexandria and George are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Alexandria', 'Arnold', 'Barack', 'Ben', 'Bernie', 'Bill', 'Elizabeth', 'George', 'Hillary', 'Jimmy', 'Joe', 'John', 'Kamala'].Q: List all the nodes connected to Alexandria in alphabetical order.\nA: ",
+        "answer": "Ben, Elizabeth, George, Hillary.",
+        "prediction": "['Ben', 'Elizabeth', 'George', 'Hillary']"
+    },
+    {
+        "id": "1575",
+        "algorithm": "sfn",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, and Patricia.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Patricia are friends.\nRobert and John are friends.\nRobert and Robert are friends.\nRobert and David are friends.\nRobert and Michael are friends.\nRobert and Mary are friends.\nJohn and John are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'John', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: List all the nodes connected to Patricia in alphabetical order.\nA: ",
+        "answer": "James.",
+        "prediction": "['James', 'John', 'Robert']"
+    },
+    {
+        "id": "1519",
+        "algorithm": "sfn",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, and Heidi.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nKenny and Kyle are friends.\nKenny and Kenny are friends.\nKyle and Kyle are friends.\nKyle and Stan are friends.\nKyle and Heidi are friends.\nStan and Stan are friends.\nStan and Tolkien are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Eric', 'Heidi', 'Kenny', 'Kyle', 'Stan', 'Tolkien'].Q: List all the nodes connected to Heidi in alphabetical order.\nA: ",
+        "answer": "Kyle.",
+        "prediction": "['Eric', 'Kyle']"
+    },
+    {
+        "id": "1785",
+        "algorithm": "sfn",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, Michael, Jimbo, Herbert, Malcolm, and Gary.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Eric are friends.\nEric and Kyle are friends.\nEric and Tolkien are friends.\nEric and Veronica are friends.\nKenny and Kyle are friends.\nKenny and Heidi are friends.\nKenny and Gerald are friends.\nKenny and Jimbo are friends.\nKenny and Herbert are friends.\nKyle and Sharon are friends.\nKyle and Kyle are friends.\nKyle and Stan are friends.\nKyle and Tolkien are friends.\nKyle and Bebe are friends.\nKyle and Liane are friends.\nKyle and Linda are friends.\nKyle and Veronica are friends.\nKyle and Michael are friends.\nKyle and Malcolm are friends.\nKyle and Gary are friends.\nStan and Sharon are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gary', 'Gerald', 'Heidi', 'Herbert', 'Jimbo', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Malcolm', 'Michael', 'Sharon', 'Stan', 'Tolkien', 'Veronica'].Q: List all the nodes connected to Sharon in alphabetical order.\nA: ",
+        "answer": "Kyle, Stan.",
+        "prediction": "Bebe, Kyle, Sharon, Stan"
+    },
+    {
+        "id": "1945",
+        "algorithm": "sfn",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, Michael, Jimbo, Herbert, Malcolm, and Gary.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Tolkien are friends.\nKenny and Kyle are friends.\nKenny and Kenny are friends.\nKenny and Stan are friends.\nKenny and Heidi are friends.\nKenny and Bebe are friends.\nKenny and Liane are friends.\nKenny and Michael are friends.\nKenny and Malcolm are friends.\nKenny and Gary are friends.\nKyle and Kyle are friends.\nKyle and Stan are friends.\nKyle and Liane are friends.\nKyle and Sharon are friends.\nKyle and Linda are friends.\nKyle and Gerald are friends.\nKyle and Veronica are friends.\nKyle and Herbert are friends.\nTolkien and Sharon are friends.\nTolkien and Jimbo are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gary', 'Gerald', 'Heidi', 'Herbert', 'Jimbo', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Malcolm', 'Michael', 'Sharon', 'Stan', 'Tolkien', 'Veronica'].Q: List all the nodes connected to Eric in alphabetical order.\nA: ",
+        "answer": "Kenny, Kyle, Tolkien.",
+        "prediction": "['Eric', 'Kenny', 'Kyle', 'Tolkien']"
+    },
+    {
+        "id": "1842",
+        "algorithm": "sfn",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, and Susan.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Mary are friends.\nJames and Patricia are friends.\nJames and Jennifer are friends.\nJames and Linda are friends.\nJames and Richard are friends.\nRobert and John are friends.\nRobert and Michael are friends.\nRobert and Robert are friends.\nRobert and Joseph are friends.\nJohn and John are friends.\nJohn and David are friends.\nJohn and Elizabeth are friends.\nJohn and William are friends.\nJohn and Thomas are friends.\nJohn and Christopher are friends.\nJohn and Barbara are friends.\nJohn and Susan are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Susan', 'Thomas', 'William'].Q: List all the nodes connected to John in alphabetical order.\nA: ",
+        "answer": "Barbara, Christopher, David, Elizabeth, James, John, Robert, Susan, Thomas, William.",
+        "prediction": "['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'John', 'Robert', 'Susan', 'Thomas', 'William']"
+    },
+    {
+        "id": "1938",
+        "algorithm": "sfn",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, and Gerald.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Tolkien are friends.\nKenny and Kyle are friends.\nKenny and Kenny are friends.\nKenny and Bebe are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Liane are friends.\nKenny and Linda are friends.\nKyle and Stan are friends.\nKyle and Sharon are friends.\nKyle and Gerald are friends.\nStan and Tolkien are friends.\nTolkien and Heidi are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Sharon', 'Stan', 'Tolkien'].Q: List all the nodes connected to Linda in alphabetical order.\nA: ",
+        "answer": "Kenny.",
+        "prediction": "['Bebe', 'Eric', 'Gerald', 'Heidi', 'Kenny', 'Liane', 'Linda']"
+    },
+    {
+        "id": "1867",
+        "algorithm": "sfn",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, Michael, Jimbo, and Herbert.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Bebe are friends.\nKenny and Kyle are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Linda are friends.\nKyle and Kyle are friends.\nKyle and Heidi are friends.\nKyle and Liane are friends.\nKyle and Sharon are friends.\nKyle and Gerald are friends.\nKyle and Veronica are friends.\nKyle and Michael are friends.\nKyle and Jimbo are friends.\nKyle and Herbert are friends.\nBebe and Sharon are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Herbert', 'Jimbo', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Michael', 'Sharon', 'Stan', 'Tolkien', 'Veronica'].Q: List all the nodes connected to Kenny in alphabetical order.\nA: ",
+        "answer": "Eric, Kyle, Linda, Stan, Tolkien.",
+        "prediction": "Eric, Heidi, Kyle, Linda, Stan, Tolkien"
+    },
+    {
+        "id": "1698",
+        "algorithm": "sfn",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, and Richard.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Jennifer are friends.\nRobert and John are friends.\nRobert and Robert are friends.\nRobert and David are friends.\nRobert and Michael are friends.\nRobert and Patricia are friends.\nRobert and Linda are friends.\nRobert and Richard are friends.\nMichael and Mary are friends.\nDavid and Elizabeth are friends.\nDavid and William are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'William'].Q: List all the nodes connected to Jennifer in alphabetical order.\nA: ",
+        "answer": "James.",
+        "prediction": "['James', 'John', 'Robert']"
+    },
+    {
+        "id": "1505",
+        "algorithm": "sfn",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, and R.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nA -> H\nA -> K\nA -> L\nA -> M\nA -> O\nA -> P\nA -> R\nB -> C\nB -> I\nB -> J\nB -> L\nB -> Q\nC -> N\nC -> C\nC -> F\nC -> G\nC -> L\nH -> H\nH -> N\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R'].Q: List all the nodes connected to P in alphabetical order.\nA: ",
+        "answer": "A.",
+        "prediction": "['A', 'R']"
+    },
+    {
+        "id": "1597",
+        "algorithm": "sfn",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, and Viserys.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Jon are friends.\nNed and Daenerys are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nCat and Arya are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Cersei are friends.\nDaenerys and Jon are friends.\nDaenerys and Jaime are friends.\nDaenerys and Bran are friends.\nDaenerys and Petyr are friends.\nDaenerys and Viserys are friends.\nJon and Bran are friends.\nJon and Cersei are friends.\nJon and Jaime are friends.\nJon and Robert are friends.\nJon and Jorah are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Jon', 'Jorah', 'Ned', 'Petyr', 'Robert', 'Sansa', 'Viserys'].Q: List all the nodes connected to Petyr in alphabetical order.\nA: ",
+        "answer": "Daenerys.",
+        "prediction": "Daenerys, Jon"
+    },
+    {
+        "id": "2430",
+        "algorithm": "complete",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, and Bill.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Bill are connected.\nJimmy and Arnold are connected.\nJimmy and Bernie are connected.\nJimmy and Bill are connected.\nArnold and Bernie are connected.\nArnold and Bill are connected.\nBernie and Bill are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arnold', 'Barack', 'Bernie', 'Bill', 'Jimmy'].Q: List all the nodes connected to Jimmy in alphabetical order.\nA: ",
+        "answer": "Arnold, Barack, Bernie, Bill.",
+        "prediction": "['Arnold', 'Barack', 'Bernie', 'Bill']"
+    },
+    {
+        "id": "2357",
+        "algorithm": "complete",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, Viserys, and Joffrey.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Robert are friends.\nNed and Jorah are friends.\nNed and Viserys are friends.\nNed and Joffrey are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Arya are friends.\nCat and Cersei are friends.\nCat and Jaime are friends.\nCat and Petyr are friends.\nCat and Robert are friends.\nCat and Jorah are friends.\nCat and Viserys are friends.\nCat and Joffrey are friends.\nDaenerys and Jon are friends.\nDaenerys and Bran are friends.\nDaenerys and Sansa are friends.\nDaenerys and Arya are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jaime are friends.\nDaenerys and Petyr are friends.\nDaenerys and Robert are friends.\nDaenerys and Jorah are friends.\nDaenerys and Viserys are friends.\nDaenerys and Joffrey are friends.\nJon and Bran are friends.\nJon and Sansa are friends.\nJon and Arya are friends.\nJon and Cersei are friends.\nJon and Jaime are friends.\nJon and Petyr are friends.\nJon and Robert are friends.\nJon and Jorah are friends.\nJon and Viserys are friends.\nJon and Joffrey are friends.\nBran and Sansa are friends.\nBran and Arya are friends.\nBran and Cersei are friends.\nBran and Jaime are friends.\nBran and Petyr are friends.\nBran and Robert are friends.\nBran and Jorah are friends.\nBran and Viserys are friends.\nBran and Joffrey are friends.\nSansa and Arya are friends.\nSansa and Cersei are friends.\nSansa and Jaime are friends.\nSansa and Petyr are friends.\nSansa and Robert are friends.\nSansa and Jorah are friends.\nSansa and Viserys are friends.\nSansa and Joffrey are friends.\nArya and Cersei are friends.\nArya and Jaime are friends.\nArya and Petyr are friends.\nArya and Robert are friends.\nArya and Jorah are friends.\nArya and Viserys are friends.\nArya and Joffrey are friends.\nCersei and Jaime are friends.\nCersei and Petyr are friends.\nCersei and Robert are friends.\nCersei and Jorah are friends.\nCersei and Viserys are friends.\nCersei and Joffrey are friends.\nJaime and Petyr are friends.\nJaime and Robert are friends.\nJaime and Jorah are friends.\nJaime and Viserys are friends.\nJaime and Joffrey are friends.\nPetyr and Robert are friends.\nPetyr and Jorah are friends.\nPetyr and Viserys are friends.\nPetyr and Joffrey are friends.\nRobert and Jorah are friends.\nRobert and Viserys are friends.\nRobert and Joffrey are friends.\nJorah and Viserys are friends.\nJorah and Joffrey are friends.\nViserys and Joffrey are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Joffrey', 'Jon', 'Jorah', 'Ned', 'Petyr', 'Robert', 'Sansa', 'Viserys'].Q: List all the nodes connected to Arya in alphabetical order.\nA: ",
+        "answer": "Bran, Cat, Cersei, Daenerys, Jaime, Joffrey, Jon, Jorah, Ned, Petyr, Robert, Sansa, Viserys.",
+        "prediction": "['Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Joffrey', 'Jon', 'Jorah', 'Ned', 'Petyr', 'Robert', 'Sansa', 'Viserys']"
+    },
+    {
+        "id": "2240",
+        "algorithm": "complete",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, and Veronica.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Bebe are friends.\nEric and Liane are friends.\nEric and Sharon are friends.\nEric and Linda are friends.\nEric and Gerald are friends.\nEric and Veronica are friends.\nKenny and Kyle are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Heidi are friends.\nKenny and Bebe are friends.\nKenny and Liane are friends.\nKenny and Sharon are friends.\nKenny and Linda are friends.\nKenny and Gerald are friends.\nKenny and Veronica are friends.\nKyle and Stan are friends.\nKyle and Tolkien are friends.\nKyle and Heidi are friends.\nKyle and Bebe are friends.\nKyle and Liane are friends.\nKyle and Sharon are friends.\nKyle and Linda are friends.\nKyle and Gerald are friends.\nKyle and Veronica are friends.\nStan and Tolkien are friends.\nStan and Heidi are friends.\nStan and Bebe are friends.\nStan and Liane are friends.\nStan and Sharon are friends.\nStan and Linda are friends.\nStan and Gerald are friends.\nStan and Veronica are friends.\nTolkien and Heidi are friends.\nTolkien and Bebe are friends.\nTolkien and Liane are friends.\nTolkien and Sharon are friends.\nTolkien and Linda are friends.\nTolkien and Gerald are friends.\nTolkien and Veronica are friends.\nHeidi and Bebe are friends.\nHeidi and Liane are friends.\nHeidi and Sharon are friends.\nHeidi and Linda are friends.\nHeidi and Gerald are friends.\nHeidi and Veronica are friends.\nBebe and Liane are friends.\nBebe and Sharon are friends.\nBebe and Linda are friends.\nBebe and Gerald are friends.\nBebe and Veronica are friends.\nLiane and Sharon are friends.\nLiane and Linda are friends.\nLiane and Gerald are friends.\nLiane and Veronica are friends.\nSharon and Linda are friends.\nSharon and Gerald are friends.\nSharon and Veronica are friends.\nLinda and Gerald are friends.\nLinda and Veronica are friends.\nGerald and Veronica are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Sharon', 'Stan', 'Tolkien', 'Veronica'].Q: List all the nodes connected to Kenny in alphabetical order.\nA: ",
+        "answer": "Bebe, Eric, Gerald, Heidi, Kyle, Liane, Linda, Sharon, Stan, Tolkien, Veronica.",
+        "prediction": "Bebe, Eric, Gerald, Heidi, Kenny, Kyle, Liane, Linda, Sharon, Stan, Tolkien, Veronica"
+    },
+    {
+        "id": "2357",
+        "algorithm": "complete",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, Michael, and Jimbo.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Bebe are friends.\nEric and Liane are friends.\nEric and Sharon are friends.\nEric and Linda are friends.\nEric and Gerald are friends.\nEric and Veronica are friends.\nEric and Michael are friends.\nEric and Jimbo are friends.\nKenny and Kyle are friends.\nKenny and Stan are friends.\nKenny and Tolkien are friends.\nKenny and Heidi are friends.\nKenny and Bebe are friends.\nKenny and Liane are friends.\nKenny and Sharon are friends.\nKenny and Linda are friends.\nKenny and Gerald are friends.\nKenny and Veronica are friends.\nKenny and Michael are friends.\nKenny and Jimbo are friends.\nKyle and Stan are friends.\nKyle and Tolkien are friends.\nKyle and Heidi are friends.\nKyle and Bebe are friends.\nKyle and Liane are friends.\nKyle and Sharon are friends.\nKyle and Linda are friends.\nKyle and Gerald are friends.\nKyle and Veronica are friends.\nKyle and Michael are friends.\nKyle and Jimbo are friends.\nStan and Tolkien are friends.\nStan and Heidi are friends.\nStan and Bebe are friends.\nStan and Liane are friends.\nStan and Sharon are friends.\nStan and Linda are friends.\nStan and Gerald are friends.\nStan and Veronica are friends.\nStan and Michael are friends.\nStan and Jimbo are friends.\nTolkien and Heidi are friends.\nTolkien and Bebe are friends.\nTolkien and Liane are friends.\nTolkien and Sharon are friends.\nTolkien and Linda are friends.\nTolkien and Gerald are friends.\nTolkien and Veronica are friends.\nTolkien and Michael are friends.\nTolkien and Jimbo are friends.\nHeidi and Bebe are friends.\nHeidi and Liane are friends.\nHeidi and Sharon are friends.\nHeidi and Linda are friends.\nHeidi and Gerald are friends.\nHeidi and Veronica are friends.\nHeidi and Michael are friends.\nHeidi and Jimbo are friends.\nBebe and Liane are friends.\nBebe and Sharon are friends.\nBebe and Linda are friends.\nBebe and Gerald are friends.\nBebe and Veronica are friends.\nBebe and Michael are friends.\nBebe and Jimbo are friends.\nLiane and Sharon are friends.\nLiane and Linda are friends.\nLiane and Gerald are friends.\nLiane and Veronica are friends.\nLiane and Michael are friends.\nLiane and Jimbo are friends.\nSharon and Linda are friends.\nSharon and Gerald are friends.\nSharon and Veronica are friends.\nSharon and Michael are friends.\nSharon and Jimbo are friends.\nLinda and Gerald are friends.\nLinda and Veronica are friends.\nLinda and Michael are friends.\nLinda and Jimbo are friends.\nGerald and Veronica are friends.\nGerald and Michael are friends.\nGerald and Jimbo are friends.\nVeronica and Michael are friends.\nVeronica and Jimbo are friends.\nMichael and Jimbo are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Jimbo', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Michael', 'Sharon', 'Stan', 'Tolkien', 'Veronica'].Q: List all the nodes connected to Bebe in alphabetical order.\nA: ",
+        "answer": "Eric, Gerald, Heidi, Jimbo, Kenny, Kyle, Liane, Linda, Michael, Sharon, Stan, Tolkien, Veronica.",
+        "prediction": "Bebe, Eric, Gerald, Heidi, Kenny, Kyle, Liane, Linda, Michael, Sharon, Stan, Tolkien, Veronica"
+    },
+    {
+        "id": "2498",
+        "algorithm": "complete",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, and 6.\nIn this graph:\nNode 0 is connected to nodes 1, 2, 3, 4, 5, 6.\nNode 1 is connected to nodes 0, 2, 3, 4, 5, 6.\nNode 2 is connected to nodes 0, 1, 3, 4, 5, 6.\nNode 3 is connected to nodes 0, 1, 2, 4, 5, 6.\nNode 4 is connected to nodes 0, 1, 2, 3, 5, 6.\nNode 5 is connected to nodes 0, 1, 2, 3, 4, 6.\nNode 6 is connected to nodes 0, 1, 2, 3, 4, 5.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '2', '3', '4', '5', '6'].Q: List all the nodes connected to 1 in alphabetical order.\nA: ",
+        "answer": "0, 2, 3, 4, 5, 6.",
+        "prediction": "0, 2, 3, 4, 5, 6"
+    },
+    {
+        "id": "2449",
+        "algorithm": "complete",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, and M.\nG has the following undirected edges:\nA -> B\nA -> C\nA -> D\nA -> E\nA -> F\nA -> G\nA -> H\nA -> I\nA -> J\nA -> K\nA -> L\nA -> M\nB -> C\nB -> D\nB -> E\nB -> F\nB -> G\nB -> H\nB -> I\nB -> J\nB -> K\nB -> L\nB -> M\nC -> D\nC -> E\nC -> F\nC -> G\nC -> H\nC -> I\nC -> J\nC -> K\nC -> L\nC -> M\nD -> E\nD -> F\nD -> G\nD -> H\nD -> I\nD -> J\nD -> K\nD -> L\nD -> M\nE -> F\nE -> G\nE -> H\nE -> I\nE -> J\nE -> K\nE -> L\nE -> M\nF -> G\nF -> H\nF -> I\nF -> J\nF -> K\nF -> L\nF -> M\nG -> H\nG -> I\nG -> J\nG -> K\nG -> L\nG -> M\nH -> I\nH -> J\nH -> K\nH -> L\nH -> M\nI -> J\nI -> K\nI -> L\nI -> M\nJ -> K\nJ -> L\nJ -> M\nK -> L\nK -> M\nL -> M\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'].Q: List all the nodes connected to C in alphabetical order.\nA: ",
+        "answer": "A, B, D, E, F, G, H, I, J, K, L, M.",
+        "prediction": "A, B, D, E, F, G, H, I, J, K, L, M"
+    },
+    {
+        "id": "2110",
+        "algorithm": "complete",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, and David.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and John are connected.\nJames and Michael are connected.\nJames and David are connected.\nRobert and John are connected.\nRobert and Michael are connected.\nRobert and David are connected.\nJohn and Michael are connected.\nJohn and David are connected.\nMichael and David are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'John', 'Michael', 'Robert'].Q: List all the nodes connected to James in alphabetical order.\nA: ",
+        "answer": "David, John, Michael, Robert.",
+        "prediction": "['David', 'John', 'Michael', 'Robert']"
+    },
+    {
+        "id": "2232",
+        "algorithm": "complete",
+        "text_encoding": "social_network",
+        "question": "G describes a social network graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, and Linda.\nWe have the following edges in G:\nJames and Robert are connected.\nJames and John are connected.\nJames and Michael are connected.\nJames and David are connected.\nJames and Mary are connected.\nJames and Patricia are connected.\nJames and Jennifer are connected.\nJames and Linda are connected.\nRobert and John are connected.\nRobert and Michael are connected.\nRobert and David are connected.\nRobert and Mary are connected.\nRobert and Patricia are connected.\nRobert and Jennifer are connected.\nRobert and Linda are connected.\nJohn and Michael are connected.\nJohn and David are connected.\nJohn and Mary are connected.\nJohn and Patricia are connected.\nJohn and Jennifer are connected.\nJohn and Linda are connected.\nMichael and David are connected.\nMichael and Mary are connected.\nMichael and Patricia are connected.\nMichael and Jennifer are connected.\nMichael and Linda are connected.\nDavid and Mary are connected.\nDavid and Patricia are connected.\nDavid and Jennifer are connected.\nDavid and Linda are connected.\nMary and Patricia are connected.\nMary and Jennifer are connected.\nMary and Linda are connected.\nPatricia and Jennifer are connected.\nPatricia and Linda are connected.\nJennifer and Linda are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: List all the nodes connected to Linda in alphabetical order.\nA: ",
+        "answer": "David, James, Jennifer, John, Mary, Michael, Patricia, Robert.",
+        "prediction": "['David', 'James', 'Jennifer', 'John', 'Mary', 'Michael', 'Patricia', 'Robert']"
+    },
+    {
+        "id": "2327",
+        "algorithm": "complete",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, and Jaime.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nCat and Daenerys are friends.\nCat and Jon are friends.\nCat and Bran are friends.\nCat and Sansa are friends.\nCat and Arya are friends.\nCat and Cersei are friends.\nCat and Jaime are friends.\nDaenerys and Jon are friends.\nDaenerys and Bran are friends.\nDaenerys and Sansa are friends.\nDaenerys and Arya are friends.\nDaenerys and Cersei are friends.\nDaenerys and Jaime are friends.\nJon and Bran are friends.\nJon and Sansa are friends.\nJon and Arya are friends.\nJon and Cersei are friends.\nJon and Jaime are friends.\nBran and Sansa are friends.\nBran and Arya are friends.\nBran and Cersei are friends.\nBran and Jaime are friends.\nSansa and Arya are friends.\nSansa and Cersei are friends.\nSansa and Jaime are friends.\nArya and Cersei are friends.\nArya and Jaime are friends.\nCersei and Jaime are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Jon', 'Ned', 'Sansa'].Q: List all the nodes connected to Cat in alphabetical order.\nA: ",
+        "answer": "Arya, Bran, Cersei, Daenerys, Jaime, Jon, Ned, Sansa.",
+        "prediction": "Arya, Bran, Cersei, Daenerys, Jaime, Jon, Ned, Sansa"
+    },
+    {
+        "id": "2199",
+        "algorithm": "complete",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, Susan, and Jessica.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nJames and John wrote a paper together.\nJames and Michael wrote a paper together.\nJames and David wrote a paper together.\nJames and Mary wrote a paper together.\nJames and Patricia wrote a paper together.\nJames and Jennifer wrote a paper together.\nJames and Linda wrote a paper together.\nJames and Elizabeth wrote a paper together.\nJames and William wrote a paper together.\nJames and Richard wrote a paper together.\nJames and Joseph wrote a paper together.\nJames and Thomas wrote a paper together.\nJames and Christopher wrote a paper together.\nJames and Barbara wrote a paper together.\nJames and Susan wrote a paper together.\nJames and Jessica wrote a paper together.\nRobert and John wrote a paper together.\nRobert and Michael wrote a paper together.\nRobert and David wrote a paper together.\nRobert and Mary wrote a paper together.\nRobert and Patricia wrote a paper together.\nRobert and Jennifer wrote a paper together.\nRobert and Linda wrote a paper together.\nRobert and Elizabeth wrote a paper together.\nRobert and William wrote a paper together.\nRobert and Richard wrote a paper together.\nRobert and Joseph wrote a paper together.\nRobert and Thomas wrote a paper together.\nRobert and Christopher wrote a paper together.\nRobert and Barbara wrote a paper together.\nRobert and Susan wrote a paper together.\nRobert and Jessica wrote a paper together.\nJohn and Michael wrote a paper together.\nJohn and David wrote a paper together.\nJohn and Mary wrote a paper together.\nJohn and Patricia wrote a paper together.\nJohn and Jennifer wrote a paper together.\nJohn and Linda wrote a paper together.\nJohn and Elizabeth wrote a paper together.\nJohn and William wrote a paper together.\nJohn and Richard wrote a paper together.\nJohn and Joseph wrote a paper together.\nJohn and Thomas wrote a paper together.\nJohn and Christopher wrote a paper together.\nJohn and Barbara wrote a paper together.\nJohn and Susan wrote a paper together.\nJohn and Jessica wrote a paper together.\nMichael and David wrote a paper together.\nMichael and Mary wrote a paper together.\nMichael and Patricia wrote a paper together.\nMichael and Jennifer wrote a paper together.\nMichael and Linda wrote a paper together.\nMichael and Elizabeth wrote a paper together.\nMichael and William wrote a paper together.\nMichael and Richard wrote a paper together.\nMichael and Joseph wrote a paper together.\nMichael and Thomas wrote a paper together.\nMichael and Christopher wrote a paper together.\nMichael and Barbara wrote a paper together.\nMichael and Susan wrote a paper together.\nMichael and Jessica wrote a paper together.\nDavid and Mary wrote a paper together.\nDavid and Patricia wrote a paper together.\nDavid and Jennifer wrote a paper together.\nDavid and Linda wrote a paper together.\nDavid and Elizabeth wrote a paper together.\nDavid and William wrote a paper together.\nDavid and Richard wrote a paper together.\nDavid and Joseph wrote a paper together.\nDavid and Thomas wrote a paper together.\nDavid and Christopher wrote a paper together.\nDavid and Barbara wrote a paper together.\nDavid and Susan wrote a paper together.\nDavid and Jessica wrote a paper together.\nMary and Patricia wrote a paper together.\nMary and Jennifer wrote a paper together.\nMary and Linda wrote a paper together.\nMary and Elizabeth wrote a paper together.\nMary and William wrote a paper together.\nMary and Richard wrote a paper together.\nMary and Joseph wrote a paper together.\nMary and Thomas wrote a paper together.\nMary and Christopher wrote a paper together.\nMary and Barbara wrote a paper together.\nMary and Susan wrote a paper together.\nMary and Jessica wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nPatricia and Linda wrote a paper together.\nPatricia and Elizabeth wrote a paper together.\nPatricia and William wrote a paper together.\nPatricia and Richard wrote a paper together.\nPatricia and Joseph wrote a paper together.\nPatricia and Thomas wrote a paper together.\nPatricia and Christopher wrote a paper together.\nPatricia and Barbara wrote a paper together.\nPatricia and Susan wrote a paper together.\nPatricia and Jessica wrote a paper together.\nJennifer and Linda wrote a paper together.\nJennifer and Elizabeth wrote a paper together.\nJennifer and William wrote a paper together.\nJennifer and Richard wrote a paper together.\nJennifer and Joseph wrote a paper together.\nJennifer and Thomas wrote a paper together.\nJennifer and Christopher wrote a paper together.\nJennifer and Barbara wrote a paper together.\nJennifer and Susan wrote a paper together.\nJennifer and Jessica wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nLinda and William wrote a paper together.\nLinda and Richard wrote a paper together.\nLinda and Joseph wrote a paper together.\nLinda and Thomas wrote a paper together.\nLinda and Christopher wrote a paper together.\nLinda and Barbara wrote a paper together.\nLinda and Susan wrote a paper together.\nLinda and Jessica wrote a paper together.\nElizabeth and William wrote a paper together.\nElizabeth and Richard wrote a paper together.\nElizabeth and Joseph wrote a paper together.\nElizabeth and Thomas wrote a paper together.\nElizabeth and Christopher wrote a paper together.\nElizabeth and Barbara wrote a paper together.\nElizabeth and Susan wrote a paper together.\nElizabeth and Jessica wrote a paper together.\nWilliam and Richard wrote a paper together.\nWilliam and Joseph wrote a paper together.\nWilliam and Thomas wrote a paper together.\nWilliam and Christopher wrote a paper together.\nWilliam and Barbara wrote a paper together.\nWilliam and Susan wrote a paper together.\nWilliam and Jessica wrote a paper together.\nRichard and Joseph wrote a paper together.\nRichard and Thomas wrote a paper together.\nRichard and Christopher wrote a paper together.\nRichard and Barbara wrote a paper together.\nRichard and Susan wrote a paper together.\nRichard and Jessica wrote a paper together.\nJoseph and Thomas wrote a paper together.\nJoseph and Christopher wrote a paper together.\nJoseph and Barbara wrote a paper together.\nJoseph and Susan wrote a paper together.\nJoseph and Jessica wrote a paper together.\nThomas and Christopher wrote a paper together.\nThomas and Barbara wrote a paper together.\nThomas and Susan wrote a paper together.\nThomas and Jessica wrote a paper together.\nChristopher and Barbara wrote a paper together.\nChristopher and Susan wrote a paper together.\nChristopher and Jessica wrote a paper together.\nBarbara and Susan wrote a paper together.\nBarbara and Jessica wrote a paper together.\nSusan and Jessica wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'Jessica', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Susan', 'Thomas', 'William'].Q: List all the nodes connected to John in alphabetical order.\nA: ",
+        "answer": "Barbara, Christopher, David, Elizabeth, James, Jennifer, Jessica, Joseph, Linda, Mary, Michael, Patricia, Richard, Robert, Susan, Thomas, William.",
+        "prediction": "['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'Jessica', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Susan', 'Thomas', 'William']"
+    },
+    {
+        "id": "2879",
+        "algorithm": "star",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, and Veronica.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Bebe are friends.\nEric and Liane are friends.\nEric and Sharon are friends.\nEric and Linda are friends.\nEric and Gerald are friends.\nEric and Veronica are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Sharon', 'Stan', 'Tolkien', 'Veronica'].Q: List all the nodes connected to Veronica in alphabetical order.\nA: ",
+        "answer": "Eric.",
+        "prediction": "['Eric', 'Gerald', 'Veronica']"
+    },
+    {
+        "id": "2844",
+        "algorithm": "star",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, and 13.\nThe edges in G are: (0, 1) (0, 2) (0, 3) (0, 4) (0, 5) (0, 6) (0, 7) (0, 8) (0, 9) (0, 10) (0, 11) (0, 12) (0, 13).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '11', '12', '13', '2', '3', '4', '5', '6', '7', '8', '9'].Q: List all the nodes connected to 8 in alphabetical order.\nA: ",
+        "answer": "0.",
+        "prediction": "['0', '1', '10', '11', '12', '13', '2', '3', '4', '5', '6', '7', '8', '9']"
+    },
+    {
+        "id": "2856",
+        "algorithm": "star",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, and Tolkien.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Eric', 'Kenny', 'Kyle', 'Stan', 'Tolkien'].Q: List all the nodes connected to Kyle in alphabetical order.\nA: ",
+        "answer": "Eric.",
+        "prediction": "['Eric', 'Stan']"
+    },
+    {
+        "id": "2647",
+        "algorithm": "star",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, and 5.\nIn this graph:\nNode 0 is connected to nodes 1, 2, 3, 4, 5.\nNode 1 is connected to node 0.\nNode 2 is connected to node 0.\nNode 3 is connected to node 0.\nNode 4 is connected to node 0.\nNode 5 is connected to node 0.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '2', '3', '4', '5'].Q: List all the nodes connected to 3 in alphabetical order.\nA: ",
+        "answer": "0.",
+        "prediction": "0"
+    },
+    {
+        "id": "2837",
+        "algorithm": "star",
+        "text_encoding": "got",
+        "question": "G describes a friendship graph among nodes Ned, Cat, Daenerys, Jon, Bran, Sansa, Arya, Cersei, Jaime, Petyr, Robert, Jorah, and Viserys.\nWe have the following edges in G:\nNed and Cat are friends.\nNed and Daenerys are friends.\nNed and Jon are friends.\nNed and Bran are friends.\nNed and Sansa are friends.\nNed and Arya are friends.\nNed and Cersei are friends.\nNed and Jaime are friends.\nNed and Petyr are friends.\nNed and Robert are friends.\nNed and Jorah are friends.\nNed and Viserys are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arya', 'Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Jon', 'Jorah', 'Ned', 'Petyr', 'Robert', 'Sansa', 'Viserys'].Q: List all the nodes connected to Arya in alphabetical order.\nA: ",
+        "answer": "Ned.",
+        "prediction": "['Bran', 'Cat', 'Cersei', 'Daenerys', 'Jaime', 'Jon', 'Jorah', 'Ned', 'Petyr', 'Robert', 'Sansa', 'Viserys']"
+    },
+    {
+        "id": "2623",
+        "algorithm": "star",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, and Bernie.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Arnold', 'Barack', 'Bernie', 'Jimmy'].Q: List all the nodes connected to Jimmy in alphabetical order.\nA: ",
+        "answer": "Barack.",
+        "prediction": "['Barack']"
+    },
+    {
+        "id": "2600",
+        "algorithm": "star",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, and Sharon.\nWe have the following edges in G:\nEric and Kenny are friends.\nEric and Kyle are friends.\nEric and Stan are friends.\nEric and Tolkien are friends.\nEric and Heidi are friends.\nEric and Bebe are friends.\nEric and Liane are friends.\nEric and Sharon are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Heidi', 'Kenny', 'Kyle', 'Liane', 'Sharon', 'Stan', 'Tolkien'].Q: List all the nodes connected to Liane in alphabetical order.\nA: ",
+        "answer": "Eric.",
+        "prediction": "['Eric', 'Liane']"
+    },
+    {
+        "id": "2924",
+        "algorithm": "star",
+        "text_encoding": "politician",
+        "question": "G describes a social network graph among nodes Barack, Jimmy, Arnold, Bernie, Bill, Kamala, Hillary, Elizabeth, John, Ben, Joe, Alexandria, and George.\nWe have the following edges in G:\nBarack and Jimmy are connected.\nBarack and Arnold are connected.\nBarack and Bernie are connected.\nBarack and Bill are connected.\nBarack and Kamala are connected.\nBarack and Hillary are connected.\nBarack and Elizabeth are connected.\nBarack and John are connected.\nBarack and Ben are connected.\nBarack and Joe are connected.\nBarack and Alexandria are connected.\nBarack and George are connected.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Alexandria', 'Arnold', 'Barack', 'Ben', 'Bernie', 'Bill', 'Elizabeth', 'George', 'Hillary', 'Jimmy', 'Joe', 'John', 'Kamala'].Q: List all the nodes connected to Bill in alphabetical order.\nA: ",
+        "answer": "Barack.",
+        "prediction": "Alexandria, Barack, Ben, Bernie, Elizabeth, Hillary, Joe, John, Kamala"
+    },
+    {
+        "id": "2752",
+        "algorithm": "star",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, and Jennifer.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Michael are friends.\nJames and David are friends.\nJames and Mary are friends.\nJames and Patricia are friends.\nJames and Jennifer are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'Jennifer', 'John', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: List all the nodes connected to Robert in alphabetical order.\nA: ",
+        "answer": "James.",
+        "prediction": "['David', 'James', 'John', 'Mary', 'Michael', 'Patricia']"
+    },
+    {
+        "id": "2655",
+        "algorithm": "star",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, and Thomas.\nWe have the following edges in G:\nJames and Robert are friends.\nJames and John are friends.\nJames and Michael are friends.\nJames and David are friends.\nJames and Mary are friends.\nJames and Patricia are friends.\nJames and Jennifer are friends.\nJames and Linda are friends.\nJames and Elizabeth are friends.\nJames and William are friends.\nJames and Richard are friends.\nJames and Joseph are friends.\nJames and Thomas are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Thomas', 'William'].Q: List all the nodes connected to Elizabeth in alphabetical order.\nA: ",
+        "answer": "James.",
+        "prediction": "['David', 'James', 'Linda', 'William']"
+    },
+    {
+        "id": "3412",
+        "algorithm": "path",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, N, and O.\nG has the following undirected edges:\nA -> B\nB -> C\nC -> D\nD -> E\nE -> F\nF -> G\nG -> H\nH -> I\nI -> J\nJ -> K\nK -> L\nL -> M\nM -> N\nN -> O\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'].Q: List all the nodes connected to N in alphabetical order.\nA: ",
+        "answer": "M, O.",
+        "prediction": "M,O"
+    },
+    {
+        "id": "3221",
+        "algorithm": "path",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, Michael, Jimbo, and Herbert.\nWe have the following edges in G:\nEric and Kenny are friends.\nKenny and Kyle are friends.\nKyle and Stan are friends.\nStan and Tolkien are friends.\nTolkien and Heidi are friends.\nHeidi and Bebe are friends.\nBebe and Liane are friends.\nLiane and Sharon are friends.\nSharon and Linda are friends.\nLinda and Gerald are friends.\nGerald and Veronica are friends.\nVeronica and Michael are friends.\nMichael and Jimbo are friends.\nJimbo and Herbert are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Herbert', 'Jimbo', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Michael', 'Sharon', 'Stan', 'Tolkien', 'Veronica'].Q: List all the nodes connected to Liane in alphabetical order.\nA: ",
+        "answer": "Bebe, Sharon.",
+        "prediction": "Bebe, Heidi, Liane, Sharon"
+    },
+    {
+        "id": "3225",
+        "algorithm": "path",
+        "text_encoding": "south_park",
+        "question": "G describes a friendship graph among nodes Eric, Kenny, Kyle, Stan, Tolkien, Heidi, Bebe, Liane, Sharon, Linda, Gerald, Veronica, and Michael.\nWe have the following edges in G:\nEric and Kenny are friends.\nKenny and Kyle are friends.\nKyle and Stan are friends.\nStan and Tolkien are friends.\nTolkien and Heidi are friends.\nHeidi and Bebe are friends.\nBebe and Liane are friends.\nLiane and Sharon are friends.\nSharon and Linda are friends.\nLinda and Gerald are friends.\nGerald and Veronica are friends.\nVeronica and Michael are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Bebe', 'Eric', 'Gerald', 'Heidi', 'Kenny', 'Kyle', 'Liane', 'Linda', 'Michael', 'Sharon', 'Stan', 'Tolkien', 'Veronica'].Q: List all the nodes connected to Tolkien in alphabetical order.\nA: ",
+        "answer": "Heidi, Stan.",
+        "prediction": "['Heidi', 'Stan']"
+    },
+    {
+        "id": "3124",
+        "algorithm": "path",
+        "text_encoding": "coauthorship",
+        "question": "G describes a coauthorship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, and Richard.\nIn this coauthorship graph:\nJames and Robert wrote a paper together.\nRobert and John wrote a paper together.\nJohn and Michael wrote a paper together.\nMichael and David wrote a paper together.\nDavid and Mary wrote a paper together.\nMary and Patricia wrote a paper together.\nPatricia and Jennifer wrote a paper together.\nJennifer and Linda wrote a paper together.\nLinda and Elizabeth wrote a paper together.\nElizabeth and William wrote a paper together.\nWilliam and Richard wrote a paper together..\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'William'].Q: List all the nodes connected to David in alphabetical order.\nA: ",
+        "answer": "Mary, Michael.",
+        "prediction": "David, Mary, Michael"
+    },
+    {
+        "id": "3394",
+        "algorithm": "path",
+        "text_encoding": "incident",
+        "question": "G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10.\nIn this graph:\nNode 0 is connected to node 1.\nNode 1 is connected to nodes 0, 2.\nNode 2 is connected to nodes 1, 3.\nNode 3 is connected to nodes 2, 4.\nNode 4 is connected to nodes 3, 5.\nNode 5 is connected to nodes 4, 6.\nNode 6 is connected to nodes 5, 7.\nNode 7 is connected to nodes 6, 8.\nNode 8 is connected to nodes 7, 9.\nNode 9 is connected to nodes 8, 10.\nNode 10 is connected to node 9.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '2', '3', '4', '5', '6', '7', '8', '9'].Q: List all the nodes connected to 9 in alphabetical order.\nA: ",
+        "answer": "8, 10.",
+        "prediction": "['8', '10']"
+    },
+    {
+        "id": "3460",
+        "algorithm": "path",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, and Jennifer.\nWe have the following edges in G:\nJames and Robert are friends.\nRobert and John are friends.\nJohn and Michael are friends.\nMichael and David are friends.\nDavid and Mary are friends.\nMary and Patricia are friends.\nPatricia and Jennifer are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'Jennifer', 'John', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: List all the nodes connected to Patricia in alphabetical order.\nA: ",
+        "answer": "Jennifer, Mary.",
+        "prediction": "['Jennifer', 'Mary', 'Patricia']"
+    },
+    {
+        "id": "3486",
+        "algorithm": "path",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, Linda, Elizabeth, William, Richard, Joseph, Thomas, Christopher, Barbara, and Susan.\nWe have the following edges in G:\nJames and Robert are friends.\nRobert and John are friends.\nJohn and Michael are friends.\nMichael and David are friends.\nDavid and Mary are friends.\nMary and Patricia are friends.\nPatricia and Jennifer are friends.\nJennifer and Linda are friends.\nLinda and Elizabeth are friends.\nElizabeth and William are friends.\nWilliam and Richard are friends.\nRichard and Joseph are friends.\nJoseph and Thomas are friends.\nThomas and Christopher are friends.\nChristopher and Barbara are friends.\nBarbara and Susan are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['Barbara', 'Christopher', 'David', 'Elizabeth', 'James', 'Jennifer', 'John', 'Joseph', 'Linda', 'Mary', 'Michael', 'Patricia', 'Richard', 'Robert', 'Susan', 'Thomas', 'William'].Q: List all the nodes connected to Mary in alphabetical order.\nA: ",
+        "answer": "David, Patricia.",
+        "prediction": "['David', 'Patricia']"
+    },
+    {
+        "id": "3415",
+        "algorithm": "path",
+        "text_encoding": "adjacency",
+        "question": "In an undirected graph, (i,j) means that node i and node j are connected with an undirected edge. G describes a graph among nodes 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, and 18.\nThe edges in G are: (0, 1) (1, 2) (2, 3) (3, 4) (4, 5) (5, 6) (6, 7) (7, 8) (8, 9) (9, 10) (10, 11) (11, 12) (12, 13) (13, 14) (14, 15) (15, 16) (16, 17) (17, 18).\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['0', '1', '10', '11', '12', '13', '14', '15', '16', '17', '18', '2', '3', '4', '5', '6', '7', '8', '9'].Q: List all the nodes connected to 18 in alphabetical order.\nA: ",
+        "answer": "17.",
+        "prediction": "['17']"
+    },
+    {
+        "id": "3350",
+        "algorithm": "path",
+        "text_encoding": "expert",
+        "question": "You are a graph analyst and you have been given a graph G among nodes A, B, C, D, E, F, G, H, I, J, K, L, M, and N.\nG has the following undirected edges:\nA -> B\nB -> C\nC -> D\nD -> E\nE -> F\nF -> G\nG -> H\nH -> I\nI -> J\nJ -> K\nK -> L\nL -> M\nM -> N\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'].Q: List all the nodes connected to E in alphabetical order.\nA: ",
+        "answer": "D, F.",
+        "prediction": "['D', 'F']"
+    },
+    {
+        "id": "3348",
+        "algorithm": "path",
+        "text_encoding": "friendship",
+        "question": "G describes a friendship graph among nodes James, Robert, John, Michael, David, Mary, Patricia, Jennifer, and Linda.\nWe have the following edges in G:\nJames and Robert are friends.\nRobert and John are friends.\nJohn and Michael are friends.\nMichael and David are friends.\nDavid and Mary are friends.\nMary and Patricia are friends.\nPatricia and Jennifer are friends.\nJennifer and Linda are friends.\nThere are 1 number of islands.  \n This is island 1 of 1. It contains the nodes ['David', 'James', 'Jennifer', 'John', 'Linda', 'Mary', 'Michael', 'Patricia', 'Robert'].Q: List all the nodes connected to Jennifer in alphabetical order.\nA: ",
+        "answer": "Linda, Patricia.",
+        "prediction": "['Jennifer', 'Linda', 'Patricia']"
+    }
+]
