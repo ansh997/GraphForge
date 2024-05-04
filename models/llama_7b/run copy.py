@@ -1,7 +1,6 @@
 import json
 import os
 import torch
-import random
 from transformers import AutoModelForCausalLM, AutoTokenizer
 # from torch.quantization import quantize_dynamic
 
@@ -36,7 +35,7 @@ model.to(device)
 
 def inject_prompt(question):
     with torch.no_grad():
-        inputs = tokenizer(question+"\n\n Just provide me the answer. your output should not contain any conversation. Give me just one word answer wherever necessary and nothing else.",
+        inputs = tokenizer(question+"\n\n Just provide me the answer. your output should not contain any conversation",
         return_tensors="pt")
         outputs = model.generate(**inputs)
         response = tokenizer.decode(outputs[0], skip_special_tokens=True)
@@ -53,35 +52,20 @@ if not os.path.exists(prediction_path):
 for json_path in os.listdir(question_folder):
     json_file = open(question_folder + json_path, 'r')
     data = json.load(json_file)
-    
-    class_dict = {}
-    
-    for entry in data:
-        class_name = entry['algorithm']
-        if class_name not in class_dict:
-            class_dict[class_name] = []
-        class_dict[class_name].append(entry)
-        
-    # Step 4: Randomly sample 100 dictionaries from each class
-    sampled_data = []
-    for class_name, entries in class_dict.items():
-        sampled_entries = random.sample(entries, min(10, len(entries)))
-        sampled_data.extend(sampled_entries)
-    
 
     all_records = []
     output = prediction_path + json_path.split('.')[0] + '.json'
 
     print("Working on file", json_path)
 
-    for item in sampled_data:
+    for item in data:
         id_ = item['id']
         algorithm = item['algorithm']
         text_encoding = item['text_encoding']
         question = item['question']
         answer = item['answer']
 
-        print("Processing question no.:", id_, "of", len(sampled_data))
+        print("Processing question no.:", id_, "of", len(data))
 
         prediction = inject_prompt(question)
 
