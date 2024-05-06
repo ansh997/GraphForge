@@ -1,0 +1,218 @@
+{
+    "node_count_cot_bag_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "node_degree_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 50.32425309943516
+    },
+    "edge_count_few_shot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "cycle_check_cot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "edge_existence_few_shot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 1.5771989184565225
+    },
+    "connected_nodes_cot_bag_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 26.073665673161987
+    },
+    "node_degree_zero_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 8.88550301342516
+    },
+    "edge_existence_cot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 31.149628016216084
+    },
+    "connected_nodes_few_shot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 36.34272813851288
+    },
+    "node_degree_cot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 47.20421396049045
+    },
+    "edge_count_zero_shot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "edge_existence_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 40.67930017927965
+    },
+    "edge_count_cot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "cycle_check_zero_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "edge_count_cot_bag_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "node_count_zero_shot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "connected_nodes_zero_shot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 12.0028731130675
+    },
+    "subprocess_order_zero_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 11.429237095742256
+    },
+    "node_count_few_shot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "node_count_cot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "connected_nodes_cot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 23.9072392769843
+    },
+    "subprocess_order_cot_bag_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 18.53257793837365
+    },
+    "node_count_cot_bag_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "cycle_check_cot_bag_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "node_degree_zero_shot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 57.65117460022502
+    },
+    "cycle_check_zero_shot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "cycle_check_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "connected_nodes_zero_shot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 32.53389438772916
+    },
+    "node_degree_cot_bag_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 51.93136734401144
+    },
+    "node_count_zero_cot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "node_count_zero_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "connected_nodes_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 39.1516953684979
+    },
+    "edge_existence_zero_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "subprocess_order_cot_bag_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 11.53852090039702
+    },
+    "edge_count_cot_bag_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "node_degree_few_shot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 33.25153558434411
+    },
+    "cycle_check_few_shot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "edge_count_zero_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "edge_count_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "subprocess_order_few_shot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 7.029462500962959
+    },
+    "connected_nodes_zero_cot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 28.60017503403728
+    },
+    "node_degree_few_shot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 49.37236321756526
+    },
+    "node_count_zero_shot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 1.9386353758682109
+    },
+    "connected_nodes_zero_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 28.603385428750222
+    },
+    "node_count_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "edge_existence_cot_bag_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 18.668263778277883
+    },
+    "connected_nodes_few_shot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 36.28437247113354
+    },
+    "edge_count_zero_shot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "subprocess_order_zero_cot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 0
+    },
+    "node_degree_zero_shot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 55.95583646549693
+    },
+    "subprocess_order_cot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 21.111553870099705
+    },
+    "edge_existence_cot_bag_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 27.644809168186107
+    },
+    "edge_existence_zero_shot_test.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 53.67312191630412
+    },
+    "node_degree_zero_cot_test_island.json": {
+        "average_accuracy": 0,
+        "exact_match_accuracy": 19.79110382795006
+    }
+}
