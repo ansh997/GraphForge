@@ -7,8 +7,7 @@ def island_encoding():
     output += “There are {len(list_islands)}.”
     for i, island in enumerate(list_islands):
         island_nodes = list(island.nodes())
-        output += += f" \n This is island {i+1} of {number_of_islands}.
-                           Contains the nodes {island_nodes}."
+        output += += f" \n This is island {i+1} of {number_of_islands}. Contains the nodes {island_nodes}."
     return output
 ```
 
